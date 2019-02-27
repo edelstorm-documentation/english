@@ -1,0 +1,1257 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentations for modern Wordpress development">
+      
+      
+        <link rel="canonical" href="https://edelstorm-documentation.github.io/english/creation-de-l'instance/">
+      
+      
+        <meta name="author" content="Dorian Lannay & Marie Suchodolski">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Création de l'instance - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#creation-de-linstance-lightsail" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://edelstorm-documentation.github.io/english/" title="Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              Création de l'instance
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/edelstorm-documentation/english.git" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    edelstorm-documentation/english
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Amazon Web Services" class="md-tabs__link md-tabs__link--active">
+        Amazon Web Services
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../help/glossary/" title="Help" class="md-tabs__link">
+          Help
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../aide/glossaire/" title="Aide" class="md-tabs__link">
+          Aide
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://edelstorm-documentation.github.io/english/" title="Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/edelstorm-documentation/english.git" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    edelstorm-documentation/english
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Amazon Web Services" class="md-nav__link">
+      Amazon Web Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sign-up/" title="Sign Up" class="md-nav__link">
+      Sign Up
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../domain-name/" title="Domain name" class="md-nav__link">
+      Domain name
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../instance-creation/" title="Instance creation" class="md-nav__link">
+      Instance creation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../run-cloud/" title="RunCloud" class="md-nav__link">
+      RunCloud
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../content-delivery-network/" title="Content Delivery Network" class="md-nav__link">
+      Content Delivery Network
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Help
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Help
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../help/glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Amazon Web Services" class="md-nav__link">
+      Amazon Web Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../creation-du-compte/" title="Création du compte" class="md-nav__link">
+      Création du compte
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../nom-de-domaine/" title="Nom de domaine" class="md-nav__link">
+      Nom de domaine
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Création de l'instance
+      </label>
+    
+    <a href="./" title="Création de l'instance" class="md-nav__link md-nav__link--active">
+      Création de l'instance
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generer-une-paire-de-cles-ssh" title="Générer une paire de clés SSH" class="md-nav__link">
+    Générer une paire de clés SSH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-linstance" title="Création de l'instance" class="md-nav__link">
+    Création de l'instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-ip-statique" title="Firewall &amp; IP Statique" class="md-nav__link">
+    Firewall &amp; IP Statique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zone-dns" title="Zone DNS" class="md-nav__link">
+    Zone DNS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serveurs-de-noms" title="Serveurs de noms" class="md-nav__link">
+    Serveurs de noms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options-de-linstance" title="Options de l'instance" class="md-nav__link">
+    Options de l'instance
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../run-cloud-fr/" title="RunCloud" class="md-nav__link">
+      RunCloud
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../content-delivery-network-fr/" title="Content Delivery Network" class="md-nav__link">
+      Content Delivery Network
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Aide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Aide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../aide/glossaire/" title="Glossaire" class="md-nav__link">
+      Glossaire
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../design/" title="Design" class="md-nav__link">
+      Design
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#generer-une-paire-de-cles-ssh" title="Générer une paire de clés SSH" class="md-nav__link">
+    Générer une paire de clés SSH
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-linstance" title="Création de l'instance" class="md-nav__link">
+    Création de l'instance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-ip-statique" title="Firewall &amp; IP Statique" class="md-nav__link">
+    Firewall &amp; IP Statique
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zone-dns" title="Zone DNS" class="md-nav__link">
+    Zone DNS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#serveurs-de-noms" title="Serveurs de noms" class="md-nav__link">
+    Serveurs de noms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#options-de-linstance" title="Options de l'instance" class="md-nav__link">
+    Options de l'instance
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="creation-de-linstance-lightsail">Création de l'instance <small>- Lightsail</small><a class="headerlink" href="#creation-de-linstance-lightsail" title="Permanent link">&para;</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Copiez / collez facilement les commandes du tutoriel en cliquant sur l'icône de droite.</p>
+<div class="codehilite"><pre><span></span>Copiez cette phrase pour tester.
+</pre></div>
+
+</div>
+<h2 id="generer-une-paire-de-cles-ssh">Générer une paire de clés SSH<a class="headerlink" href="#generer-une-paire-de-cles-ssh" title="Permanent link">&para;</a></h2>
+<p><a href="../assets/images/aws/creation-instance/fr/1.gif" target="_blank"><img alt="Générer une paire de clé SSH sur Mac" src="../assets/images/aws/creation-instance/fr/1.gif"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Sécurisation des communications entre votre ordinateur et votre futur serveur</strong></dt>
+<dd>
+<ul>
+<li><mark class="critic">Pour les ordinateurs Mac</mark> En haut à droite de votre écran, lancer une recherche Spotlight, tapez <em>Terminal</em> puis appuyez sur <kbd>Entrer</kbd>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><mark class="critic">Pour les ordinateurs Windows</mark> Plusieurs solutions en fonction de la version de votre OS. <ul>
+<li>Soit, dans le menu <em>Démarrer</em>, tapez dans la barre de recherche <em>cmd</em>. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez <em>exécuter en tant qu'administrateur</em>.</li>
+<li>Soit, ouvrez la barre de recherche de l'ordinateur en vous rendant sur votre bureau puis en tapant <kbd>⊞Win</kbd> + <kbd>S</kbd>. Tapez <em>cmd</em> dans le champ de recherche. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez <em>exécuter en tant qu'administrateur</em>.</li>
+</ul>
+</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Une fois dans votre terminal, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
+<div class="codehilite"><pre><span></span>ssh-keygen -t rsa
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous pouvez ensuite nommer votre paire de clés, sinon appuyez juste sur <kbd>Entrer</kbd>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ressaisissez votre mot de passe et appuyez sur <kbd>Entrer</kbd>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">À savoir</p>
+<p>Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas le voir se former sur votre écran.<br>
+C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper. Vous devez donc le définir à l'aveugle !</p>
+</div>
+<hr />
+<p><a href="../assets/images/aws/creation-instance/fr/2.gif" target="_blank"><img alt="Localiser une paire de clé SSH sur Mac" src="../assets/images/aws/creation-instance/fr/2.gif"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Localisation de votre paire de clés SSH</strong></dt>
+<dd>
+<ul>
+<li>Ouvrez votre Finder, cliquez en haut dans la barre de menu sur <strong>Aller</strong>, puis cliquez sur <strong>Aller au dossier...</strong></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans la barre de recherche, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
+<div class="codehilite"><pre><span></span>~/.ssh
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Une fois dans le dossier <mark class="critic">.ssh</mark> faites glisser l'icône dossier en haut de la fenêtre du Finder dans votre barre de favoris. Cela vous permettra d'y accéder plus facilement pour la prochaine étape.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Votre machine a généré votre paire de clés SSH que vous pouvez facilement localiser à partir de son dossier !</p>
+</div>
+<hr />
+<h2 id="creation-de-linstance">Création de l'instance<a class="headerlink" href="#creation-de-linstance" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/NG6jjPI0bRg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Options de l'instance Amazon Lightsail</strong></dt>
+<dd>
+<ul>
+<li>Dans votre console de management AWS, cherchez le service <em>Lightsail</em> dans la barre recherche et cliquez dessus.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Définissez la langue que vous souhaitez utiliser pour l'interface.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Créer une instance</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Choisissez l'emplacement de l'instance. Choisissez la région se rapprochant le plus de vos futurs utilisateurs.<br>
+    <em>Si vous ciblez un public européen francophone, vous pouvez choisir Paris, si vous ciblez des utilisateurs japonais, choisissez Tokyo... Le but est de permettre à vos utilisateurs de charger plus rapidement votre site.</em></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Laissez par défaut la zone de disponibilité de l'instance.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Choisissez <em>Linux/Unix</em> comme plateforme.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur l'onglet <em>Système d'exploitation uniquement</em> et sélectionnez <em>Ubuntu 16.04 LTS</em> comme système d'exploitation.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Nous n'ajouterons pas de script de lancement. (I)</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <em>Modifier une paire de clés SSH</em> et cliquez sur <em>Charger un nouveau</em> puis sur <mark class="critic">Charger</mark>. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <em>Choisir un fichier</em> et choisissez le fichier <code class="codehilite">id_rsa.pub</code> dans votre dossier <code class="codehilite">~/.ssh</code> puis cliquez sur <mark class="critic">Charger une clé</mark>. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Choisissez le plan d'instance basique à <strong>3.50$ par mois</strong>, le premier mois d'essais est gratuit.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Nommez votre instance, de préférence avec votre nom de domaine. (A)</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous pouvez appliquer des balises d'identifications à cette instance si vous pensez en créer plusieurs par la suite.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Créer une instance</mark> et patientez un instant que votre instance s'initialise.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition info">
+<p class="admonition-title">Informations</p>
+<p>À partir de cette étape, vous souscrivez au service Amazon Lighsail. Vous pouvez supprimer cette instance à tout moment si vous n'en avez plus besoin. Consultez l'évolution de votre facturation depuis votre <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">console de management AWS</a>.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Votre instance Amazon Lightsail est prête à être utilisée pour votre site web.</p>
+</div>
+<hr />
+<h2 id="firewall-ip-statique">Firewall &amp; IP Statique<a class="headerlink" href="#firewall-ip-statique" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/aBRPNBX_XMc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Ouverture des ports HTTPS &amp; FTP</strong></dt>
+<dd>
+<ul>
+<li>Cliquez sur l'instance et allez dans l'onglet <em>Mise en réseau</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans la section <em>Par-feu</em>, cliquez sur <em>Ajouter un autre élément</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans le champ <em>Personnaliser, sélectionnez : *HTTPS</em>.<br>
+    Cette étape permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <em>Ajouter un autre élément</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Laissez le champ <em>Personnaliser</em> et ajoutez le port <em>34210</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Enregistrer</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<dl>
+<dt><strong>Fixation de l'adresse IP dynamique</strong></dt>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Attacher une IP Statique</mark> puis cliquez sur <mark class="critic">Créer une IP Statique</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>L'emplacement de l'IP Statique doit être similaire à celui de votre instance.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Nommez votre IP statique de cette façon, avec votre nom de domaine : <em>StaticIp-VotreNomDeDomaine</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Créer</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition info">
+<p class="admonition-title">Informations</p>
+<p>Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire qu'à chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une IP statique est gratuite lorsqu'elle est attachée à une instance.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Les ports HTTPS et FTP sont ouvert et votre instance Lightsail possède une adresse IP statique.</p>
+</div>
+<hr />
+<h2 id="zone-dns">Zone DNS<a class="headerlink" href="#zone-dns" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/SL4oC8wznzI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Association de votre instance à votre nom de domaine</strong></dt>
+<dd>
+<ul>
+<li>En haut à gauche, cliquez sur <em>Accueil</em> puis sur l'onglet <em>Mise en réseau</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Créer une zone DNS</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans le champ, spécifiez votre nom de domaine. (A)</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous pouvez associer des tags d'identifications à cette zone DNS si vous pensez en créer plusieurs par la suite.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Créer une zone DNS</mark></li>
+</ul>
+</dd>
+</dl>
+<hr />
+<dl>
+<dt><strong>Création des enregistrements pour votre zone DNS</strong></dt>
+<dd>
+<ul>
+<li>Cliquez sur <em>Ajouter un enregistrement</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez un premier enregistrement de type A pour <code class="codehilite">@.VotreNomDeDomaine.com</code> pointant vers votre IP statique. <br><br>
+   <strong>Pour se faire</strong>, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez à nouveau sur <em>Ajouter un enregistrement</em></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez un second enregistrement de type A pour <code class="codehilite">www.VotreNomDeDomaine.com</code> pointant vers votre IP statique.<br><br>
+   <strong>Pour se faire</strong>, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Votre instance possède une zone DNS et son IP statique pointe vers votre nom de domaine.</p>
+</div>
+<hr />
+<h2 id="serveurs-de-noms">Serveurs de noms<a class="headerlink" href="#serveurs-de-noms" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/uVV-diKCHcM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Injection des serveurs de nom pour votre nom de domaine</strong></dt>
+<dd>
+<ul>
+<li>Sous les enregistrements de la zone DNS se trouve une section <em>Serveurs de noms</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>En haut à droite, cliquez sur <em>AWS</em> pour accèder à la console de management.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cherchez le service <em>Route 53</em> dans la barre de recherche et cliquez dessus.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <em>Domaines enregistrés</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur votre nom de domaine.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sur la droite, cliquez sur <em>Ajouter/Modifier les noms de serveurs</em> et remplacez un à un les serveurs de noms actuels par les quatre nouveaux noms de serveurs de votre zone DNS.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Mettre à jour</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Les serveurs de noms de votre zone DNS correspondent à votre nom de domaine.</p>
+</div>
+<hr />
+<h2 id="options-de-linstance">Options de l'instance<a class="headerlink" href="#options-de-linstance" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Tour d'horizon</p>
+<p>Vous venez de créer votre première instance. En cliquant sur son nom depuis l'accueil, vous pourrez découvrir de nombreuses options que nous allons vous présenter ci-dessous.</p>
+</div>
+<p><a href="../assets/images/aws/creation-instance/fr/3.png" target="_blank"><img alt="Options Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/3.png"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Connexion SSH depuis votre navigateur</strong></dt>
+<dd>
+<ul>
+<li>Dans l'onglet <em>Connexion</em>, en cliquant sur <em>Se connecter à l'aide de SSH</em> vous pourrez accéder en mode sécurisé au terminal de votre serveur à distance.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous pouvez choisir de vous connecter, d'arrêter, de redémarrer et de supprimer cette instance.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous pouvez utiliser votre IP statique et nom d'utilisateur affichés ici, si vous souhaitez vous connecter en SSH directement avec le terminal de votre ordinateur.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><a href="../assets/images/aws/creation-instance/fr/4.png" target="_blank"><img alt="Connexion SSH Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/4.png"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Stockage évolutif</strong></dt>
+<dd>
+<ul>
+<li>Dans l'onglet <em>Stockage</em>, avec le plan à 3.50$ par mois vous bénéficiez de 20Go de stockage sur cette instance. Ce qui est largement suffisant pour vos besoins actuels.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Si vous avez besoin de plus d'espace de stockage, vous pouvez ajouter des disques supplémentaires à cette instance. L'ajout de nouveaux disques est une fonction payante.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><a href="../assets/images/aws/creation-instance/fr/5.png" target="_blank"><img alt="Stockage Évolutif Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/5.png"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Métriques</strong></dt>
+<dd>
+<ul>
+<li>Dans l'onglet <em>Métriques</em>, vous pouvez obtenir les statistiques basées sur l'usage que vous faites de votre instance.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><a href="../assets/images/aws/creation-instance/fr/6.png" target="_blank"><img alt="Métriques Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/6.png"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Snapshots</strong></dt>
+<dd>
+<ul>
+<li>L'onglet <em>Snapshots</em> est une fonctionnalité très importante sur laquelle nous reviendrons par la suite. Un snapshot vous permet de sauvegarder la totalité de votre instance (et donc votre site) à un instant T. Cela peut donc vous permettre de revenir à une version antérieure de votre instance en cas d'erreur.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><a href="../assets/images/aws/creation-instance/fr/7.png" target="_blank"><img alt="Snapshots Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/7.png"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Tags</strong></dt>
+<dd>
+<ul>
+<li>Vous pouvez ajouter des tags à votre instance pour l'identifier plus facilement si vous en avez plusieurs.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><a href="../assets/images/aws/creation-instance/fr/8.png" target="_blank"><img alt="Tags Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/8.png"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Historique</strong></dt>
+<dd>
+<ul>
+<li>Vous pouvez consulter l'historique pour voir vos dernières actions sur cette instance.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><a href="../assets/images/aws/creation-instance/fr/9.png" target="_blank"><img alt="Historique Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/9.png"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Suppression</strong></dt>
+<dd>
+<ul>
+<li>À tout moment, vous pouvez supprimer votre instance depuis cet onglet.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<div class="admonition success">
+<p class="admonition-title">Félicitation votre instance est configurée pour votre site web !</p>
+</div>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../nom-de-domaine/" title="Nom de domaine" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Nom de domaine
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../run-cloud-fr/" title="RunCloud" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                RunCloud
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Edelstorm
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://edelstorm.io/" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://edelstorm-documentation.github.io/english/" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.43ad2ac2.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

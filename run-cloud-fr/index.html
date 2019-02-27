@@ -1,0 +1,1477 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Documentations for modern Wordpress development">
+      
+      
+        <link rel="canonical" href="https://edelstorm-documentation.github.io/english/run-cloud-fr/">
+      
+      
+        <meta name="author" content="Dorian Lannay & Marie Suchodolski">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>RunCloud - Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#e91e63">
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700|Ubuntu+Mono">
+        <style>body,input{font-family:"Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Ubuntu Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "None", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#run-cloud-aws" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://edelstorm-documentation.github.io/english/" title="Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Documentation
+            </span>
+            <span class="md-header-nav__topic">
+              RunCloud
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/edelstorm-documentation/english.git" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    edelstorm-documentation/english
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+<nav class="md-tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href=".." title="Amazon Web Services" class="md-tabs__link md-tabs__link--active">
+        Amazon Web Services
+      </a>
+    
+  </li>
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../help/glossary/" title="Help" class="md-tabs__link">
+          Help
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../aide/glossaire/" title="Aide" class="md-tabs__link">
+          Aide
+        </a>
+      
+    </li>
+  
+
+      
+        
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://edelstorm-documentation.github.io/english/" title="Documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/edelstorm-documentation/english.git" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    edelstorm-documentation/english
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Amazon Web Services" class="md-nav__link">
+      Amazon Web Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sign-up/" title="Sign Up" class="md-nav__link">
+      Sign Up
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../domain-name/" title="Domain name" class="md-nav__link">
+      Domain name
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../instance-creation/" title="Instance creation" class="md-nav__link">
+      Instance creation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../run-cloud/" title="RunCloud" class="md-nav__link">
+      RunCloud
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../content-delivery-network/" title="Content Delivery Network" class="md-nav__link">
+      Content Delivery Network
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Help
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Help
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../help/glossary/" title="Glossary" class="md-nav__link">
+      Glossary
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Amazon Web Services" class="md-nav__link">
+      Amazon Web Services
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../creation-du-compte/" title="Création du compte" class="md-nav__link">
+      Création du compte
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../nom-de-domaine/" title="Nom de domaine" class="md-nav__link">
+      Nom de domaine
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../creation-de-l'instance/" title="Création de l'instance" class="md-nav__link">
+      Création de l'instance
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        RunCloud
+      </label>
+    
+    <a href="./" title="RunCloud" class="md-nav__link md-nav__link--active">
+      RunCloud
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creation-du-compte" title="Création du compte" class="md-nav__link">
+    Création du compte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-lapplication" title="Création de l'application" class="md-nav__link">
+    Création de l'application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" title="Configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-donnees" title="Base de données" class="md-nav__link">
+    Base de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cron-job-lets-encrypt" title="Cron Job Let's Encrypt" class="md-nav__link">
+    Cron Job Let's Encrypt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations-wordpress" title="Configurations Wordpress" class="md-nav__link">
+    Configurations Wordpress
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reecriture-durl" title="Réécriture d'URL" class="md-nav__link">
+    Réécriture d'URL
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../content-delivery-network-fr/" title="Content Delivery Network" class="md-nav__link">
+      Content Delivery Network
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      Aide
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-14">
+        Aide
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../aide/glossaire/" title="Glossaire" class="md-nav__link">
+      Glossaire
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../design/" title="Design" class="md-nav__link">
+      Design
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creation-du-compte" title="Création du compte" class="md-nav__link">
+    Création du compte
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" title="Installation" class="md-nav__link">
+    Installation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creation-de-lapplication" title="Création de l'application" class="md-nav__link">
+    Création de l'application
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations" title="Configurations" class="md-nav__link">
+    Configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#base-de-donnees" title="Base de données" class="md-nav__link">
+    Base de données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cron-job-lets-encrypt" title="Cron Job Let's Encrypt" class="md-nav__link">
+    Cron Job Let's Encrypt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configurations-wordpress" title="Configurations Wordpress" class="md-nav__link">
+    Configurations Wordpress
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reecriture-durl" title="Réécriture d'URL" class="md-nav__link">
+    Réécriture d'URL
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="run-cloud-aws">Run Cloud <small>- AWS</small><a class="headerlink" href="#run-cloud-aws" title="Permanent link">&para;</a></h1>
+<h2 id="creation-du-compte">Création du compte<a class="headerlink" href="#creation-du-compte" title="Permanent link">&para;</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Runcloud.io</p>
+<p>Runcloud est un service vous permettant de déployer des applications PHP facilement et en toute sérénité. Le but de cette étape est de connecter votre instance Lightsail à l'interface Runcloud.io pour y installer et configurer Wordpress.</p>
+</div>
+<p><a href="../assets/images/aws/run-cloud/1.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/1.gif"></a></p>
+
+<hr />
+<dl>
+<dt><strong>Rendez-vous sur le site web de <a href="https://runcloud.io/" target="_blank">RunCloud.io</a></strong></dt>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Sign Up</mark> en haut à droite.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Remplissez le formulaire et cliquez sur <mark class="critic">Create Free Account</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><a href="../assets/images/aws/run-cloud/2.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/2.gif"></a></p>
+
+<hr />
+<dl>
+<dd>
+<ul>
+<li>Confirmez votre compte en cliquant sur <mark class="critic">Verify Registration</mark> dans l'e-mail que vous avez reçu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Connectez-vous à votre compte avec vos identifiants en cliquant sur <mark class="critic">Sign in to Dashboard</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Vous avez un compte Runcloud.io</p>
+</div>
+<hr />
+<h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/cAwNQjCvDm4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Installation de Runcloud sur votre instance Lightsail</strong></dt>
+<dd>
+<ul>
+<li>Cliquez sur <em>Connect a New Server</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Nommez votre serveur avec le nom de votre site web.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copiez/collez l'IP statique de votre instance Lightsail dans le champ du formulaire.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Inscrivez <em>AWS</em> comme Server Provider.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Connect this server</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>RunCloud.io va générer une commande d'installation pour votre serveur. Copiez-là en cliquant sur l'icône vert à droite de la commande.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Revenez sur Lightsail et connectez-vous en SSH à votre instance en cliquant sur <em>Connexion</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Une fois à l'intérieur du terminal de votre serveur, tapez directement la commande ci-dessous pour obtenir les droits administrateurs et appuyez sur <kbd>Entrer</kbd>.
+<div class="codehilite"><pre><span></span>sudo su
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur l'icône orange en bas à droite de la fenêtre du terminal et collez la commande à l'intérieur.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez ensuite sur la partie noire du terminal, faites un clic droit pour coller la commande à l'intérieur et appuyez sur <kbd>Entrer</kbd>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Installation</p>
+<p>La commande va alors installer Runcloud avec l'ensemble des configurations nécessaires à son fonctionnement. Surtout, NE QUITTEZ PAS le terminal avant la fin du processus qui dure une dizaine de minutes. </p>
+</div>
+<hr />
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/0efKMExFMfY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Sauvegarde de vos accès MySQL</strong></dt>
+<dd>
+<ul>
+<li>Une fois l'installation terminée, pensez impérativement à sauvegarder les mots de passe MySQL de votre base de données dans un endroit sécurisé sur votre ordinateur ! Pour copier/coller sur le terminal, il vous suffit de sélectionner ce que vous voulez copier, puis de cliquer sur l'icône orange en bas à droite. Vous y retrouverez ce que vous venez de sélectionner, vous pouvez alors, à partir de cet endroit, copier le contenu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ouvrez un fichier texte pour y stocker vos accès MySQL, sauvegardez-le ensuite dans un endroit sécurisé.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Vous avez maintenant accès à l'interface d'administration de votre instance Runcloud.io.</p>
+</div>
+<hr />
+<h2 id="creation-de-lapplication">Création de l'application<a class="headerlink" href="#creation-de-lapplication" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/2jrRYXP-3k4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Revenez sur Runcloud.io, vous devriez avoir accès à votre interface d'administration</strong></dt>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">Web Application</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Create Application</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Nommez votre application avec le nom de votre futur site web.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez le nom de domaine que vous utilisez pour votre instance de cette façon : <code class="codehilite">*.VotreNomDeDomaine.com</code></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Choisissez l'utilisateur par défaut <em>Runcloud</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Laissez le chemin public (Public Path) par défaut.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez la version de PHP la plus avancée à disposition.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez <em>NGINX + Apache2 Hybrid (You will be able to use .htaccess)</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Choisissez le mode <em>Production</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Laissez la case <em>Advanced Settings</em> décochée pour obtenir l'ensemble des configurations par défaut.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Add Web Application</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Un espace permettant d'accueillir une application est désormais disponible sur votre instance Lightsail.</p>
+</div>
+<hr />
+<h2 id="configurations">Configurations<a class="headerlink" href="#configurations" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/E8IpVG2c9-Q?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Installation de Wordpress</strong></dt>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">Script Installer</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez le script <em>Wordpress</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Install</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<dl>
+<dt><strong>Configuration du nom de domaine</strong></dt>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">Domain Name</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez votre nom de domaine sous ces deux formes : <code class="codehilite">www.exemple.com</code> et <code class="codehilite">exemple.com</code>, à la liste existante.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Attach Domain Name</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<dl>
+<dt><strong>Création du certificat de sécurité SSL</strong></dt>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">SSL/TLS</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cochez la cache <em>Enable HSTS</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez <em>Let's Encrypt</em> comme méthode SSL.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez <em>Http-01</em> comme méthode d'autorisation.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez <em>Live</em> comme environnement.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Submit</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Wordpress est installé sur votre instance Lightsail, la configuration du nom de domaine est correcte et votre certificat de sécurité SSL est activé.</p>
+</div>
+<hr />
+<h2 id="base-de-donnees">Base de données<a class="headerlink" href="#base-de-donnees" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Wb7_7h03Zgc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Création de la base de données</strong></dt>
+<dd>
+<ul>
+<li>Revenez à l'accueil en cliquant sur <em>Back to web apps</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">Database</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <em>Create Database</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Nommez votre base de données comme vous le souhaitez.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Laissez le champ <em>Collation</em> vide par défaut.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Add Database</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition info">
+<p class="admonition-title">Information</p>
+<p>Pour fonctionner, votre application (Wordpress) a besoin d'une base de données dans laquelle l'ensemble du site web et des informations de vos utilisateurs seront stockés.</p>
+</div>
+<hr />
+<dl>
+<dt><strong>Création de l'administrateur de la base de données</strong></dt>
+<dd>
+<ul>
+<li>Cliquez sur <em>Create Database User</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans <em>Database User</em> créez votre identifiant, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Générez votre mot de passe, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <em>Add Database User</em>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition info">
+<p class="admonition-title">Information</p>
+<p>Pour accéder à l'interface d'administration de Wordpress, il vous faut un compte administrateur qui aura les droits d'accès à la base de données. Sauvegardez impérativement ces informations dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</p>
+</div>
+<hr />
+<dl>
+<dt><strong>Association du compte administrateur à la base de données</strong></dt>
+<dd>
+<ul>
+<li>Cliquez sur <em>Attach User</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez votre l'utilisateur administrateur dans la liste déroulante.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <em>Attach User</em>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Une base de données lié à un administrateur est disponible pour Wordpress.</p>
+</div>
+<hr />
+<h2 id="cron-job-lets-encrypt">Cron Job Let's Encrypt<a class="headerlink" href="#cron-job-lets-encrypt" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TvcAU5hLn-Y?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Création d'une tâche automatisée pour le renouvellement de votre certificat de sécurité</strong></dt>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">Cron Job</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Create a Cron Job</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Nommez votre Cron Job : <em>Let's Encrypt</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copiez / collez la commande ci-dessous dans le champ <em>Command</em> prévu à cet effet :
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">cd /etc/letsencrypt/ &amp;&amp; ./certbot-auto renew &amp;&amp; /etc/init.d/apache2 restart</span>
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Définissez une périodicité de renouvellement en sélectionnant <em>Every 10 days at midnight</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Add a Cron Job</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Félicitations ! Votre certificat de sécurité Let's Encrypt sera renouvelé automatiquement tous les dix jours.</p>
+</div>
+<hr />
+<dl>
+<dt><strong>Configuration de votre clé SSH publique pour Runcloud.io</strong></dt>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">SSH Key</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Add SSH Key</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez un nom à votre clé SSH publique.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Allez dans votre dossier <code class="codehilite"><span class="na">.ssh</span></code>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ouvrez avec un éditeur de texte votre clé publique <code class="codehilite">id_rsa.pub</code>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copiez / collez la clé publique dans le champ Runcloud.io</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Add</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Votre clé SSH publique est disponible, vous pourrez vous connecter à distance sur votre serveur dans Runcloud.io.</p>
+</div>
+<hr />
+<h2 id="configurations-wordpress">Configurations Wordpress<a class="headerlink" href="#configurations-wordpress" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/xcMjKatVbqQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<p><strong>Association de la base de donnnées à Wordpress</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Accéder à votre site web</p>
+<p>Vous pouvez maintenant accéder à votre site ! Tapez votre nom de domaine <code class="codehilite">https://example.com</code> dans la barre d'adresse URL  de votre navigateur, vous verrez alors la page d'installation classique de Wordpress.</p>
+</div>
+<dl>
+<dd>
+<ul>
+<li>Sélectionnez la langue de votre choix.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">C'est parti !</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Entrez le nom de votre base de données Runcloud.io (A)</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copiez/collez le nom d'administrateur de la base de données Runcloud.io (A)</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copiez/collez le mot de passe de la base de données Runcloud.io (A)</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Laissez par défaut <em>Database Host</em> à <code class="codehilite">localhost</code>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Changez votre préfixe de table par quelque chose d'autre que <code class="codehilite">wp_</code>, tout en gardant ce format.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Valider</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Démarrer l'installation</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TRinVkDEo2E?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<p><strong>Informations du site et création de l'utilisateur administrateur</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Identifiants à retenir !</p>
+<p>Pour cette étape, vous allez créer les accès administrateur à votre site Wordpress. Conservez absolument ces informations dans un endroit sécurisé !</p>
+</div>
+<dl>
+<dd>
+<ul>
+<li>Donnez un titre à votre site web.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Définissez votre nom d'utilisateur, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Générez un mot de passe, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez votre adresse e-mail d'administrateur.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Laissez la case <em>Search Engine Visibility</em> décochée.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Install Wordpress</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous pouvez désormais vous <mark class="critic">connecter</mark> à votre interface Wordpress.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Vous avez maintenant accès à l'interface d'administration Wordpress de votre site web.</p>
+</div>
+<hr />
+<h2 id="reecriture-durl">Réécriture d'URL<a class="headerlink" href="#reecriture-durl" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/HbBmtxZXZlA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Application par défaut</strong></dt>
+<dd>
+<ul>
+<li>Revenez sur Runcloud.io et cliquez sur <mark class="critic">Web Application</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur l'icon rouage à droite et sélectionnez <em>Set as default Web Application</em>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Set As Default</mark>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<p><strong>Injection de la règle de réécriture d'URL</strong></p>
+<div class="admonition info">
+<p class="admonition-title">Information</p>
+<p>Le fichier Htaccess vous permet de définir des règles de redirection du trafic sur votre site web. Après cette étape, l'ensemble des utilisateurs essayant d'accéder à l'IP static de votre instance Lightsail seront automatiquement redirigés vers votre nom de domaine sécurisé.</p>
+</div>
+<dl>
+<dd>
+<ul>
+<li>Cliquez sur le nom de votre application.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Toujours dans le menu de gauche, cliquez sur <mark class="critic">File Manager</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez le fichier <code class="codehilite"><span class="na">.htaccess</span></code> et cliquez sur <em>View/Edit</em>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ujgFncj9nf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+<hr />
+<dl>
+<dt><strong>Configuration de la règle de réécriture d'URL</strong></dt>
+<dd>
+<ul>
+<li>Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous sous <code class="codehilite">RewriteBase /</code> :
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://votresite.com/$1 [R=301,L]</span>
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans votre interface Lightsail, copiez l'adresse IP Static de votre instance.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Collez l'IP Static dans le fichier Htaccess pour l'avoir sous les yeux.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ensuite, éditez la commande que vous avez précédemment copiée/collée, avec votre IP Static et nom de domaine. Vous pouvez vous appuyer sur cet exemple :
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^35\.180\.184\.49$ [NC]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]</span>
+</pre></div></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Une fois cette étape terminée, effacez l'IP Static et réorganisez le bloc de commandes pour plus de lisibilité.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur Sauvegarder en haut ou appuyer sur les touches <kbd>Ctrl</kbd> + <kbd>S</kbd> pour enregistrer vos modifications.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition success">
+<p class="admonition-title">Félicitations ! Wordpress est correctement installé et configuré pour supporter la création de votre site web.</p>
+</div>
+<hr />
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../creation-de-l'instance/" title="Création de l'instance" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Création de l'instance
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../content-delivery-network-fr/" title="Content Delivery Network" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Content Delivery Network
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2019 Edelstorm
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://edelstorm.io/" class="md-footer-social__link fa fa-globe"></a>
+    
+      <a href="https://edelstorm-documentation.github.io/english/" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.43ad2ac2.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>
