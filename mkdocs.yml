@@ -65,11 +65,7 @@ extra:
     - type: globe
       link: https://edelstorm.io/
     - type: github-alt
-      link: https://github.com/squidfunk
-    - type: twitter
-      link: https://twitter.com/squidfunk
-    - type: linkedin
-      link: https://linkedin.com/in/squidfunk
+      link: https://edelstorm-documentation.github.io/english/
 
 # Extensions
 markdown_extensions:
@@ -109,6 +105,15 @@ nav:
   - Content Delivery Network: content-delivery-network.md
   - Help:
     - Glossary: help/glossary.md
+  - Amazon Web Services: introduction.md
+  - Création du compte: creation-du-compte.md
+  - Nom de domaine: nom-de-domaine.md
+  - Création de l'instance: creation-de-l'instance.md
+  - RunCloud: run-cloud-fr.md
+  - Content Delivery Network: content-delivery-network-fr.md
+  - Aide:
+    - Glossaire: aide/glossaire.md
+  - Design: design.md
 
 # Google Analytics
 google_analytics:

@@ -16,7 +16,7 @@
 
 ## Choosing a domain name
 
-<p><a href="../assets/images/aws/nom-de-domaine/en/3.gif" target="_blank"><img alt="Domain Name Creation Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/3.gif"></a></p>
+<p><a href="../assets/images/aws/nom-de-domaine/en/2.gif" target="_blank"><img alt="Domain Name Creation Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/2.gif"></a></p>
 
 ***
 
@@ -29,7 +29,7 @@
 
 ## Contact details
 
-<p><a href="../assets/images/aws/nom-de-domaine/en/4.gif" target="_blank"><img alt="Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/4.gif"></a></p>
+<p><a href="../assets/images/aws/nom-de-domaine/en/3.gif" target="_blank"><img alt="Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/3.gif"></a></p>
 
 ***
 
@@ -42,7 +42,7 @@
 
 ## Check your contact details
 
-<p><a href="../assets/images/aws/nom-de-domaine/en/5.png" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/5.png"></a></p>
+<p><a href="../assets/images/aws/nom-de-domaine/en/4.gif" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/4.gif"></a></p>
 
 ***
 
@@ -55,7 +55,7 @@
 
 ## Registration statuts
 
-<p><a href="../assets/images/aws/nom-de-domaine/en/7.gif" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/7.gif"></a></p>
+<p><a href="../assets/images/aws/nom-de-domaine/en/5.gif" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/5.gif"></a></p>
 
 ***
 
@@ -68,7 +68,7 @@
 
 ## Hosted zones
 
-<p><a href="../assets/images/aws/nom-de-domaine/en/8.gif" target="_blank"><img alt="Delete Default Hosted Zone Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/8.gif"></a></p>
+<p><a href="../assets/images/aws/nom-de-domaine/en/6.gif" target="_blank"><img alt="Delete Default Hosted Zone Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/6.gif"></a></p>
 
 ***
 

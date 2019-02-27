@@ -6,7 +6,7 @@
 
     Runcloud is a service that offers a secure and easy way to spread PHP apps. The goal of this step is to connect your Lightsail instance to the Runcloud.io interface so we can install and configure Wordpress on it.
 
-<p><a href="../assets/images/aws/run-cloud/en/1.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/1.gif"></a></p>
+<p><a href="../assets/images/aws/run-cloud/1.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/1.gif"></a></p>
 
 ***
 
@@ -20,7 +20,7 @@
 
 ***
 
-<p><a href="../assets/images/aws/run-cloud/en/2.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/en/2.gif"></a></p>
+<p><a href="../assets/images/aws/run-cloud/2.gif" target="_blank"><img alt="Runcloud.io" src="../assets/images/aws/run-cloud/2.gif"></a></p>
 
 ***
 

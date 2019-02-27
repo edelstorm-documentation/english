@@ -8,7 +8,7 @@
 
 ## Generate an SSH key
 
-<p><a href="../assets/images/aws/creation-instance/en/1a.gif" target="_blank"><img alt="Generate an SSH key on Mac" src="../assets/images/aws/creation-instance/en/1a.gif"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/1.gif" target="_blank"><img alt="Generate an SSH key on Mac" src="../assets/images/aws/creation-instance/en/1.gif"></a></p>
 
 ***
 
@@ -37,7 +37,7 @@ ssh-keygen -t rsa
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/1b.gif" target="_blank"><img alt="Localize an SSH key on Mac" src="../assets/images/aws/creation-instance/en/1b.gif"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/2.gif" target="_blank"><img alt="Localize an SSH key on Mac" src="../assets/images/aws/creation-instance/en/2.gif"></a></p>
 
 ***
 
@@ -174,7 +174,7 @@ ssh-keygen -t rsa
 
     You just created your first instance. By clicking on its name from the Lightsail homepage you will discover that you have some options at your disposal. We are going to tell you about it.
 
-<p><a href="../assets/images/aws/creation-instance/en/4.png" target="_blank"><img alt="Instance Options Amazon Lightsail" src="../assets/images/aws/creation-instance/en/4.png"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/3.png" target="_blank"><img alt="Instance Options Amazon Lightsail" src="../assets/images/aws/creation-instance/en/3.png"></a></p>
 
 ***
 
@@ -186,7 +186,7 @@ ssh-keygen -t rsa
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/5.png" target="_blank"><img alt="SSH Connexion Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/5.png"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/4.png" target="_blank"><img alt="SSH Connexion Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/4.png"></a></p>
 
 ***
 
@@ -197,7 +197,7 @@ ssh-keygen -t rsa
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/6.png" target="_blank"><img alt="Storage Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/6.png"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/5.png" target="_blank"><img alt="Storage Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/5.png"></a></p>
 
 ***
 
@@ -207,7 +207,7 @@ ssh-keygen -t rsa
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/7.png" target="_blank"><img alt="Metrics Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/7.png"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/6.png" target="_blank"><img alt="Metrics Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/6.png"></a></p>
 
 ***
 
@@ -217,7 +217,7 @@ ssh-keygen -t rsa
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/8.png" target="_blank"><img alt="Snapshots Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/8.png"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/7.png" target="_blank"><img alt="Snapshots Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/7.png"></a></p>
 
 ***
 
@@ -226,7 +226,7 @@ ssh-keygen -t rsa
 :    * You can add tags to your instance to identify it more easily if you have several ones.
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/9.png" target="_blank"><img alt="Tags Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/9.png"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/8.png" target="_blank"><img alt="Tags Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/8.png"></a></p>
 
 ***
 
@@ -236,7 +236,7 @@ ssh-keygen -t rsa
 
 ***
 
-<p><a href="../assets/images/aws/creation-instance/en/10.png" target="_blank"><img alt="History Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/10.png"></a></p>
+<p><a href="../assets/images/aws/creation-instance/en/9.png" target="_blank"><img alt="History Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/9.png"></a></p>
 
 ***
 
