@@ -1,12 +1,12 @@
 # Introduction to the Edelstorm training
 
-***
-
 **Welcome to the Edelstorm.io documentation!**
 
 Before we start the creation of your website, here is a short introduction that will let you know what you need to start and that will help you to be more familiar with the technical aspect of the training.
 
 ## What you need
+
+***
 
 Make sure that you have the listed items at your disposal before starting:
 
@@ -24,7 +24,12 @@ You should also use:
 
 * A coffee or a tea! :coffee::wink:
 
+***
+
 ## What we use
+
+***
+
 We will use three tools to build your website: 
 
   * [**Amazon Web Service (AWS)**][1]: it is an on-demand cloud computing service. Which means that it will **allow you to create a server[^1]**, so you can put your website online and to buy a domain name[^2]. 
@@ -40,7 +45,5 @@ We will use three tools to build your website:
  [^1]: A server is a distance virtual computer. It allows you, among other things, to receive emails, stock data and access the web.
  [^2]: A domain name is an address where the users can go to visit your website. For example, the domain name of Edelstorm is edelstorm.io.
 
-
-***
 Voila! You can now start [the first step of your website creation][4].
 [4]: sign-up.md

@@ -288,16 +288,30 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 :    * Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous sous `RewriteBase /` :
 ``` yaml
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_USER_AGENT} ^(.+)$
+RewriteCond %{SERVER_NAME} ^example\.com$ [OR]
+RewriteCond %{SERVER_NAME} ^www\.example\.com$
 RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
-RewriteRule ^(.*)$ https://votresite.com/$1 [R=301,L]
+RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]
+Header add Strict-Transport-Security "max-age=300"
 ```
 
 :    * Dans votre interface Lightsail, copiez l'adresse IP Static de votre instance.
 :    * Collez l'IP Static dans le fichier Htaccess pour l'avoir sous les yeux.
 :    * Ensuite, éditez la commande que vous avez précédemment copiée/collée, avec votre IP Static et nom de domaine. Vous pouvez vous appuyer sur cet exemple :
 ``` yaml
-RewriteCond %{HTTP_HOST} ^35\.180\.184\.49$ [NC]
-RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_USER_AGENT} ^(.+)$
+RewriteCond %{SERVER_NAME} ^edelstorm\.io$ [OR]
+RewriteCond %{SERVER_NAME} ^www\.edelstorm\.io$
+RewriteCond %{HTTP_HOST} ^35\.180\.150\.81$ [NC]
+RewriteRule ^(.*)$ https://edelstorm.io/$1 [R=301,L]
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]
+Header add Strict-Transport-Security "max-age=300"
 ```
 
 :    * Une fois cette étape terminée, effacez l'IP Static et réorganisez le bloc de commandes pour plus de lisibilité.
