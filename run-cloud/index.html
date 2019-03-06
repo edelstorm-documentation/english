@@ -1353,8 +1353,15 @@
 <dd>
 <ul>
 <li>Once in the editor, copy/past the re-writing rule below under <code class="codehilite">RewriteBase /</code>:
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://yoursite.com/$1 [R=301,L]</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTPS} !=on</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_USER_AGENT} ^(.+)$</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^example\.com$ [OR]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^www\.example\.com$</span>
+<span class="l l-Scalar l-Scalar-Plain">Header add Strict-Transport-Security &quot;max-age=300&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP:X-Forwarded-Proto} !https</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]</span>
 </pre></div></li>
 </ul>
 </dd>
@@ -1371,8 +1378,15 @@
 <dd>
 <ul>
 <li>Then, edit the "re-writing rule" you copied/pasted on the last step, with your static IP and domain name. Has the example below:
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^35\.180\.184\.49$ [NC]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://edelstorm.com/$1 [R=301,L]</span>
+<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTPS} !=on</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_USER_AGENT} ^(.+)$</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^edelstorm\.io$ [OR]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^www\.edelstorm\.io$</span>
+<span class="l l-Scalar l-Scalar-Plain">Header add Strict-Transport-Security &quot;max-age=300&quot;</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^35\.180\.150\.81$ [NC]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://edelstorm.io/$1 [R=301,L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP:X-Forwarded-Proto} !https</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]</span>
 </pre></div></li>
 </ul>
 </dd>
