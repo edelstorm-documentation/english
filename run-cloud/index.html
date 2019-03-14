@@ -254,6 +254,19 @@
   
     <li class="md-tabs__item">
       
+        <a href="../wordpress/plugins/" title="Wordpress" class="md-tabs__link">
+          Wordpress
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
         <a href="../help/glossary/" title="Help" class="md-tabs__link">
           Help
         </a>
@@ -448,8 +461,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cron-job-lets-encrypt" title="Cron Job Let's Encrypt" class="md-nav__link">
-    Cron Job Let's Encrypt
+  <a href="#ssh-key" title="SSH Key" class="md-nav__link">
+    SSH Key
   </a>
   
 </li>
@@ -501,10 +514,46 @@
       <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
     
     <label class="md-nav__link" for="nav-7">
-      Help
+      Wordpress
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-7">
+        Wordpress
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wordpress/plugins/" title="Plugins" class="md-nav__link">
+      Plugins
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Help
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
         Help
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -606,13 +655,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15">
     
-    <label class="md-nav__link" for="nav-14">
+    <label class="md-nav__link" for="nav-15">
       Aide
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-14">
+      <label class="md-nav__title" for="nav-15">
         Aide
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -703,8 +752,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cron-job-lets-encrypt" title="Cron Job Let's Encrypt" class="md-nav__link">
-    Cron Job Let's Encrypt
+  <a href="#ssh-key" title="SSH Key" class="md-nav__link">
+    SSH Key
   </a>
   
 </li>
@@ -1015,8 +1064,14 @@
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Wb7_7h03Zgc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
+<p><strong>Database creation</strong></p>
 <dl>
-<dt><strong>Database creation</strong></dt>
+<dt><strong>By default application</strong></dt>
+<dd>
+<ul>
+<li>On the top right corner, click on <mark class="critic">More</mark> and select <em>Set as default Web Application</em> then click on <mark class="critic">Set As Default</mark></li>
+</ul>
+</dd>
 <dd>
 <ul>
 <li>Come back to the homepage by clicking on <em>Back to web apps</em>.</li>
@@ -1103,49 +1158,11 @@
 <p class="admonition-title">The database linked to an admin account is now available for Wordpress.</p>
 </div>
 <hr />
-<h2 id="cron-job-lets-encrypt">Cron Job Let's Encrypt<a class="headerlink" href="#cron-job-lets-encrypt" title="Permanent link">&para;</a></h2>
+<h2 id="ssh-key">SSH Key<a class="headerlink" href="#ssh-key" title="Permanent link">&para;</a></h2>
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TvcAU5hLn-Y?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
-<dl>
-<dt><strong>Security certificate Let's Encrypt automatic task renewal</strong></dt>
-<dd>
-<ul>
-<li>Click on <mark class="critic">Cron Job</mark> in the left menu.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Click on<mark class="critic">Create a Cron Job</mark>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Name your Cron Job: <em>Let's Encrypt</em>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Copy the command below and paste it in the command field:
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">cd /etc/letsencrypt/ &amp;&amp; ./certbot-auto renew &amp;&amp; /etc/init.d/apache2 restart</span>
-</pre></div></li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Define the predefined settings on <em>Every 10 days at midnight</em>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Click on<mark class="critic">Add a Cron Job</mark>.</li>
-</ul>
-</dd>
-</dl>
-<div class="admonition success">
-<p class="admonition-title">Congratulations! Your security certificate Let's Encrypt will be now automatically renewed every ten days.</p>
-</div>
-<hr />
+<p>3f79f1b09ce0bc4730a7e807e6c56919e95ad7d9183a90823ff27103c839f3cff85db7bc70ef9f27b4b5f116408e4264198adf45e9d0228c14204d230f51ee6d</p>
 <dl>
 <dt><strong>Public SSH key setting for Runcloud.io</strong></dt>
 <dd>
@@ -1295,27 +1312,8 @@
 </div>
 <hr />
 <h2 id="htaccess-settings">Htaccess settings<a class="headerlink" href="#htaccess-settings" title="Permanent link">&para;</a></h2>
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/HbBmtxZXZlA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/_nxGzQ8rpag?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
-<hr />
-<dl>
-<dt><strong>By default application</strong></dt>
-<dd>
-<ul>
-<li>Come back to Runcloud.io and in the left menu, click on <mark class="critic">Web Application</mark>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Click on the right option icon and select <em>Set as default Web Application</em>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Click on <mark class="critic">Set As Default</mark>.</li>
-</ul>
-</dd>
-</dl>
 <hr />
 <p><strong>URL rewriting rule injection</strong></p>
 <div class="admonition info">
@@ -1345,23 +1343,25 @@
 </dd>
 </dl>
 <hr />
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ujgFncj9nf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-<hr />
 <dl>
 <dt><strong>URL rewriting rule configuration</strong></dt>
 <dd>
 <ul>
 <li>Once in the editor, copy/past the re-writing rule below under <code class="codehilite">RewriteBase /</code>:
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTPS} !=on</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_USER_AGENT} ^(.+)$</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^example\.com$ [OR]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^www\.example\.com$</span>
-<span class="l l-Scalar l-Scalar-Plain">Header add Strict-Transport-Security &quot;max-age=300&quot;</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]</span>
+<div class="codehilite"><pre><span></span><span class="c1"># BEGIN WordPress</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;IfModule mod_rewrite.c&gt;</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteEngine On</span>
 <span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP:X-Forwarded-Proto} !https</span>
 <span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteBase /</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^index\.php$ - [L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-f</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-d</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule . /index.php [L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;/IfModule&gt;</span>
+<span class="l l-Scalar l-Scalar-Plain"># END WordPress</span>
 </pre></div></li>
 </ul>
 </dd>
@@ -1378,15 +1378,20 @@
 <dd>
 <ul>
 <li>Then, edit the "re-writing rule" you copied/pasted on the last step, with your static IP and domain name. Has the example below:
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTPS} !=on</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_USER_AGENT} ^(.+)$</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^edelstorm\.io$ [OR]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{SERVER_NAME} ^www\.edelstorm\.io$</span>
-<span class="l l-Scalar l-Scalar-Plain">Header add Strict-Transport-Security &quot;max-age=300&quot;</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^35\.180\.150\.81$ [NC]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://edelstorm.io/$1 [R=301,L]</span>
+<div class="codehilite"><pre><span></span><span class="c1"># BEGIN WordPress</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;IfModule mod_rewrite.c&gt;</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteEngine On</span>
 <span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP:X-Forwarded-Proto} !https</span>
 <span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteBase /</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^index\.php$ - [L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-f</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-d</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule . /index.php [L]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^3\.120\.109\.175$ [NC]</span>
+<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]</span>
+<span class="l l-Scalar l-Scalar-Plain">&lt;/IfModule&gt;</span>
+<span class="l l-Scalar l-Scalar-Plain"># END WordPress</span>
 </pre></div></li>
 </ul>
 </dd>
@@ -1404,7 +1409,6 @@
 <div class="admonition success">
 <p class="admonition-title">Congratulations! Wordpress is now correctly installed and set to support your website creation.</p>
 </div>
-<hr />
                 
                   
                 
