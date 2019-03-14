@@ -1,0 +1,1 @@
+# Plugins <small>- Installation & Configuration</small>

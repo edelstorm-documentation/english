@@ -30,7 +30,7 @@
 
 ## Installation
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/cAwNQjCvDm4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/60g3llUqnAo?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -57,7 +57,7 @@ sudo su
 
 ***
     
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/0efKMExFMfY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/cwFqsujueXo?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -73,7 +73,7 @@ sudo su
 
 ## Création de l'application
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/2jrRYXP-3k4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/QZWbIUgD3fI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -97,7 +97,7 @@ sudo su
 
 ## Configurations
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/E8IpVG2c9-Q?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/dXBSFrl6MYg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -132,12 +132,13 @@ sudo su
 
 ## Base de données
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Wb7_7h03Zgc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/8DdfF7XL5Ug?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Création de la base de données**
 
+:    * En haut à droite, cliquez sur {==More==} et sélectionnez *Set as default Web Application* puis {==Set As Default==}
 :    * Revenez à l'accueil en cliquant sur *Back to web apps*.
 :    * Dans le menu de gauche, cliquez sur {==Database==}.
 :    * Cliquez sur *Create Database*.
@@ -174,26 +175,9 @@ sudo su
 
 ***
 
-## Cron Job Let's Encrypt
+## SSH Key
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TvcAU5hLn-Y?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
-**Création d'une tâche automatisée pour le renouvellement de votre certificat de sécurité**
-
-:    * Dans le menu de gauche, cliquez sur {==Cron Job==}.
-:    * Cliquez sur {==Create a Cron Job==}.
-:    * Nommez votre Cron Job : *Let's Encrypt*.
-:    * Copiez / collez la commande ci-dessous dans le champ *Command* prévu à cet effet :
-``` yaml
-cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
-```
-
-:    * Définissez une périodicité de renouvellement en sélectionnant *Every 10 days at midnight*.
-:    * Cliquez sur {==Add a Cron Job==}.
-
-!!! success "Félicitations ! Votre certificat de sécurité Let's Encrypt sera renouvelé automatiquement tous les dix jours."
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/EovF2HXPruE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -213,7 +197,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 ## Configurations Wordpress
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/xcMjKatVbqQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/mqCtL375GDY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -234,7 +218,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TRinVkDEo2E?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/_nxGzQ8rpag?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -257,15 +241,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 ## Réécriture d'URL
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/HbBmtxZXZlA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
-**Application par défaut**
-
-:    * Revenez sur Runcloud.io et cliquez sur {==Web Application==}.
-:    * Cliquez sur l'icon rouage à droite et sélectionnez *Set as default Web Application*.
-:    * Cliquez sur {==Set As Default==}.
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/RWE6U5WhQ_A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -280,43 +256,47 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ujgFncj9nf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
 **Configuration de la règle de réécriture d'URL**
 
 :    * Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous sous `RewriteBase /` :
 ``` yaml
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_USER_AGENT} ^(.+)$
-RewriteCond %{SERVER_NAME} ^example\.com$ [OR]
-RewriteCond %{SERVER_NAME} ^www\.example\.com$
-RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
-RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]
-Header add Strict-Transport-Security "max-age=300"
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
+RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+</IfModule>
+# END WordPress
 ```
 
 :    * Dans votre interface Lightsail, copiez l'adresse IP Static de votre instance.
 :    * Collez l'IP Static dans le fichier Htaccess pour l'avoir sous les yeux.
 :    * Ensuite, éditez la commande que vous avez précédemment copiée/collée, avec votre IP Static et nom de domaine. Vous pouvez vous appuyer sur cet exemple :
 ``` yaml
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_USER_AGENT} ^(.+)$
-RewriteCond %{SERVER_NAME} ^edelstorm\.io$ [OR]
-RewriteCond %{SERVER_NAME} ^www\.edelstorm\.io$
-RewriteCond %{HTTP_HOST} ^35\.180\.150\.81$ [NC]
-RewriteRule ^(.*)$ https://edelstorm.io/$1 [R=301,L]
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]
-Header add Strict-Transport-Security "max-age=300"
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+RewriteCond %{HTTP_HOST} ^35\.180\.150\.137$ [NC]
+RewriteRule ^(.*)$ https://edelstorm.io/$1 [R=301,L]
+</IfModule>
+# END WordPress
 ```
 
 :    * Une fois cette étape terminée, effacez l'IP Static et réorganisez le bloc de commandes pour plus de lisibilité.
 :    * Cliquez sur Sauvegarder en haut ou appuyer sur les touches <kbd>Ctrl</kbd> + <kbd>S</kbd> pour enregistrer vos modifications.
 
 !!! success "Félicitations ! Wordpress est correctement installé et configuré pour supporter la création de votre site web."
-
-***

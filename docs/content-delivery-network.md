@@ -244,5 +244,3 @@ define( 'AS3CF_SETTINGS', serialize( array(
 :    * Click on *Save changes*.
 
 !!! success "Congratulations, you have correctly set your CDN Amazon Cloudfront for your Wordpress website!"
-
-***

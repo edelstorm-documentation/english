@@ -103,6 +103,8 @@ nav:
   - Instance creation: instance-creation.md
   - RunCloud: run-cloud.md
   - Content Delivery Network: content-delivery-network.md
+  - Wordpress:
+    - Plugins: wordpress/plugins.md  
   - Help:
     - Glossary: help/glossary.md
   - Amazon Web Services: introduction.md

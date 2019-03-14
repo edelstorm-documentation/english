@@ -142,6 +142,9 @@ sudo su
 
 **Database creation**
 
+**By default application**
+
+:    * On the top right corner, click on {==More==} and select *Set as default Web Application* then click on {==Set As Default==}
 :    * Come back to the homepage by clicking on *Back to web apps*.
 :    * In the left menu, click on {==Database==}.
 :    * Click on *Create Database*.
@@ -178,28 +181,13 @@ sudo su
 
 ***
 
-## Cron Job Let's Encrypt
+## SSH Key
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TvcAU5hLn-Y?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Security certificate Let's Encrypt automatic task renewal**
-
-:    * Click on {==Cron Job==} in the left menu.
-:    * Click on{==Create a Cron Job==}.
-:    * Name your Cron Job: *Let's Encrypt*.
-:    * Copy the command below and paste it in the command field:
-``` yaml
-cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
-```
-
-:    * Define the predefined settings on *Every 10 days at midnight*.
-:    * Click on{==Add a Cron Job==}.
-
-!!! success "Congratulations! Your security certificate Let's Encrypt will be now automatically renewed every ten days."
-
-***
+3f79f1b09ce0bc4730a7e807e6c56919e95ad7d9183a90823ff27103c839f3cff85db7bc70ef9f27b4b5f116408e4264198adf45e9d0228c14204d230f51ee6d
 
 **Public SSH key setting for Runcloud.io**
 
@@ -261,15 +249,7 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 ## Htaccess settings
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/HbBmtxZXZlA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
-**By default application**
-
-:    * Come back to Runcloud.io and in the left menu, click on {==Web Application==}.
-:    * Click on the right option icon and select *Set as default Web Application*.
-:    * Click on {==Set As Default==}.
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/_nxGzQ8rpag?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -285,43 +265,47 @@ cd /etc/letsencrypt/ && ./certbot-auto renew && /etc/init.d/apache2 restart
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ujgFncj9nf8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
 **URL rewriting rule configuration**
 
 :    * Once in the editor, copy/past the re-writing rule below under `RewriteBase /`:
 ``` yaml
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_USER_AGENT} ^(.+)$
-RewriteCond %{SERVER_NAME} ^example\.com$ [OR]
-RewriteCond %{SERVER_NAME} ^www\.example\.com$
-Header add Strict-Transport-Security "max-age=300"
-RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
-RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]
+RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]
+</IfModule>
+# END WordPress
 ```
 
 :    * On your Lightsail interface, copy the static IP address of your instance.
 :    * Paste the static IP in the Htaccess file so you can see it during this step.
 :    * Then, edit the "re-writing rule" you copied/pasted on the last step, with your static IP and domain name. Has the example below:
 ``` yaml
-RewriteCond %{HTTPS} !=on
-RewriteCond %{HTTP_USER_AGENT} ^(.+)$
-RewriteCond %{SERVER_NAME} ^edelstorm\.io$ [OR]
-RewriteCond %{SERVER_NAME} ^www\.edelstorm\.io$
-Header add Strict-Transport-Security "max-age=300"
-RewriteCond %{HTTP_HOST} ^35\.180\.150\.81$ [NC]
-RewriteRule ^(.*)$ https://edelstorm.io/$1 [R=301,L]
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
 RewriteCond %{HTTP:X-Forwarded-Proto} !https
 RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+RewriteCond %{HTTP_HOST} ^3\.120\.109\.175$ [NC]
+RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]
+</IfModule>
+# END WordPress
 ```
 
 :    * Once this step is done, erase the static IP and the spaces you created, to make everything more readable.
 :    * Click on Save at the top of the windows or hit <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
 
 !!! success "Congratulations! Wordpress is now correctly installed and set to support your website creation."
-
-***
