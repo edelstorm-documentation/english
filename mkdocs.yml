@@ -104,6 +104,7 @@ nav:
   - RunCloud: run-cloud.md
   - Content Delivery Network: content-delivery-network.md
   - Wordpress:
+    - Extensions: wordpress/extensions.md
     - Plugins: wordpress/plugins.md  
   - Help:
     - Glossary: help/glossary.md
