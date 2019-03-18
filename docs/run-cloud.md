@@ -187,8 +187,6 @@ sudo su
 
 ***
 
-3f79f1b09ce0bc4730a7e807e6c56919e95ad7d9183a90823ff27103c839f3cff85db7bc70ef9f27b4b5f116408e4264198adf45e9d0228c14204d230f51ee6d
-
 **Public SSH key setting for Runcloud.io**
 
 :    * Click on {==SSH Key==} in the left menu.

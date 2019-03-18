@@ -183,7 +183,7 @@ https://YourDomainName.com
 
 !!! info "Velvet Blues Update URLs"
 
-    We are about to install Velvet Blues Update URLs. A QUOI CA SERT.
+    We are about to install Velvet Blues Update URLs. If you move your WordPress website to a new domain name, you will find that internal links to pages and references to images are not updated. Instead, these links and references will point to your old domain name. This plugin fixes that problem by helping you change old urls and links in your website.
 
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/D0Sg4K9h0lQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
@@ -225,7 +225,7 @@ https://YourDomainName.com
 
 !!! info "Smush image compression and optimization"
 
-    We are about to intall Smush. A QUOI CA SERT.
+    We are about to intall Smush. This plugin resize, optimize, optimise and compress all of your images. You website will be faster and lighter!
 
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/H8CmaKUlSXs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
