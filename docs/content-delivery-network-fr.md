@@ -152,7 +152,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-## Certificate Manager
+## Certificat Manager
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/4ExrDofDvo4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
@@ -171,7 +171,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/CM8FkHJJoOI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/qLVwr3xWueM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -190,7 +190,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ## Cloudfront
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/5atjyQXHVJw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/D2qpY6Zg88U?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -208,7 +208,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/j10DD5tqosw?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/LcAJaWh4ccA?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -223,7 +223,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ## WP Offload Media
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/jbT2s1piWME?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/aMhjGJkSvQ4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 

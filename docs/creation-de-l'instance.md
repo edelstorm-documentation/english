@@ -147,13 +147,13 @@ ssh-keygen -t rsa
 
 ***
 
-## Serveurs de noms
+## Noms de Serveurs
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/44dl6vCcAmU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Injection des serveurs de nom pour votre nom de domaine**
+**Injection des noms de serveurs pour votre nom de domaine**
 
 :    * Sous les enregistrements de la zone DNS se trouve une section *Serveurs de noms*.
 :    * En haut à droite, cliquez sur *AWS* pour accèder à la console de management.
@@ -163,7 +163,7 @@ ssh-keygen -t rsa
 :    * Sur la droite, cliquez sur *Ajouter/Modifier les noms de serveurs* et remplacez un à un les serveurs de noms actuels par les quatre nouveaux noms de serveurs de votre zone DNS.
 :    * Cliquez sur {==Mettre à jour==}.
 
-!!! success "Les serveurs de noms de votre zone DNS correspondent à votre nom de domaine."
+!!! success "Les noms des serveurs de votre zone DNS correspondent à votre nom de domaine."
 
 ***
 
