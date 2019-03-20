@@ -1,7 +1,7 @@
 # Création du compte <small>- AWS</small>
 
 !!! tip "Conseil"
-    Chaque étape et instruction seront accompagnées d’une image ou d’une animation, n’hésitez pas à vous en aider !
+    Chaque étape et instruction seront accompagnées d’une image, d'une animation ou d’une video, n’hésitez pas à vous en aider !
 
 ## Identifiants
 

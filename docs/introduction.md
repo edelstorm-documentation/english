@@ -1,51 +1,46 @@
-# Introduction to the Edelstorm training
+# Introduction à la formation Edelstorm
+
+**Bienvenue sur la documentation Edelstorm.io!**
+
+Avant de commencer la construction de votre site, voici une courte introduction qui vous indiquera ce dont vous avez besoin pour commencer et qui vous familiarisera avec les différents outils que nous utiliserons.
+
+## Ce dont vous avez besoin
 
 ***
 
-**Welcome to the Edelstorm.io documentation!**
+Avant de démarrer la première étape, vérifiez que vous avez à disposition :
 
-Before we start the creation of your website, here is a short introduction that will let you know what you need to start and that will help you to be more familiar with the technical aspect of the training.
+* Votre carte de paiement
 
-## What you need
+* Une adresse e-mail valide
 
-***
+* Une connexion internet stable (qui ne risque pas de couper à tout moment)
 
-Make sure that you have the listed items at your disposal before starting:
+Il faut également que vous utilisiez :
 
-* Your payment card
+* Google Chrome. Si vous n'utilisez pas ce navigateur, téléchargez-le ici <a href="https://www.google.com/chrome/" target="_blank">ici</a>. C’est gratuit et nos outils fonctionnent mieux avec. Internet Explorer est proscrit et Firefox peut poser quelques problèmes.
 
-* An email address
+* Un OS à jour (système d'exploitation) Apple, Windows ou Linux à jour (si vous êtes sur Mac ou PC, vous êtes équipé du bon OS).
 
-* A relatively stable Internet connexion (that will not stop every 5 minutes)
-
-You should also use:
-
-* Google Chrome. If you do not use this browser, download it <a href="https://www.google.com/chrome/" target="_blank">here</a>. It's free and the tools you are going to use work better with it. Internet Explorer is prohibited and using Firefox can generate a few problems.
-
-* An up to date OS (operating system) Apple, Windows or Linux. (If you are on a Mac or Windows, you have the kind of right OS.)
-
-* A coffee or a tea! :coffee::wink:
+* Un café ou un thé :coffee::wink:
 
 ***
 
-## What we use
+## Ce que nous allons utiliser
 
 ***
 
-We will use three tools to build your website: 
+Nous utiliserons trois outils pour créer votre site :
 
-  * [**Amazon Web Service (AWS)**][1]: it is an on-demand cloud computing service. Which means that it will **allow you to create a server[^1]**, so you can put your website online and to buy a domain name[^2]. 
-   There are other companies that offer those kinds of services but we think, with the experience, that AWS offers greater freedom of action and is really more **simple to manage**. Once your website is online, you will almost never have to use it again. Also, AWS **most secure solution on the market**. 
-   And finally, if more user comes to visit your website, AWS allows you to make the capacities your website to grow.
-   [1]: https://aws.amazon.com/fr/
-  * [**Wordpress**][2]: is a CMS or “content management system“. It will allow you to customize your website as you vision it, without having to touch the "code".
-   It's a very powerful platform that will let you manage your content without having technical knowledge. However, you will have to get used to this tool, but we will show you how to use it.
-   [2]: https://fr.wordpress.org/
-  * [**Envato**][3]: it's on this website that you will buy your theme. A theme is the graphic base of your website. It impacts the visual part of your website (colors, design, content layout...). It's like a "pattern" that you can customize. 
-   The theme is important because it's thanks to it that you won't have to create your website design, which can take time and require web development knowledge.
-  [3]: https://themeforest.net/
- [^1]: A server is a distance virtual computer. It allows you, among other things, to receive emails, stock data and access the web.
- [^2]: A domain name is an address where the users can go to visit your website. For example, the domain name of Edelstorm is edelstorm.io.
+  * <a href="https://aws.amazon.com/fr/" target="_blank">**Amazon Web Service (AWS)**</a> : il s'agit d'un service informatique dématérialisé à la demande (cloud computing).  C’est-à-dire qu’il vous **permettra notamment de créer un serveur[^1]**, pour pouvoir mettre votre site en ligne et acheter un nom de domaine[^2].
+   D'autres entreprises offrent le même genre de services, mais nous trouvons que AWS est offre une plus grande liberté d’action et est vraiment plus **simple d'utilisation**. Une fois votre site mis en ligne vous n’aurez quasiment plus à vous en soucier. AWS offre également la solution la **solution la plus sécurisée du marché**. Enfin, si votre site grandit, si beaucoup plus d’utilisateurs s’y connectent qu’au début, AWS permet de faire évoluer les capacités de votre site. 
+  * <a href="https://fr.wordpress.org/" target="_blank">**Wordpress**</a> : est un CMS ou "système de gestion de contenu". Il vous permettra de personnaliser votre site comme vous le souhaitez sans pour autant avoir à “coder“. 
+   C’est une plate-forme très puissante qui vous permettra de gérer votre contenue sans connaissance technique. Il faut cependant apprivoiser cet outil et nous vous montrerons comment.
+  * <a href="https://themeforest.net/" target="_blank">**Envato**</a> : c’est sur ce site que vous achèterez votre thème. Un thème est en fait la base graphique de votre site. Il impacte toute la partie visuelle du site (couleurs, dispositions des contenus, design…). C’est une sorte de modèle que vous pouvez personnaliser à votre volonté. 
+   Le thème est important, car grâce à lui vous n’avez pas à créer le design de votre site, ce qui peut prendre du temps et requière des connaissances en développement web.
 
-Voila! You can now start [the first step of your website creation][4].
-[4]: sign-up.md
+ [^1]: Un serveur est ordinateur virtuel à distance qui permet également de recevoir du courrier électronique, de stocker des données et d’accéder au web de façon générale.
+ [^2]: C’est l’adresse à laquelle les utilisateurs pourront se rendre pour visiter votre site. Par exemple, le nom de domaine d’Edelstorm est : edelstorm.io.
+
+Voilà ! Vous pouvez maintenant commencer [la première étape de la création de votre site][4].
+[4]: /creation-du-compte/
