@@ -7,17 +7,35 @@
     We are about to install Wordfence. This Wordpress plugin will allow your website to be protected from any hacking attempt that may occur. Your website will be secure, your data and your user's data as well.
 
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/29I6-15PAi4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/WN3fGueIBFM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Install Wordfence on your server**
 
+:    * Go to your Wordpress page.
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Type *Wordfence* in the search space at the top right. 
+:    * Choose the *Wordfence Security - Firewall & Malware Scan* plugin, click on *Install*, then *Activate*.
+:    * Click on *Settings* under *Wordfence Security - Firewall & Malware Scan*.
+:    * A window appears, type your e-mail address. It will be used by Wordfence to send you reports and alerts about the security state of your website.
+:    * Select the answer *No* and check the box about the terms and privacy. Click on {==*Continue*==}.
+:    * Click on *No Thanks*.
+:    * The *Wordfence* plugin is also in your left menu. Click on it and select *Dashboard*. 
+:    * At the top of your page you can see two messages:
+        * *`Do you want Wordfence to stay up-to-date automatically`*, click on {==*Yes, enable auto-update*==}.
+        * *`To make your website as secure as possible, take a moment to optimize the WordfenceWeb Application Firewall`*, click on {==*Click here to configure*==}.
+
+:    * On the new page, a window appears. Select ***Manuel Configuration*** in the drop menu. Click on {==*Continue*==}.
+:    * You can now see a sequence of characters, we are going to use a modified version of this to install Wordfence on your server. So ignore this sequence of characters, keep the window open and move on to the next step!
+
+***
+
 :    * Go back to your Lightsail instance and go to the *Homepage*. Click on the three little dots at the right of your instance insert.
 :    * Click on *Connexion*.
 :    * Once you are inside your server's terminal, type directly the command below:
 ``` sh
-sudo nano ../../etc/php-extra/domainname.conf
+sudo nano ../../etc/php-extra/DomainName.conf
 ```
 
 :    * Don't forget to replace the *domainname* your yours. For example : edelstorm.conf . Then press <kbd>Enter</kbd>.
@@ -38,21 +56,18 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Ks4aKt5hWsU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/VK884Ah4qbk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Wordfence settings**
 
-:    * Go to your Wordpress page.
-:    * Click on *Plugins* in the left menu, then *Add New*.
-:    * Type *Wordfence* in the search space at the top right. 
-:    * Choose the *Wordfence Security - Firewall & Malware Scan* plugin, click on *Install*, then *Activate*.
-:    * You can now find *Wordfence* in your left menu, at the bottom. Click on it and select *Options*. 
+:    * Go back on your Wordpress page. Click on {==*Close*==}.
+:    * In the left Wordfence menu, click on *All options*.
 :    * Scroll down and click on the *Import/Export Options* button.
 :    * In the token field, paste the token below, then click on the *Import Wordfence Options* button:
 ``` sh
-729374216505ce5b56b11477a07b46c9c9005eaa042749e28fd17e6d0cbf93f19fcafc4a88a0d0af3c18f7c116f108062cf3dcc918815031c6354f7c24c326c0
+28fcd2d531bca2da79409a53e36f26a7066b3be83f6f9938f6fdfa24a8b681e89af7bf1be829ee88905edb0d4173d99d1cac1ba448f15e0e6c683665a33e848e
 ```
 
 :    * Click on *Reload*. 
@@ -66,41 +81,34 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 **Wordfence options**
 
 :    * In the left menu, click on *Live Traffic*. You can find here a live vision of the users connected to your website.
-:    * In the left menu, click on *Scan*. Click on the *Scan* button to scan your website and to check if everything is secured.
+:    * In the left menu, click on *Scan*. Click on the *Scan* button to scan your website and to check if everything is secured 
+        * Scroll down a little bit and you will see the scan results. For the first one, click on the eye icon *Ignore* and select *Ignore until the files changes*. Repeat the same action for the other results but this time select *Always Ignore*.
 :    * In the left menu, click on *Blocking*. Here you can create rules that will block some users from accessing your website.
 
 ***
 
-## WP Fastest Cache
+## PageSpeed Ninja
 
-!!! info "WP Fastest Cache"
+!!! info "PageSpeed Ninja"
 
-    We are about ot install WP Fastest Cache. A QUOI CA SERT.
+    We are about to install PageSpeed Ninja. This plugin accelerates the page loading on your website.
 
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/r3KcU8Vezic?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/D89StzJQuZ4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**WP Fastest Cache install**
+**PageSpeed Ninja install**
 
 :    * Click on *Plugins* in the left menu, then *Add New*.
-:    * Type *Cache* in the search space at the top right.
-:    * Choose the *WP Fastest Cache* plugin, click on *Install*, then *Activate*.
-:    * You can now find *WP Fastest Cache* in your left menu at the bottom. Click on it.
-:    * You are now going to check some options :
-        * Check the *Cache System* box.
-        * Check the *Preload* box, then the *Homepage*, *Posts*, *Categories*, *Pages*, *Tags*, *Attachments* and *Custom Post Types* boxes. Click on {==*Ok*==}.
-        * Check the *New Post* box. Select *Clear all cache*, click on {==*Ok*==}.
-        * Check the *Update Post*. Select  *Clear all cache*, click on {==*Ok*==}.
-        * Check the *Minify HTML* box.
-        * Check the *Minify CSS* box.
-        * Check the *Gzip* box.
-        * Check the *Disable Emojis* box.
-        * Select your language.
-:    * Click on the {==*Submit*==} button.
+:    * Type *PageSpeed Ninja* in the search space at the top right. 
+:    * Choose the *PageSpeed Ninja* plugin, click on *Install*, then *Activate*.
+:    * A message appears at the top of your page. Click on *Settings Page*.
+:    * In the drop menu click on *Optimal*.
+:    * Un-check *Send anonymous statistics*.
+:    * Click on {==*Save*==}.
 
-!!! success "WP Fastest Cache is now installed."
+!!! success "PageSpeed Ninja is now installed."
 
 ***
 
@@ -108,14 +116,14 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 !!! info "Really simple SSL"
 
-    We are about to intall Really simple SSL. A QUOI CA SERT.
+    We are about to install Really simple SSL. This tools automatically detect your settings and configures your website to work in HTTPS (see <a href="/help/glossary/#https" target="_blank">Glossary</a>).
 
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ZzkqfX7SXU0?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/QpQEaKtlTu8?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Installation de Really simple SSL**
+**Really simple SSL install**
 
 :    * Click on *Plugins* in the left menu, then *Add New*.
 :    * Type *SSL* in the search space at the top right. 
@@ -130,10 +138,10 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 !!! info "Redirection"
 
-    We are about to install Redirection. A QUOI CA SERT.
+    We are about to install Redirection. Redirection will redirect the IP address (see the <a href="/help/glossary/#ipaddress" target="_blank">Glossary</a>) of your server to your secure domain name.
 
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/b20_civFPxg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/mj39mDAv06o?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -151,12 +159,12 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 ***
 
-:    * Scroll down the page and check the *Force HTTPS* box.
-:    * Click on the {==*Update*==} button.
-:    * Scroll up to the top of the page and click on *Redirects*.
+:    * You are now on the *Options* page. Click on the *Redirects. link the top of the page. 
 :    * In the *Add new redirection* section, write **https://* in the first field.
-:    * Then go to your instance to copy your IP address. Paste it after the *https://*. Add an */* at the end
-:    * In the next field, type the following address, but replace *YourDomainName.com* with your domain name :
+:    * Then go to your instance to copy your IP address. Paste it after the *https://*.
+:    * Next to the *Add Redirect* button, click on the wheelwork.
+:    * In the second drop menu of the *When matched* section, select ***308 - Permanent Redirect***.
+:    * In the *Target URL* field, type the following address, but replace *YourDomainName.com* with your domain name :
 ``` sh
 https://YourDomainName.com
 ```
@@ -170,54 +178,8 @@ https://YourDomainName.com
 ```
 
 :    * Click on the {==*Add Redirect*==} button.
-:    * At the top of the page, click on *Clear Cache* then on : 
-        * *Delete Cache* 
-        * and *Delete Cache and Minified CSS/JS*
-
 
 !!! success "Redirection is now installed."
-
-***
-
-## Velvet Blues Update URLs
-
-!!! info "Velvet Blues Update URLs"
-
-    We are about to install Velvet Blues Update URLs. If you move your WordPress website to a new domain name, you will find that internal links to pages and references to images are not updated. Instead, these links and references will point to your old domain name. This plugin fixes that problem by helping you change old urls and links in your website.
-
-
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/D0Sg4K9h0lQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
-**Velvet Blues Update URLs intall**
-
-:    * Click on *Plugins* in the left menu, then *Add New*.
-:    * Copy/paste the following name in the search space at the top right.
-``` sh
-Velvet Blues Update URLs
-```
-
-:    * Choose the *Redirection* plugin, click on *Velvet Blues Update URLs*, then *Activate*.
-:    * Click on *Update URLs* under *Redirection*.
-:    * Paste the following address on the first field *Old URL*. Replace *YourDomainName.com* with your domain name :  
-``` sh
-http://YourDomainName.com
-```
-
-:    * Paste the following address on the second field *New URL*. Replace *YourDomainName.com* with your domain name :  
-``` sh
-https://YourDomainName.com
-```
-
-:    * Check all the boxes on *Step 2*.
-:    * Click on the {==*Update URL NOW*==} button.
-
-!!! warning "Error message"
-
-    This message *ERROR: Something may have gone wrong.* will appear. It is normal because you did not have actually any new URL to replace for now. When you will create new pages, the URLs will be replaced automaticlly.
-
-!!! success "Velvet Blues Update URLs is now installed."
 
 ***
 
@@ -225,11 +187,10 @@ https://YourDomainName.com
 
 !!! info "Smush image compression and optimization"
 
-    We are about to intall Smush. This plugin resize, optimize, optimise and compress all of your images. You website will be faster and lighter!
+    We are about to install Smush. This plugin resizes, optimize, optimize and compress all of your images. Your website will be faster and lighter!
 
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/H8CmaKUlSXs?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/tuDYbje8vKI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 ***
 
 **Smush Install**
@@ -244,5 +205,244 @@ https://YourDomainName.com
 :    * Click on the {==*Finish SETUP WIZARD*==} blue button.
 
 !!! success "Smush is now installed."
+
+***
+
+## Redis Object Cache
+
+!!! info "Redis"
+
+    We are about to install Redis. This plugin will make your medias loading faster.
+
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/5LLpovaEMTY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Redis install**
+
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Type *Redis Object Cache* in the search space at the top right. 
+:    * Choose the *Redis Object Cache* plugin, click on *Install*, then *Activate*.
+:    * Click on *Settings* under *Smush*.
+:    * Click on {==*Enable Object Cache*==}.
+
+!!! success "Redis is now installed."
+
+***
+
+## Yoast SEO
+
+!!! info "Yoast SEO"
+
+    We are about to install Yoast SEO. This plugin will allow you to optimize your SEO. SEO is the process of maximizing the number of visitors to a particular website by ensuring that the site appears high on the search engine's list of results.
+
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/C7PukHWqp8U?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Yoast SEO install**
+
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Type *Yoast SEO* in the search space at the top right. 
+:    * Choose the *Yoast SEO* plugin, click on *Install*, then *Activate*.
+:    * Click on *Settings* under *Yoast SEO*.
+:    * In *First-time SEO configuration*, click on *Configuration wizard*.
+:    * Cliquez on {==*Configure Yoast SEO*==}.
+:    * Cliquez on {==*Next*==}.
+:    * Select what type of website you are creating, then click on {==*Next*==}.
+:    * Choose if your website will be introducing a company or an individual. Fill out the field depending on your answer then click on {==*Next*==}.
+:    * Complete only if you want to or can then click on {==*Next*==}.
+:    * On the next page, click on {==*Next*==} and again on {==*Next*==}.
+:    * Click on {==*Get Google Authorization Code*==}.
+:    * Log in or sign in to a Google account.
+:    * Copy the code on the screen and paste it on the *Authorization Code* field on the Wordpress window.
+:    * Click on {==*Authenticate*==}, click on {==*Next*==}, click again on {==*Next*==}, remove your e-mail address from the field and click on {==*Next*==}.
+:    * Scroll down the page, click on {==*Next*==} and finally click on {==*Close*==}.
+
+!!! success "Yoast SEO is set up."
+
+***
+
+## Google Analytics
+
+!!! info "Google Analytics"
+
+    We are about to install Google Analytics, so you can link your website to your Google Analytics account. You will have access to the data of your website, like how many users visited your website today, where they visited it from...
+
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ImS61sdT608?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Google Analytics install**
+
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Type *Google Analytics* in the search space at the top right. 
+:    * Choose the *Google Analytics Dashboard for WP by ExactMetrics* plugin, click on *Install*, then *Activate*.
+:    * Click on *Settings* under *Google Analytics Dashboard*.
+
+
+***
+
+**Google Analytics account creation**
+
+:    * Go on <a href="https://analytics.google.com/analytics/web/" target="_blank">Google Analytics</a>
+:    * If you already have an account, you can go to the next step. If not, stay with us!
+:    * You will be asked to connect to your Google account. Type in your email and password.
+:    * Once on the Google Analytics click on the {==*Register*==} button.
+:    * You are now about to create an account for your website. You can go to the next step. You just created your Google Analytics account so the video will be slightly different from what you see on your screen. No worries although, you'll get to the same result!
+
+***
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/2W-CXMYhHWc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+:    * If you already had an account, go on *Administration*, then click on {==*Create an account*==}. For the others, you already are in the right form.
+:    * Fill out the form. Add your website address with the *Https*.
+:    * If you just created your account you can uncheck all the boxes at the end of the form, under the *Data sharing settings* section.
+:    * Click on the {==*Get a tracking ID*==}.
+
+:    * Go back on the Wordpress page and click on {==*Authorize plugin*==}.
+:    * Click on the *Get access code* link, select your Google account and click on {==*Authorize*==}.
+:    * A sequence of characters appears on the screen. Copy it.
+:    * Go back on the Wordpress page and paste the code in the *Access code* field. Click on {==*Save Access Code*==}.
+:    * Check that the settings are like the ones on the video, then click on {==*Save changes*==}.
+
+!!! success "Google Analytics is now set up."
+
+***
+
+## Mailchimp
+
+!!! info "Mailchimp"
+
+    Mailchimp will allow your website to send emails. For example, you will be able to get notification from your website on your e-mail address, like answers to a contact form. You will also be able to send e-mails to your users (notification after an order, newsletter...).
+
+
+<p><a href="/assets/images/wp/extentions/1.png" target="_blank"><img alt="mailchimp.com" src="/assets/images/wp/extentions/1.png"></a></p>
+
+***
+
+**Mailchimp account creation**
+
+:    * Go on <a href="https://mailchimp.com/" target="_blank">Mailchimp.com</a>.
+:    * Click on {==*Sign-Up Free*==}.
+:    * fill out the sign-up form.
+:    * Click on {==*Get Started!*==}.
+
+!!! warning "Don't forget to confirm your email address. Mailchimp sent you an e-mail!"
+
+!!! success "You now have a Mailchimp account."
+
+***
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/l8dsBag30bk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Link your Mailchimp account to your website**
+
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Type *MailChimp* in the search space at the top right. 
+:    * Choose the *MailChimp for Wordpress* and *MailChimp UserSync*, plugins, click on *Install*, then *Activate*.
+:    * Click on *Settings* under *MailChimp for Wordpress*.
+
+:    * Now go on your Mailchimp account.
+:    * In the top menu, at the right, click on the *name of your account* and on the drop menu click on *Profile*.
+:    * Click on *Extras* and in the drop menu click on *API keys*.
+:    * Scroll down the page to the *You don't have an API key* section. Click on the button {==*Create a key*==}.
+:    * On the next page, you will find your new key. Copy it and go back to the Wordpress page.
+:    * Paste the AP key in the *API key* field. Click on {==*Save*==}.
+
+!!! success "Your Mailchimp account is now liked to your Wordpress website."
+
+***
+
+## 10 plugins to activate
+
+??? note "What are those plugins for?""
+
+    **WPS Hide Login**: To log in your Wordpress dashboard you generally have to add */wp-login* after your domain name. For security reasons, this plugin allows you to change the URL of the login form page. For example: https://edelstom.io/entrer.<br>
+
+    **404 page - your smart custom 404 error page**: Create your custom 404 error page just like any other page using the WordPress Page Editor. Users will encounter this page if they try to connect to a non-existing page or one that does not exist anymore.<br>
+
+    **Duplicate Page**: You will understand it later, but this plugin is very useful. It will allow you to duplicate pages or posts that you have created.<br>
+
+    **Force Regenerate Thumbnails**: Takes care of the good quality of your photo display.<br>
+
+    **Loco Translate**: Will allow you to translate your website. It is also useful with themes because sometimes some buttons or links stay in the language of the theme. With these tools, you will be able to translate those details in the language of your choice.<br>
+
+    **SVG Support**: Help you to upload SVG files on your website. The SVG format is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation.<br>
+
+    **WP Retina 2x**: So your website is beautiful on every device, the plugin creates the image files, from your images, required by the High-DPI devices and it displays them to your visitors accordingly.<br>
+
+    **Disable Gutenberg**: Let you use the classic Wordpress editor. *Gutenberg* is the new Wordpress editor, but this editor is not approved by the Wordpress community. <br>
+
+    **Imsanity**:  Automatically resizes huge image uploads down to a size that is more reasonable for display in a browser, yet still more than large enough for typical website use.<br>
+
+    **Easy Updates Manager**: Allows you to manage the Wordpress updates. You can, for example, prevent some automatic updates.
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Z8gHm_MH1KM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Install and activate**
+
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Copy paste the following plugins in the search space at the top right. <br>Then click on *Install*.
+``` sh
+404 page - your smart custom 404 error page
+Disable Gutenberg
+Duplicate Page
+Easy Updates Manager
+Force Regenerate Thumbnails
+Imsanity
+Loco Translate
+SVG Support
+WP Retina 2x
+WPS Hide Login
+```
+
+:    * Once every plugin install, go on the left menu and click on *Installed Plugins*.
+:    * Select all the plugins you just installed. Then go back at the top of the page and click on *Bulk actions*, then *Activate* and finally click on {==*Apply*==}.
+
+!!! success "The 10 plugins are now installed and activated."
+
+***
+
+## 5 plugins not to activate
+
+??? note "What are those plugins for?"
+
+    **Crisp Live Chat**: This plugin will install a chat on your website. You will be able to speak directly with your users.<br>
+
+    **Ultimate Member**: is a user profile et membership plugin. If needed, the plugin allows you to add user profiles to your site and help you to create advanced online communities and membership system.<br>
+
+    **Disable Comments**: Will allow you to delete any possibility to post a comment on any post on your website.<br>
+
+    **Cookie Notice**: Install a banner at the bottom of your website to let your users know that you use cookies on your website. This GDPR banner is now mandatory.
+
+    **Super progressive web app**: This plugin combines the best of mobile web and the best of mobile apps to create a great mobile web experience. 
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gDGP0jE49-4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Install the plugins**
+
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Copy paste the following plugins in the search space at the top right. <br>Then click on *Install*.
+``` sh
+Cookie Notice (par dFactory)
+Crisp Live Chat
+Disable Comments
+Ultimate Member
+Super progressive web app
+```
+
+!!! success "Your 5 plugins are now installed!"
 
 ***

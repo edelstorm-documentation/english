@@ -1,7 +1,7 @@
 # Sign up to <small>- AWS</small>
 
 !!! tip "Advice"
-    At each step, you will find instructions but also images or animations. Use those to better understand what you have to do.
+    At each step, you will find instructions but also images, animations or videos. Use those to better understand what you have to do.
 
 ## Identification
 
