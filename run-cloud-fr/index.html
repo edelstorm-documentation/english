@@ -254,7 +254,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../wordpress/plugins/" title="Wordpress" class="md-tabs__link">
+        <a href="../wordpress/extensions/" title="Wordpress" class="md-tabs__link">
           Wordpress
         </a>
       
@@ -442,6 +442,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../wordpress/extensions/" title="Extensions" class="md-nav__link">
+      Extensions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../wordpress/plugins/" title="Plugins" class="md-nav__link">
       Plugins
     </a>
@@ -605,8 +617,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh-key" title="SSH Key" class="md-nav__link">
-    SSH Key
+  <a href="#cle-ssh" title="Clé SSH" class="md-nav__link">
+    Clé SSH
   </a>
   
 </li>
@@ -614,13 +626,6 @@
         <li class="md-nav__item">
   <a href="#configurations-wordpress" title="Configurations Wordpress" class="md-nav__link">
     Configurations Wordpress
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reecriture-durl" title="Réécriture d'URL" class="md-nav__link">
-    Réécriture d'URL
   </a>
   
 </li>
@@ -752,8 +757,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ssh-key" title="SSH Key" class="md-nav__link">
-    SSH Key
+  <a href="#cle-ssh" title="Clé SSH" class="md-nav__link">
+    Clé SSH
   </a>
   
 </li>
@@ -761,13 +766,6 @@
         <li class="md-nav__item">
   <a href="#configurations-wordpress" title="Configurations Wordpress" class="md-nav__link">
     Configurations Wordpress
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reecriture-durl" title="Réécriture d'URL" class="md-nav__link">
-    Réécriture d'URL
   </a>
   
 </li>
@@ -1157,7 +1155,7 @@
 <p class="admonition-title">Une base de données lié à un administrateur est disponible pour Wordpress.</p>
 </div>
 <hr />
-<h2 id="ssh-key">SSH Key<a class="headerlink" href="#ssh-key" title="Permanent link">&para;</a></h2>
+<h2 id="cle-ssh">Clé SSH<a class="headerlink" href="#cle-ssh" title="Permanent link">&para;</a></h2>
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/EovF2HXPruE?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
@@ -1260,7 +1258,7 @@
 </dd>
 </dl>
 <hr />
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/_nxGzQ8rpag?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/AYp36hsQ9vk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <p><strong>Informations du site et création de l'utilisateur administrateur</strong></p>
@@ -1307,100 +1305,6 @@
 </dl>
 <div class="admonition success">
 <p class="admonition-title">Vous avez maintenant accès à l'interface d'administration Wordpress de votre site web.</p>
-</div>
-<hr />
-<h2 id="reecriture-durl">Réécriture d'URL<a class="headerlink" href="#reecriture-durl" title="Permanent link">&para;</a></h2>
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/RWE6U5WhQ_A?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-<hr />
-<p><strong>Injection de la règle de réécriture d'URL</strong></p>
-<div class="admonition info">
-<p class="admonition-title">Information</p>
-<p>Le fichier Htaccess vous permet de définir des règles de redirection du trafic sur votre site web. Après cette étape, l'ensemble des utilisateurs essayant d'accéder à l'IP static de votre instance Lightsail seront automatiquement redirigés vers votre nom de domaine sécurisé.</p>
-</div>
-<dl>
-<dd>
-<ul>
-<li>Cliquez sur le nom de votre application.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Toujours dans le menu de gauche, cliquez sur <mark class="critic">File Manager</mark>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Sélectionnez le fichier <code class="codehilite"><span class="na">.htaccess</span></code> et cliquez sur <em>View/Edit</em>.</li>
-</ul>
-</dd>
-</dl>
-<hr />
-<dl>
-<dt><strong>Configuration de la règle de réécriture d'URL</strong></dt>
-<dd>
-<ul>
-<li>Une fois dans l'éditeur, copiez la règle de réécriture ci-dessous sous <code class="codehilite">RewriteBase /</code> :
-<div class="codehilite"><pre><span></span><span class="c1"># BEGIN WordPress</span>
-<span class="l l-Scalar l-Scalar-Plain">&lt;IfModule mod_rewrite.c&gt;</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteEngine On</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP:X-Forwarded-Proto} !https</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteBase /</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^index\.php$ - [L]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-f</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-d</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule . /index.php [L]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^111\.111\.111\.111$ [NC]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://example.com/$1 [R=301,L]</span>
-<span class="l l-Scalar l-Scalar-Plain">&lt;/IfModule&gt;</span>
-<span class="l l-Scalar l-Scalar-Plain"># END WordPress</span>
-</pre></div></li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Dans votre interface Lightsail, copiez l'adresse IP Static de votre instance.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Collez l'IP Static dans le fichier Htaccess pour l'avoir sous les yeux.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Ensuite, éditez la commande que vous avez précédemment copiée/collée, avec votre IP Static et nom de domaine. Vous pouvez vous appuyer sur cet exemple :
-<div class="codehilite"><pre><span></span><span class="c1"># BEGIN WordPress</span>
-<span class="l l-Scalar l-Scalar-Plain">&lt;IfModule mod_rewrite.c&gt;</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteEngine On</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP:X-Forwarded-Proto} !https</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://%{SERVER_NAME}/$1 [R,L]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteBase /</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^index\.php$ - [L]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-f</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{REQUEST_FILENAME} !-d</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule . /index.php [L]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteCond %{HTTP_HOST} ^35\.180\.150\.137$ [NC]</span>
-<span class="l l-Scalar l-Scalar-Plain">RewriteRule ^(.*)$ https://edelstorm.io/$1 [R=301,L]</span>
-<span class="l l-Scalar l-Scalar-Plain">&lt;/IfModule&gt;</span>
-<span class="l l-Scalar l-Scalar-Plain"># END WordPress</span>
-</pre></div></li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Une fois cette étape terminée, effacez l'IP Static et réorganisez le bloc de commandes pour plus de lisibilité.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Cliquez sur Sauvegarder en haut ou appuyer sur les touches <kbd>Ctrl</kbd> + <kbd>S</kbd> pour enregistrer vos modifications.</li>
-</ul>
-</dd>
-</dl>
-<div class="admonition success">
-<p class="admonition-title">Félicitations ! Wordpress est correctement installé et configuré pour supporter la création de votre site web.</p>
 </div>
                 
                   
