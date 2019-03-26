@@ -195,6 +195,26 @@ sudo su
 
 ***
 
+## Installation de Redis
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/FjCZo9eb1Yk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Activation et configuration de Redis sur Runcloud**
+
+:    * Dans le menu de gauche, cliquez sur {==Services==}.
+:    * Descendez un peu la page et cliquez sur l'*icône de réglages* de *Redis*.
+:    * Cliquez sur *Start*, puis sur le bouton {==Start==}.
+:    * Dans le menu de gauche, cliquez sur {==Web Application==}.
+:    * Cliquez sur le nom de votre application. Sur la page suivante, cliquez sur *Settings* dans le menu de gauche.
+:    * Descendez la page jusqu'à atteindre le champ : *MAX_EXECUTION_TIME*. Écrivez *300* ou ajoutez simplement un *0* dans ce champ. Puis à nouveau *300* dans le champ du dessous *MAX_INPUT_TIME*.
+:    * Descendez en bas de la page et cliquez sur le bouton {==Update Web Application Settings==}.
+
+!!! success "Redis est maintenant actif sur votre application Runcloud."
+
+***
+
 ## Configurations Wordpress
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/mqCtL375GDY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
