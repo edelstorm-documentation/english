@@ -2,7 +2,7 @@
 
 ## Wordfence
 
-!!! info "Wordfence"
+!!! question "Wordfence"
 
     We are about to install Wordfence. This Wordpress plugin will allow your website to be protected from any hacking attempt that may occur. Your website will be secure, your data and your user's data as well.
 
@@ -89,7 +89,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 ## PageSpeed Ninja
 
-!!! info "PageSpeed Ninja"
+!!! question "PageSpeed Ninja"
 
     We are about to install PageSpeed Ninja. This plugin accelerates the page loading on your website.
 
@@ -114,7 +114,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 ## Really simple SSL
 
-!!! info "Really simple SSL"
+!!! question "Really simple SSL"
 
     We are about to install Really simple SSL. This tools automatically detect your settings and configures your website to work in HTTPS (see <a href="/help/glossary/#https" target="_blank">Glossary</a>).
 
@@ -136,7 +136,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 ## Redirection
 
-!!! info "Redirection"
+!!! question "Redirection"
 
     We are about to install Redirection. Redirection will redirect the IP address (see the <a href="/help/glossary/#ipaddress" target="_blank">Glossary</a>) of your server to your secure domain name.
 
@@ -185,7 +185,7 @@ https://YourDomainName.com
 
 ## Smush image compression and optimization
 
-!!! info "Smush image compression and optimization"
+!!! question "Smush image compression and optimization"
 
     We are about to install Smush. This plugin resizes, optimize, optimize and compress all of your images. Your website will be faster and lighter!
 
@@ -210,7 +210,7 @@ https://YourDomainName.com
 
 ## Redis Object Cache
 
-!!! info "Redis"
+!!! question "Redis"
 
     We are about to install Redis. This plugin will make your medias loading faster.
 
@@ -233,7 +233,7 @@ https://YourDomainName.com
 
 ## Yoast SEO
 
-!!! info "Yoast SEO"
+!!! question "Yoast SEO"
 
     We are about to install Yoast SEO. This plugin will allow you to optimize your SEO. SEO is the process of maximizing the number of visitors to a particular website by ensuring that the site appears high on the search engine's list of results.
 
@@ -267,7 +267,7 @@ https://YourDomainName.com
 
 ## Google Analytics
 
-!!! info "Google Analytics"
+!!! question "Google Analytics"
 
     We are about to install Google Analytics, so you can link your website to your Google Analytics account. You will have access to the data of your website, like how many users visited your website today, where they visited it from...
 
@@ -317,7 +317,7 @@ https://YourDomainName.com
 
 ## Mailchimp
 
-!!! info "Mailchimp"
+!!! question "Mailchimp"
 
     Mailchimp will allow your website to send emails. For example, you will be able to get notification from your website on your e-mail address, like answers to a contact form. You will also be able to send e-mails to your users (notification after an order, newsletter...).
 

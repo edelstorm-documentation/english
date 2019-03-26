@@ -105,7 +105,9 @@ nav:
   - Content Delivery Network: content-delivery-network.md
   - Wordpress:
     - Extensions: wordpress/extensions.md
+    - Thème: wordpress/theme-fr.md  
     - Plugins: wordpress/plugins.md  
+    - Theme: wordpress/theme.md  
   - Help:
     - Glossary: help/glossary.md
   - Amazon Web Services: introduction.md

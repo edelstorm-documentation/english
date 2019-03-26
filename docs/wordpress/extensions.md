@@ -2,7 +2,7 @@
 
 ## Wordfence
 
-!!! info "Wordfence"
+!!! question "Wordfence"
 
     Nous sommes sur le point d'installer Wordfence. Il s'agit d'une extension de Wordpress permettant de protéger votre site d'éventuelles tentatives de piratage par exemple. Il permet de sécuriser votre site, vos données et celles de vos utilisateurs.
 
@@ -87,7 +87,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 
 ## PageSpeed Ninja
 
-!!! info "PageSpeed Ninja"
+!!! question "PageSpeed Ninja"
 
     Nous sommes sur le point d'installer PageSpeed Ninja. L'extension permet d'accélérer le chargement des pages de votre site.
 
@@ -112,7 +112,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 
 ## Really simple SSL
 
-!!! info "Really simple SSL"
+!!! question "Really simple SSL"
 
     Nous sommes sur le point d'installer Really simple SSL. Cet outil détecte automatiquement vos réglages et configure votre site web pour fonctionner en HTTPS (voir <a href="/aide/glossaire/#https" target="_blank">Glossaire</a>).
 
@@ -134,7 +134,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 
 ## Redirection
 
-!!! info "Redirection"
+!!! question "Redirection"
 
     Nous sommes sur le point d'installer Redirection qui permet de rediriger l'adresse IP (voir <a href="/aide/glossaire/#adresseip" target="_blank">Glossaire</a>) de votre serveur vers votre nom de domaine sécurisé.
 
@@ -183,7 +183,7 @@ https://VotreNomDeDomaine.com
 
 ## Smush compression d'image et optimisation
 
-!!! info "Smush compression d'image et optimisation"
+!!! question "Smush compression d'image et optimisation"
 
     Nous sommes sur le point d'installer Smush. Cette extension redimensionne, optimise et compresse toutes vos images. Votre site sera ainsi plus léger et rapide.
 
@@ -209,7 +209,7 @@ https://VotreNomDeDomaine.com
 
 ## Redis Object Cache
 
-!!! info "Redis"
+!!! question "Redis"
 
     Nous sommes sur le point d'installer Redis. L'extension permet d'accélérer le chargement des medias de votre site.
 
@@ -232,7 +232,7 @@ https://VotreNomDeDomaine.com
 
 ## Yoast SEO
 
-!!! info "Yoast SEO"
+!!! question "Yoast SEO"
 
     Nous sommes sur le point d'installer Yoast SEO. Cette extension vous aidera à optimiser le SEO de votre site. Le SEO ou référencement naturel peut être défini comme un ensemble de techniques visant à de positionner un site dans les premiers résultats naturels des moteurs de recherche.
 
@@ -266,7 +266,7 @@ https://VotreNomDeDomaine.com
 
 ## Google Analytics
 
-!!! info "Google Analytics"
+!!! question "Google Analytics"
 
     Nous sommes sur le point d'installer Google Analytics. Elle permet de lier votre site à Google Analytics. Vous aurez ainsi accès aux données générées par votre site, tel que le nombre de visiteurs par jour.
 
@@ -319,7 +319,7 @@ https://VotreNomDeDomaine.com
 
 ## Mailchimp
 
-!!! info "Mailchimp"
+!!! question "Mailchimp"
 
     Mailchimp est un système permettant à votre site d'envoyer des e-mails. Par exemple, vous pouvez ainsi recevoir sur votre adresse mail des notifications émanant de votre site, comme les formulaires de contacts remplis par vos utilisateurs par exemple. Vous pouvez aussi envoyer des e-mails à vos utilisateurs (notifications suite à une commande de produit, newsletter...)
 

@@ -83,7 +83,7 @@ sudo su
 
 **Come back to Runcloud.io, you should now have access to your dashboard**
 
-:    * In the left menu, click on {==Web Application==}.
+:    * On the left menu, click on {==Web Application==}.
 :    * Click on {==Create Application==}.
 :    * Name your application with the name of your future website this way : `*.VotreNomDeDomaine.com`
 :    * Add the domain name that you use for your instance.
@@ -115,7 +115,7 @@ sudo su
 
 **Domain name configuration**
 
-:    * In the left menu, click on {==Domain Name==}.
+:    * On the left menu, click on {==Domain Name==}.
 :    * Add the domains names `www.example.com` and `example.com` to the existing list.
 :    * Click on {==Attach Domain Name==}.
 
@@ -123,7 +123,7 @@ sudo su
 
 **Creation of the SSL security certificate**
 
-:    * In the left menu, click on {==SSL/TLS==}.
+:    * On the left menu, click on {==SSL/TLS==}.
 :    * Check the box *Enable HSTS*.
 :    * Select *Let's Encrypt* as an SSL method.
 :    * Select *Http-01*.
@@ -146,7 +146,7 @@ sudo su
 
 :    * On the top right corner, click on {==More==} and select *Set as default Web Application* then click on {==Set As Default==}
 :    * Come back to the homepage by clicking on *Back to web apps*.
-:    * In the left menu, click on {==Database==}.
+:    * On the left menu, click on {==Database==}.
 :    * Click on *Create Database*.
 :    * Name your database as you wish.
 :    * Leave the field *Collation* empty by default.
@@ -189,7 +189,7 @@ sudo su
 
 **Public SSH key setting for Runcloud.io**
 
-:    * Click on {==SSH Key==} in the left menu.
+:    * Click on {==SSH Key==} on the left menu.
 :    * Click on {==Add SSH Key==}.
 :    * Name your public SSH key.
 :    * Go to your `.ssh` file.
@@ -198,6 +198,26 @@ sudo su
 :    * Click on {==Add==}.
 
 !!! success "Your SSH public key is now available. You will be able to connect remotely to your server through RunCloud.io."
+
+***
+
+## Redis install
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/FjCZo9eb1Yk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Let's activate Redis on Runcloud**
+
+:    * Click on {==Services==} on the left menu.
+:    * Scroll down and click on *setting icon* of *Redis*.
+:    * Click on *Start*, then again on the {==Start==} button.
+:    * Click on {==Web Application==} on the left menu.
+:    * Click on your application's name. On the next page, click on *Settings* on the left menu.
+:    * Scroll down until you see the field *MAX_EXECUTION_TIME*. Write *300* on the field and *300* on the next field *MAX_INPUT_TIME*.
+:    * Scroll down and click on {==Update Web Application Settings==}.
+
+!!! success "Redis is now active and set on your Runcloud account."
 
 ***
 
