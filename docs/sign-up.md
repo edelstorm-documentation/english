@@ -19,8 +19,10 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 :    * Put an e-mail address that you currently use.
 :    * Create a password that has at least 8 characters, one capital letter, one number and a non-alphanumeric character like: <kbd>!</kbd> <kbd>@</kbd> <kbd>#</kbd> <kbd>(</kbd> <kbd>?</kbd>.
-:    * Put your password a second time to be sure that you wrote it without any mistake.
+:    * Put your password a second time to make sure that you wrote it without any mistake.
 :    * Choose a name for your AWS account. It can be your name, your company's name or your future website's name.
+:    * Click on {==*Continue*==}.
+
 ***
 
 ## Contact
@@ -46,9 +48,9 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 !!! info "Things you need to know about the AWS offer"
 
-    1. Opening an account is free. The costs will be depending on the services you use.
-    2. The first month of using your <a href="/help/glossary" target="_blank">instance</a>, that will allow you to put your website online, is free.
-    3. You will need to buy a domain name in the process of this training.
+    1. Opening an account is free. The costs will depend on the services you use.
+    2. The first month of using your <a href="/help/glossary/#instance" target="_blank">instance</a>, that will allow you to put your website online, is free.
+    3. You will need to buy a domain name to complete this program.
     4. You can easily have a look at the details of your <a href="https://console.aws.amazon.com/billing/home#/" target="_blank">billing</a>.
     5. At any moment, you can leave AWS without any hidden costs.
 
@@ -62,7 +64,7 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 :    * Put the expiration date.
 :    * Put the full name of the cardholder.
 :    * Select your billing address.
-:    * You can now submit your information in a secure way by clicking on {==*Secure Submit*==}.
+:    * You can now submit this information securely by clicking on {==*Secure Submit*==}.
 
 ***
 
@@ -72,14 +74,14 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 !!! warning "Confirm your number"
 
-    1. Have your phone near you because, in the next step, you will receive an automatic call from AWS.
-    2. You will have to enter 4 numbers on your phone, that will appear on your computer screen.
+    1. Have your phone near you because you will receive an automatic call from AWS at the next step.
+    2. You will have to enter 4 numbers on your phone. Those numbers will appear on your computer screen.
 
 ***
 
 **Phone number confirmation**
 
-Now, AWS is going to check that you are a real person and not a robot.
+Now, AWS is going to check that you are a humain and not a robot.
 
 :    * Select your country and type your phone number.
 :    * Complete the Captcha by typing the letters and numbers that you can see on the image.
@@ -89,13 +91,13 @@ Now, AWS is going to check that you are a real person and not a robot.
 
 ### AWS call
 
-<p><a href="../assets/images/aws/inscription/5.gif" target="_blank"><img alt="Creation du Compte Amazon Web Services Call" src="../assets/images/aws/inscription/5.gif"></a></p>gif)
+<p><a href="../assets/images/aws/inscription/5.gif" target="_blank"><img alt="Creation du Compte Amazon Web Services Call" src="../assets/images/aws/inscription/5.gif"></a></p>
 
 ***
 
 **AWS is calling you**
 
-Type on your phone the four numbers you see on your computer screen.
+:    * Type the four numbers you see on your computer screen on your phone.
 
 ***
 
@@ -107,8 +109,8 @@ Type on your phone the four numbers you see on your computer screen.
 
 **Wait a minute...**
 
-When this confirmation message appears on the screen, it means that the operation was a success.<br>
-You can now click on {==Continue==}.
+:    * When this confirmation message appears on the screen, it means that the operation was a success.
+:    * You can now click on {==Continue==}.
 
 ***
 
@@ -116,7 +118,8 @@ You can now click on {==Continue==}.
 
 !!! warning "Possible incident"
 
-      If, for any reason, you hang up the phone or get disconnected before you could type the code on your phone, keep the page open. Wait a few minutes, AWS is going to detect that a problem occurred and will ask you to try again. You will just have to click on {==Retry==}.
+      If, for any reason, you hang up the phone or get disconnected before you could type the code on your phone, keep the page open. <br>
+      Wait a few minutes, AWS is going to detect that a problem occurred and will ask you to try again. You will just have to click on {==Retry==}.
 
 ## Basic Plan
 
@@ -133,7 +136,7 @@ You can now click on {==Continue==}.
 
 ## Connexion
 
-<p><a href="../assets/images/aws/inscription/9.gif" target="_blank"><img alt="Account Log In Amazon Web Services" src="../assets/images/aws/inscription/9.gif"></a></p>f)
+<p><a href="../assets/images/aws/inscription/9.gif" target="_blank"><img alt="Account Log In Amazon Web Services" src="../assets/images/aws/inscription/9.gif"></a></p>
 
 ***
 
@@ -149,4 +152,4 @@ You can now click on {==Continue==}.
 <p><a href="../assets/images/aws/inscription/10.png" target="_blank"><img alt="Management Console Amazon Web Services" src="../assets/images/aws/inscription/10.png"></a></p>
 
 !!! success "Welcome on your Amazon Web Services administration console!"
-    Don't forget to go check your e-mails and to click on the link sent by AWS to verify your e-mail!
+    **Don't forget to go check your e-mails** and to click on the link sent by AWS to verify your e-mail!

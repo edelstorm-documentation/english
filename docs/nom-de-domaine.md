@@ -6,7 +6,7 @@
 
 ***
 
-**Système de noms de domaine (DNS) dans le cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
+**Système de <a href="/aide/glossaire/#nom-de-domaine" target="_blank">noms de domaine</a> (DNS) dans le cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
 
 :    * En haut à droite de la console, sélectionnez votre zone géographique.
 :    * Puis, dans la zone de recherche, tapez {==Route 53==} et cliquez dessus.
@@ -22,7 +22,9 @@
 
 **Vérifiez la disponibilité de votre nom de domaine**
 
-:    * Tapez le nom de domaine que vous avez choisi, puis sélectionnez <a href="/aide/glossaire" target="_blank">l'extension</a> de votre futur site web.
+:    * Tapez le nom de domaine que vous avez choisi, puis sélectionnez <a href="/aide/glossaire/#extension-de-nom-de-domaine" target="_blank">l'extension</a> de votre futur site web. <br>
+Le montant indiqué en dollars est à payer annuellement.
+
 :    * Une fois votre choix fait selon les disponibilités, ajoutez le nom de domaine au panier, puis cliquez sur {==Continuer==}.
 
 ***
@@ -33,7 +35,7 @@
 
 ***
 
-**Complétez le formulaire de contact pour votre nom de domaine**
+**Complétez le formulaire de contact lié à votre nom de domaine**
 
 :    * Activez la protection de la confidentialité (à la fin du formulaire).
 :    * Cliquez sur {==Continuer==}.
@@ -62,7 +64,7 @@
 **Patientez le temps qu'AWS enregistre votre nom de domaine**
 
 :    * Un enregistrement peut prendre jusqu'à 15 minutes. Vous pouvez prendre le temps de vous étirer un peu. 🚶‍♀️ 🤸‍♀️
-:    * Cliquez sur {==Domaine enregistré==}, votre nom de domaine apparaîtra lorsque l'enregistrement sera terminé.
+:    * Dans le menu de gauiche, cliquez sur {==Domaine enregistré==}, votre nom de domaine apparaîtra lorsque l'enregistrement sera terminé.
 
 ***
 
@@ -75,9 +77,9 @@
 **Supprimer votre zone hébergée par défaut**
 
 :    * Une fois que le nom de domaine enregistré, cliquez sur {==Zones hébergées==}.
-:    * Sélectionnez votre nom de domaine, cliquez sur {==Supprimer une zone hébergée==}, puis {==Confirmer==}.<br>
+:    * Sélectionnez votre nom de domaine, cliquez sur le troisième bouton {==Supprimer une zone hébergée==}, puis {==Confirmer==}.<br>
 
-La suppression de votre zone hébergée par défaut permettra par la suite à votre futur serveur web de prendre le relais.
+!!! info "La suppression de votre zone hébergée par défaut permettra à votre futur <a href="/aide/glossaire/#serveur" target="_blank">serveur web</a> de prendre le relais par la suite."
 
 ***
 

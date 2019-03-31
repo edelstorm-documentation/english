@@ -6,10 +6,10 @@
 
 ***
 
-**Domain name system (DNS) in the cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
+**<a href="/help/glossary/#domain-name" target="_blank">Domain name</a> system (DNS) in the cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
 
-:    * At the top right of the page, select your geographic zone.
-:    * Then in the research bar, type {==Route 53==} and click on the result.
+:    * Select your geographic zone at the top right of the page.
+:    * Type {==Route 53==} in the research bar, then click on the result.
 :    * Choose the option on the right: {==Register domain name==}.
 
 ***
@@ -22,7 +22,9 @@
 
 **Check the domain name availability**
 
-:    * Type your domain name and choose an <a href="/help/glossary" target="_blank">extension</a> for your future website.
+:    * Type your domain name and choose an <a href="/help/glossary/#domain-name-extension" target="_blank">extension</a> for your future website.<br>
+The specified price is due annually.
+
 :    * Once you have chosen an available domain name, add it to the cart, then click on {==Continue==}.
 
 ***
@@ -42,7 +44,7 @@
 
 ## Check your contact details
 
-<p><a href="../assets/images/aws/nom-de-domaine/en/4.gif" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/4.gif"></a></p>
+<p><a href="../assets/images/aws/nom-de-domaine/en/4.png" target="_blank"><img alt="Check Your Contact Details Route 53 Amazon Web Services" src="../assets/images/aws/nom-de-domaine/en/4.png"></a></p>
 
 ***
 
@@ -62,7 +64,7 @@
 **Wait while AWS register your domain name**
 
 :    * Registering your domain name can take up to 15 minutes. Take the time to stretch your legs.  🚶‍♀️ 🤸‍♀️
-:    * Click on {==Registered domains==}, your domain name will appear when the registration is complete.
+:    * Click on {==Registered domains==} on the left menu. Your domain name will appear when the registration is complete.
 
 ***
 
@@ -75,11 +77,11 @@
 **Delete your default hosted zone**
 
 :    * Once the domain name registered, click on {==Hosted zones==}.
-:    * Select your domain name, click on {==Delete hosted zone==}, then on {==Confirm==}.<br>
+:    * Select your domain name, click on the third button {==Delete hosted zone==}, then on {==Confirm==}.<br>
 
-Delete your default hosted zone will be allowed your own future server to take over.
+!!! info "Deleting the default hosted zone will allow your future <a href="/help/glossary/#server" target="_blank">server</a> to take over."
 
 ***
 
-!!! success "Congratulations, you now have a registered domain name!"
+!!! success "Congratulations, you have a registered domain name!"
     We will come back on last time on this page, so keep it open in a tab!
