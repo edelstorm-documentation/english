@@ -39,7 +39,7 @@ Nous utiliserons trois outils pour créer votre site :
   * <a href="https://themeforest.net/" target="_blank">**Envato**</a> : c’est sur ce site que vous achèterez votre thème. Un thème est en fait la base graphique de votre site. Il impacte toute la partie visuelle du site (couleurs, dispositions des contenus, design…). C’est une sorte de modèle que vous pouvez personnaliser à votre volonté. 
    Le thème est important, car grâce à lui vous n’avez pas à créer le design de votre site, ce qui peut prendre du temps et requière des connaissances en développement web.
 
- [^1]: Un serveur est ordinateur virtuel à distance qui permet également de recevoir du courrier électronique, de stocker des données et d’accéder au web de façon générale.
+ [^1]: Un serveur est ordinateur virtuel à distance qui permet notamment de recevoir du courrier électronique, de stocker des données et d’accéder au web de façon générale.
  [^2]: C’est l’adresse à laquelle les utilisateurs pourront se rendre pour visiter votre site. Par exemple, le nom de domaine d’Edelstorm est : edelstorm.io.
 
 Voilà ! Vous pouvez maintenant commencer [la première étape de la création de votre site][4].

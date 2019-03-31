@@ -123,7 +123,7 @@ tags on separate lines and adding new lines between the tags and the content.
 
 !!! failure "Error: unrecognized theme 'material'"
 
-    If you run into this error, the most common reason is that you installed
+    If you run into this error, the most comon reason is that you installed
     MkDocs through some package manager (e.g. Homebrew or `apt-get`) and the
     Material theme through `pip`, so both packages end up in different
     locations.

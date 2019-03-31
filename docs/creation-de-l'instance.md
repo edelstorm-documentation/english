@@ -6,7 +6,7 @@
     Copiez cette phrase pour tester.
     ```
 
-## Générer une paire de clés SSH
+## Générer une paire de clés SSH<a href="/aide/glossaire/#ssh"" target="_blank">&#185;</a>
 
 <p><a href="../assets/images/aws/creation-instance/fr/1.gif" target="_blank"><img alt="Générer une paire de clé SSH sur Mac" src="../assets/images/aws/creation-instance/fr/1.gif"></a></p>
 
@@ -14,24 +14,26 @@
 
 **Sécurisation des communications entre votre ordinateur et votre futur serveur**
 
-:    * {==Pour les ordinateurs Mac==} En haut à droite de votre écran, lancer une recherche Spotlight, tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
+:    * {==Pour les ordinateurs Mac==} En haut à droite de votre écran, lancez une recherche Spotlight en cliquant sur la loupe. Tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
 :    * {==Pour les ordinateurs Windows==} Plusieurs solutions en fonction de la version de votre OS. 
-        * Soit, dans le menu *Démarrer*, tapez dans la barre de recherche *cmd*. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez *exécuter en tant qu'administrateur*.
-        * Soit, ouvrez la barre de recherche de l'ordinateur en vous rendant sur votre bureau puis en tapant <kbd>⊞Win</kbd> + <kbd>S</kbd>. Tapez *cmd* dans le champ de recherche. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez *exécuter en tant qu'administrateur*.
+        * Soit, dans le menu *Démarrer*, tapez dans la barre de recherche *cmd*. <br>
+        Sélectionnez le premier résultat ( *Command Prompt* ), en faisant un clic droit puis sélectionnez : *exécuter en tant qu'administrateur*.
+        * Soit, ouvrez la barre de recherche de l'ordinateur en cliquant sur votre bureau (cliquez sur votre fond d'écran) puis en appuyant en même temps sur les touches <kbd>⊞Win</kbd> et <kbd>S</kbd>. <br>
+        Tapez : *cmd* dans le champ de recherche. Sélectionnez le premier résultat ( *Command Prompt* ), en faisant un clic droit puis sélectionnez : *exécuter en tant qu'administrateur*.
 
-:    * Une fois dans votre terminal, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
+:    * Une fois dans votre <a href="/aide/glossaire/#terminal" target="_blank">terminal</a>, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
 ssh-keygen -t rsa
 ```
 
 :    * Vous pouvez ensuite nommer votre paire de clés, sinon appuyez juste sur <kbd>Entrer</kbd>.
-:    * Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.
+:    * Une petite clé s'affiche. Il est temps de définir un mot de passe {==(voir note ci-dessous)==} et appuyez sur <kbd>Entrer</kbd>.
 :    * Ressaisissez votre mot de passe et appuyez sur <kbd>Entrer</kbd>.
 
 !!! note "À savoir"
 
-    Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas le voir se former sur votre écran.<br>
-    C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper. Vous devez donc le définir à l'aveugle !
+    Lorsque vous tapez votre mot de passe dans un terminal, vous ne **pourrez pas le voir se former sur votre écran**.<br>
+    C'est **comme si vous n'étiez pas en train de taper sur votre clavier**, mais pour le terminal vous êtes bien en train de taper. Vous devez donc le définir à l'aveugle !
 
 ***
 
@@ -39,8 +41,9 @@ ssh-keygen -t rsa
 
 ***
 
-**Localisation de votre paire de clés SSH**
+**Localisation de votre paire de clés SSH<a href="/aide/glossaire/#ssh" target="_blank">&#185;</a>**
 
+{==Pour les ordinateurs Mac==} 
 :    * Ouvrez votre Finder, cliquez en haut dans la barre de menu sur **Aller**, puis cliquez sur **Aller au dossier...**
 :    * Dans la barre de recherche, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
@@ -48,6 +51,10 @@ ssh-keygen -t rsa
 ```
 
 :    * Une fois dans le dossier {==.ssh==} faites glisser l'icône dossier en haut de la fenêtre du Finder dans votre barre de favoris. Cela vous permettra d'y accéder plus facilement pour la prochaine étape.
+
+{==Pour les ordinateurs Windows==} 
+:    * 
+:    * 
 
 !!! success "Votre machine a généré votre paire de clés SSH que vous pouvez facilement localiser à partir de son dossier !"
 
@@ -61,19 +68,25 @@ ssh-keygen -t rsa
 
 **Options de l'instance Amazon Lightsail**
 
-:    * Dans votre console de management AWS, cherchez le service *Lightsail* dans la barre recherche et cliquez dessus.
+:    * **Retournez sur votre navigateur web**. Vous avez normalement laissé votre fenêtre AWS zone hébergée ouverte (voir étape précédente <a href="/nom-de-domaine/" target="_blank">Nom de domaine</a>). <br>
+Faites un **clic droit sur le logo AWS** à droite et ouvrez dans un nouvel onglet. 
+
+:    * Vous vous retrouvez sur votre console de management AWS. Cherchez le service *Lightsail* dans la barre recherche et cliquez dessus.
 :    * Définissez la langue que vous souhaitez utiliser pour l'interface.
 :    * Cliquez sur {==Créer une instance==}.
-:    * Choisissez l'emplacement de l'instance. Choisissez la région se rapprochant le plus de vos futurs utilisateurs.<br>
+:    * **Choisissez l'emplacement de l'instance.** Choisissez la région se rapprochant le plus de vos futurs utilisateurs.<br>
         *Si vous ciblez un public européen francophone, vous pouvez choisir Paris, si vous ciblez des utilisateurs japonais, choisissez Tokyo... Le but est de permettre à vos utilisateurs de charger plus rapidement votre site.*
-:    * Laissez par défaut la zone de disponibilité de l'instance.
+:    * Laissez la zone de disponibilité de l'instance par défaut.
 :    * Choisissez *Linux/Unix* comme plateforme.
-:    * Cliquez sur l'onglet *Système d'exploitation uniquement* et sélectionnez *Ubuntu 16.04 LTS* comme système d'exploitation.
-:    * Nous n'ajouterons pas de script de lancement. (I)
+:    * Dans : *Sélectionner un plan*, cliquez sur l'onglet *Système d'exploitation uniquement*, puis sélectionnez *Ubuntu 16.04 LTS* comme système d'exploitation.
+:    * Nous n'ajouterons pas de script de lancement. (voir <a href="/aide/glossaire/#script-de-lancement" target="_blank">glossaire</a>.)
 :    * Cliquez sur *Modifier une paire de clés SSH* et cliquez sur *Charger un nouveau* puis sur {==Charger==}. 
-:    * Cliquez sur *Choisir un fichier* et choisissez le fichier `id_rsa.pub` dans votre dossier `~/.ssh` puis cliquez sur {==Charger une clé==}. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.
+:    * Cliquez sur *Choisir un fichier* et choisissez le fichier `id_rsa.pub` dans votre dossier `~/.ssh` puis cliquez sur {==Charger une clé==}.<br>
+*Le chargement peut prendre quelques minutes.*<br> 
+*Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.*
+
 :    * Choisissez le plan d'instance basique à **3.50$ par mois**, le premier mois d'essais est gratuit.
-:    * Nommez votre instance, de préférence avec votre nom de domaine. (A)
+:    * Nommez votre instance, de préférence avec votre <a href="/aide/glossaire/#nom-de-domaine" target="_blank">nom de domaine</a>.
 :    * Vous pouvez appliquer des balises d'identifications à cette instance si vous pensez en créer plusieurs par la suite.
 :    * Cliquez sur {==Créer une instance==} et patientez un instant que votre instance s'initialise.
 
@@ -93,26 +106,27 @@ ssh-keygen -t rsa
 
 **Ouverture des ports HTTPS & FTP**
 
-:    * Cliquez sur l'instance et allez dans l'onglet *Mise en réseau*.
-:    * Dans la section *Par-feu*, cliquez sur *Ajouter un autre élément*.
-:    * Dans le champ *Personnaliser, sélectionnez : *HTTPS*.<br>
-        Cette étape permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.
-:    * Cliquez sur *Ajouter un autre élément*.
-:    * Laissez le champ *Personnaliser* et ajoutez le port *34210*.
+:    * L'encart de votre instance est passée de gris à orange. Elle est donc prête à être utilisée.
+:    * Cliquez sur l'instance, ou plus précisément sur le ***nom de votre instance***, puis cliquez sur l'onglet ***Mise en réseau***.
+:    * Descendez la page jusqu'à la section *Par-feu*, cliquez sur ***Ajouter un autre élément***.
+:    * Dans le champ *Personnaliser* cliquez sur le menu déroulant et sélectionnez : ***HTTPS***.<br>
+        *Cette étape permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance. <a href="/aide/glossaire/#https" target="_blank">Cliquez ici pour en savoir plus sur le https</a>.*
+:    * Cliquez sur ***Ajouter un autre élément***.
+:    * Préoccupez-vous uniquement du dernier champ *Plage de ports* et ajoutez le port suivant ***34210***.
 :    * Cliquez sur {==Enregistrer==}.
 
 ***
 
 **Fixation de l'adresse IP dynamique**
 
-:    * Cliquez sur {==Attacher une IP Statique==} puis cliquez sur {==Créer une IP Statique==}.
+:    * Remontez un peu la page et cliquez sur {==Créer une IP Statique==}.
 :    * L'emplacement de l'IP Statique doit être similaire à celui de votre instance.
-:    * Nommez votre IP statique de cette façon, avec votre nom de domaine : *StaticIp-VotreNomDeDomaine*.
+:    * Dans *Identifiez votre adresse IP statique*, nommez votre IP statique de la façon suivante, mais avec VOTRE nom de domaine complet : *StaticIp-VotreNomDeDomaine*.
 :    * Cliquez sur {==Créer==}.
 
 !!! info "Informations"
 
-    Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire qu'à chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une IP statique est gratuite lorsqu'elle est attachée à une instance.
+    Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire qu'à chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une <a href="/aide/glossaire/#ip-statique" target="_blank">IP statique</a> est gratuite lorsqu'elle est attachée à une instance.
 
 !!! success "Les ports HTTPS et FTP sont ouvert et votre instance Lightsail possède une adresse IP statique."
 
@@ -126,9 +140,9 @@ ssh-keygen -t rsa
 
 **Association de votre instance à votre nom de domaine**
 
-:    * En haut à gauche, cliquez sur *Accueil* puis sur l'onglet *Mise en réseau*.
-:    * Cliquez sur {==Créer une zone DNS==}.
-:    * Dans le champ, spécifiez votre nom de domaine. (A)
+:    * En haut à gauche, cliquez sur ***Accueil*** puis sur l'onglet ***Mise en réseau***.
+:    * Cliquez sur {==Créer une zone DNS==}. <a href="/aide/glossaire/#zone-dns" target="_blank">Cliquez ici pour en savoir plus sur la zone DNS</a>.
+:    * Dans le premier champ, spécifiez votre nom de domaine.
 :    * Vous pouvez associer des tags d'identifications à cette zone DNS si vous pensez en créer plusieurs par la suite.
 :    * Cliquez sur {==Créer une zone DNS==}
 
@@ -136,12 +150,12 @@ ssh-keygen -t rsa
 
 **Création des enregistrements pour votre zone DNS**
 
-:    * Cliquez sur *Ajouter un enregistrement*.
+:    * Cliquez sur ***Ajouter un enregistrement***.
 :    * Ajoutez un premier enregistrement de type A pour `@.VotreNomDeDomaine.com` pointant vers votre IP statique. <br><br>
-       **Pour se faire**, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.
-:    * Cliquez à nouveau sur *Ajouter un enregistrement*
+       **Pour se faire**, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'***icone verte*** pour valider cette action.
+:    * Cliquez à nouveau sur ***Ajouter un enregistrement***
 :    * Ajoutez un second enregistrement de type A pour `www.VotreNomDeDomaine.com` pointant vers votre IP statique.<br><br>
-       **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.
+       **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'***icone verte*** pour valider cette action.
 
 !!! success "Votre instance possède une zone DNS et son IP statique pointe vers votre nom de domaine."
 
@@ -156,11 +170,14 @@ ssh-keygen -t rsa
 **Injection des noms de serveurs pour votre nom de domaine**
 
 :    * Sous les enregistrements de la zone DNS se trouve une section *Serveurs de noms*.
-:    * En haut à droite, cliquez sur *AWS* pour accèder à la console de management.
-:    * Cherchez le service *Route 53* dans la barre de recherche et cliquez dessus.
-:    * Dans le menu de gauche, cliquez sur *Domaines enregistrés*.
-:    * Cliquez sur votre nom de domaine.
-:    * Sur la droite, cliquez sur *Ajouter/Modifier les noms de serveurs* et remplacez un à un les serveurs de noms actuels par les quatre nouveaux noms de serveurs de votre zone DNS.
+:    * Retournez sur la page *Route 53* que vous avez laissée ouverte.<br>
+Si vous l'avez fermé, faites un clique droit, ouvrir dans un nouvel onglet sur ***AWS*** haut à droite de votre page. Une fois sur votre console, cherchez *Route 53* dans la barre de recherche et cliquez dessus.
+
+:    * Dans le menu de gauche, cliquez sur ***Domaines enregistrés***.
+:    * Cliquez sur votre ***nom de domaine***.
+:    * Sur la droite, cliquez sur ***Ajouter/Modifier les noms de serveurs***.<br>
+Vous devez maintenant remplacer un à un les serveurs de noms actuels, par les quatre nouveaux noms de serveurs de votre zone DNS. Vous pouvez les retrouver sur la page Lightsail que vous venez de quitter.
+
 :    * Cliquez sur {==Mettre à jour==}.
 
 !!! success "Les noms des serveurs de votre zone DNS correspondent à votre nom de domaine."
@@ -182,6 +199,8 @@ ssh-keygen -t rsa
 :    * Dans l'onglet *Connexion*, en cliquant sur *Se connecter à l'aide de SSH* vous pourrez accéder en mode sécurisé au terminal de votre serveur à distance.
 :    * Vous pouvez choisir de vous connecter, d'arrêter, de redémarrer et de supprimer cette instance.
 :    * Vous pouvez utiliser votre IP statique et nom d'utilisateur affichés ici, si vous souhaitez vous connecter en SSH directement avec le terminal de votre ordinateur.
+
+!!! info "<a href="/aide/glossaire/#ssh" target="_blank">Cliquez ici</a> pour en savoir plus sur le SSH."
 
 ***
 
@@ -222,7 +241,7 @@ ssh-keygen -t rsa
 
 **Tags**
 
-:    * Vous pouvez ajouter des tags à votre instance pour l'identifier plus facilement si vous en avez plusieurs.
+:    * Vous pouvez ajouter des tags à votre instance pour l'identifier plus facilement, si vous en avez plusieurs.
 
 ***
 
