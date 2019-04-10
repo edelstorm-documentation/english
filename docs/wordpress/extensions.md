@@ -25,13 +25,13 @@
         * *`Do you want Wordfence to stay up-to-date automatically`*, cliquez sur {==*Yes, enable auto-update*==}.
         * *`To make your website as secure as possible, take a moment to optimize the WordfenceWeb Application Firewall`*, cliquez sur le bouton {==*Click here to configure*==}.
 
-:    * Sur la nouvelle page une fenêtre apparait. Dans le menu déroulant sélectionnez ***Manuel Configuration***. Cliquez sur le bouton {==*Continue*==}.
+:    * Sur la nouvelle page une fenêtre apparait. Dans le menu déroulant sélectionnez ***Manual Configuration***. Cliquez sur le bouton {==*Continue*==}.
 :    * Une suite de caractère est disponible, nous allons utiliser une version modifiée de cette suite pour installer Wordfence sur votre serveur. Donc ignorez cette fenêtre, gardez-la ouverte et passez à l'étape suivante. 
 
 ***
 
-:    * Rendez-vous sur votre instance Lightsail. Cliquez sur les trois petits points à coté du nom de votre instance et sélectionnez *Connect*.
-:    * Une fois à l'intérieur du terminal de votre serveur, tapez directement la commande ci-dessous :
+:    * Rendez-vous sur la page d'accueil de votre instance Lightsail. Cliquez sur les trois petits points orange à coté du nom de votre instance et sélectionnez *Connexion*.
+:    * Une fois à l'intérieur du terminal de votre serveur, tapez ou copiez/collez directement la commande ci-dessous :
 ``` sh
 sudo nano ../../etc/php-extra/nomdedomaine.conf
 ```
@@ -65,10 +65,14 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 :    * Descendez en bas de la page et cliquez sur le bouton {==*Import/Export Options*==}.
 :    * Dans le champ destiné à cet effet, collez le token suivant, puis cliquez sur le bouton {==*Import Wordfence Options*==} :
 ``` sh
-28fcd2d531bca2da79409a53e36f26a7066b3be83f6f9938f6fdfa24a8b681e89af7bf1be829ee88905edb0d4173d99d1cac1ba448f15e0e6c683665a33e848e
+f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9fdd5dad999a7e7b366ab1ed45489be70f05a3daefa02bdeb
 ```
 
 :    * Cliquez sur {==*Reload*==}.   
+:    * Dans le menu de gauche, cliquez sur ***All options***.
+:    * Descendez la page jusqu'à la partie *Firewall Options*. Cliquez sur l'onglet ***Basic Firewall Options***
+:    * Cliquez sur le menu déroulant de la partie *Web Application Firewall Status* et sélectionnez ***Enabled and Protecting***.
+:    * Cliquez sur le bouton {==Save changes==}.
 
 !!! success "Wordfence est correctement configuré."
 
@@ -80,7 +84,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 
 :    * Dans le menu de gauche, cliquez sur *Live Traffic*. Ici vous pouvez voir en live les utilisateurs se connectant à votre site.
 :    * Dans le menu de gauche, cliquez sur *Scan*. Cliquez sur le bouton {==Scan==} pour vérifier la sécurité sur votre site. 
-        * En descendant un peu sur la page, vous verrez les résultats du scan. Pour le premier résultat, vous pouvez cliquer sur l'oeil barré *Ignore* et sélectionnez *Ignore until the files changes*. Répétez l'opération en sélectionnant cette fois *Always Ignore* pour les autres.
+        * En descendant un peu sur la page, vous verrez les résultats du scan. Cliquez sur l'oeil barré *Ignore* et sélectionnez *Always Ignore*, répétez l'operation pour tous les résultats.
 :    * Dans le menu de gauche, cliquez sur *Blocking*. Ici vous pouvez créer des règles pour bloquer l'accès de votre site à certains utilisateurs.
 
 ***
@@ -105,12 +109,16 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 :    * Dans le menu déroulant, sélectionnez *Optimal*.
 :    * Désélectionnez *Send anonymous statistics*.
 :    * Cliquez sur le bouton {==*Save*==}.
+:    * Sur la nouvelle page, cliquez sur l'onglet ***Advanced***.
+:    * Descendez la page jusqu'à l'onglet *Eliminate render-blocking Javascript and CSS in above-the-fold content*. Cliquez sur le ***bouton vert*** pour désactiver cette option.
+:    * Répetez l'opération pour les 2 options suivantes, *Optimize images* et *Prioritize visible content*.
+:    *  Remontez la page et cliquez sur le bouton {==Save==}.
 
 !!! success "PageSpeed Ninja est correctement installé ."
 
 ***
 
-## Really simple SSL
+<!-- ## Really simple SSL
 
 !!! question "Really simple SSL"
 
@@ -130,7 +138,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 
 !!! success "Really simple SSL est correctement installé."
 
-***
+*** -->
 
 ## Redirection
 
@@ -151,17 +159,14 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/NomDeVotreApplicati
 :    * Cliquez sur *Réglages* sous *Redirection*.
 :    * Descendez en bas de la page et cliquez sur le bouton bleu {==*Start Setup*==}.
 :    * Sur la page suivante, cochez les 3 cases, puis cliquez sur le bouton bleu {==*Continue Setup*==}.
-:    * Sur la page suivante, sous le titre *Checking yuor REST API* toutes les coches passent au vert. Si ce n'est pas le cas, cliquez sur le bouton {==*Retry*==}.
-:    * Cliquez sur le bouton {==*Finish Setup*==}.
-:    * Sur la page suivante, une fois la barre de progression chargée, cliquez sur le bouton {==*Finished!*==}.
+:    * Sur la page suivante, cliquez sur le bouton {==*Finish Setup*==}.
+:    * Une fois la barre de progression chargée, cliquez sur le bouton {==*Finished!*==}.
 
 ***
 
-:    * Vous êtes maintenant sur la page *Options*. En haut de la page, cliquez sur le lien *Redirects. 
-:    * Dans la section *Add new redirection*, écrivez **https://* dans le premier champ.
-:    * Puis rendez-vous sur votre instance pour copier votre adresse IP. Collez là à la suite de *https://*.
-:    * À coté du bouton bleu *Add Redirect*, cliquez sur le petit rouage.
-:    * Dans le deuxième menu déroulant de la section *When matched*, sélectionnez ***308 - Permanent Redirect***.
+:    * Vous êtes maintenant sur la page *Options*. En haut de la page, cliquez sur le lien *Redirects*. 
+:    * Rendez-vous sur votre page Lightsail et copiez l'***adresse IP*** de votre instance.
+:    * Dans la section *Add new redirection*, écrivez ***https://*** dans le premier champ puis collez l'***adresse IP*** à la suite.
 :    * Dans le champ *Target URL*, tapez l'adresse ci-dessous en remplaçant *VotreNomDeDomaine.com* par votre nom de domaine :
 ``` sh
 https://VotreNomDeDomaine.com
@@ -170,6 +175,18 @@ https://VotreNomDeDomaine.com
 :    * Cliquez sur le bouton {==*Add Redirect*==}.
 
 :    * Les champs sont désormais vides, collez votre adresse IP dans le premier champ.
+:    * Puis, dans le champ *Target URL*, tapez l'adresse ci-dessous en remplaçant *VotreNomDeDomaine.com* par votre nom de domaine :
+``` sh
+https://VotreNomDeDomaine.com
+```
+
+:    * Cliquez sur le bouton {==*Add Redirect*==}.
+
+:    * Enfin, les champs sont à nouveau vides, tapez l'adresse ci-dessous en remplaçant *VotreNomDeDomaine.com* par votre nom de domaine :
+``` sh
+https://VotreNomDeDomaine.com/xmlrpc.php
+```
+
 :    * Puis, dans le champ *Target URL*, tapez l'adresse ci-dessous en remplaçant *VotreNomDeDomaine.com* par votre nom de domaine :
 ``` sh
 https://VotreNomDeDomaine.com

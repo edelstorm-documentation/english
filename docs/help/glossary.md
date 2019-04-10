@@ -48,3 +48,10 @@ A child theme in WordPress is a theme that inherits the code and features of ano
 
 ##Shell script
 Enable actions like adding a software, update software or setting your instance in another way.
+
+##MySQL
+It is an open source relational database management system. It is one of the most used database management software in the world, both by the general public and by professionals.
+
+##Subdomain
+This is a subdomain example: **shop.** edelstorm.io. Here: **shop.** is the subdomain, it is placed before the domain name and followed by a dot. 
+It is used as an easy way to create multiple parts in the same website. And make it easier to remember and navigate. Another example with a  picture gallery of a site. You can write it that way gallery.mysite.com, instead of mysite.com/media/gallery. 

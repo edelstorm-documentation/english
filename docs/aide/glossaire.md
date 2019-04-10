@@ -48,3 +48,10 @@ Un thème enfant dans WordPress est un thème qui hérite du code et des fonctio
 
 ##Script de lancement 
 Permet d'effectuer des actions telles qu'ajouter un logiciel, mettre à jour un logiciel ou configurer votre instance d'une autre manière.
+
+##MySQL
+MySQL est un serveur de bases de données relationnelles Open Source. Il fait partie des logiciels de gestion de base de données les plus utilisés au monde, autant par le grand public que par des professionnels.
+
+##Sous domaine
+C'est une partie de l’adresse d’un site qui précède le nom de domaine du site, exemple : **shop.** edelstorm.io. Le sous-domaine est séparé du domaine par un point. 
+Il permet de scinder un site en plusieurs parties, par exemple pour séparer le shop  ou une galerie photo du reste du site, ce qui permet une écriture de l'adresse web plus simple.

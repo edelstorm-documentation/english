@@ -6,7 +6,7 @@
     Copy this sentence to try.
     ```
 
-## Generate an SSH key<a href="/help/glossary/#ssh"" target="_blank">&#185;</a>
+## Generate an SSH key<a href="/help/glossary/#ssh" target="_blank">&#185;</a>
 
 <p><a href="../assets/images/aws/creation-instance/en/1.gif" target="_blank"><img alt="Generate an SSH key on Mac" src="../assets/images/aws/creation-instance/en/1.gif"></a></p>
 
@@ -14,10 +14,10 @@
 
 **Securing communications between your computer and your future server**
 
-:    * {==For the Mac users==} At the top right of your computer screen, click on the magnifier icon, start a Spotlight research. Type *Terminal* then hit <kbd>Enter</kbd>.
+:    * {==For the Mac users==} At the top right of your computer screen, click on the magnifier icon, start a Spotlight research. Type ***Terminal*** then hit <kbd>Enter</kbd>.
 :    * {==For the Windows users==} Two ways depending on your OS version. 
-        * In the *Start* menu, type *cmd* in the search bar. Select the first result (Command Prompt), by doing a right click and select the *execute as an administrator* mode.
-        * Or, open your computer search bar from your desktop by hitting <kbd>⊞Win</kbd> then <kbd>S</kbd>. Then, type *cmd* in the research field. Select the first result (Command Prompt), by doing a click right and select the *execute as an administrator* mode.
+        * In the *Start* menu, type ***cmd*** in the search bar. Select the first result (Command Prompt), by doing a right click and select the *execute as an administrator* mode.
+        * Or, open your computer search bar from your desktop by hitting <kbd>⊞Win</kbd> then <kbd>S</kbd>. Then, type ***cmd*** in the research field. Select the first result (Command Prompt), by doing a click right and select the *execute as an administrator* mode.
 
 :    * When you are on your terminal, type this command and hit <kbd>Enter</kbd>.
 ``` sh
@@ -60,26 +60,26 @@ ssh-keygen -t rsa
 
 ## Instance creation
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/NG6jjPI0bRg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gF4tAzemagk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Amazon Lightsail instance options**
 
 :    * **Go on your web navigator**. You should still have the AWS hosted zone page open (see last step <a href="/domain-name/" target="_blank">Domain name</a>). <br>
-Do a **Richt clic on the AWS logo** at the right and open in a new tab.
+Do a right click on the ***AWS*** logo at the right and open in a new tab.
 
-:    * You now are on your AWS management console. Search for the service *Lightsail* and click on it.
+:    * You now are on your AWS management console. Search for the service ***Lightsail*** and click on it.
 :    * Choose the language you prefer to use.
 :    * Click on {==Create instance==}.
 :    * **Choose an instance location**. Choose the region that is the closest to where your future users will be located.<br> 
         *If you target users in Europe, you can choose Frankfurt, if you target users in Japan, you should choose Tokyo. The goal is to enable a quicker loading of your website to the users.*
 :    * Let the Availability Zone by default.
-:    * Choose *Linux/Unix* as a platform.
-:    * In *Select a blueprint*, click on the tab *OS Only* and choose *Ubuntu 16.04 LTS* as an operating system.
+:    * Choose ***Linux/Unix*** as a platform.
+:    * In *Select a blueprint*, click on the tab ***OS Only*** and choose ***Ubuntu 18.04 LTS*** as an operating system.
 :    * Don't add any shell script (to read more about it <a href="/help/glossary/#shell-script" target="_blank">click here</a>).
-:    * Click on *Change SSH key pair* and on *Upload New* then on {==Upload==}. 
-:    * Click on *Choose a file* and choose `id_rsa.pub` file in your `~/.ssh` folder, then click on {==Upload key==}. <br>
+:    * Click on ***Change SSH key pair*** and on ***Upload New*** then on {==Upload==}. 
+:    * Click on ***Choose a file*** and choose `id_rsa.pub` file in your `~/.ssh` folder, then click on {==Upload key==}. <br>
 *It can take some time to load*<br>
 *Providing your public SSH key will enable you to secure the communication between your computer and your Amazon Lightsail instance.*
 
@@ -98,7 +98,7 @@ Do a **Richt clic on the AWS logo** at the right and open in a new tab.
 
 ## Firewall & Static IP
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/aBRPNBX_XMc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Y8-gIGv1zW4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -119,7 +119,11 @@ Do a **Richt clic on the AWS logo** at the right and open in a new tab.
 
 :    * Scroll up ad click on {==Create static IP==}.
 :    * The static IP location should be the same as your instance.
-:    * In *Identify your static IP*, name your static IP this way, with YOUR domain name: *StaticIp-YourDomainName*.
+:    * In *Identify your static IP*, name your static IP this way, with YOUR domain name: 
+``` sh
+StaticIp-YourDomainName
+```
+
 :    * Click on {==Create==}.
 
 !!! info "Dynamic IP and static IP"
@@ -137,7 +141,7 @@ Do a **Richt clic on the AWS logo** at the right and open in a new tab.
 **Combination of your instance and domain name**
 
 :    * On the top left corner, click on ***Home*** then go to the ***Networking*** tab.
-:    * Click on {==Create DNS zone==}.  <a href="/help/glossary/#dn-zones" target="_blank">Click here to know more about the DNS Zone</a>.
+:    * Click on {==Create DNS zone==}.  <a href="/help/glossary/#dns-zone-domain-name-system" target="_blank">Click here to know more about the DNS Zone</a>.
 :    * In the field, write your domain name.
 :    * You can add identifications tags to this DNS zone if you think you will create more than one.
 :    * Click on {==Create DNS zone==}.
@@ -151,7 +155,12 @@ Do a **Richt clic on the AWS logo** at the right and open in a new tab.
        **To do so**, type <kbd>@</kbd> on the first field on the left. Then select the static IP you just created on the right. Click on the ***green icon*** to save.
 :    * Click on ***Add record*** again.
 :    * Add a second type A for `www.YourDomainName.com` pointing to your static IP.<br><br>
-       **To do so**, type <kbd>www</kbd> on the first field on the left. Then select the static IP you just created on the right. Click on the ***green icon*** to save.
+       **To do so**, type <kbd>www</kbd> on the first field on the left. Then select the static IP you just created on the right. Click on the ***green icon*** to save.<br>
+
+:    * **Now, the next step is if you want to register a <a href="/help/glossary/#subdomain" target="_blank">subdomain</a>**, if you need to create an e-shop for example. This step is not mandatory and you will be able to add a subdomain later. Though, you will have to pay because of Runcloud (see the video).
+:    * Click on ***Add record*** again.
+:    * Add a second type A for `SubDomain.YourDomainName.com` pointing to your static IP.<br><br>
+       **To do so**, type <kbd>YourSubDomain</kbd> on the first field on the left. Then select the static IP you just created on the right. Click on the ***green icon*** to save.
 
 !!! success "Your instance has a DNS zone and its static IP point to your domain name."
 
@@ -176,6 +185,10 @@ If you closed it then do a right click on ***AWS***, at the top right corner. Th
 Then, you have to replace the actuals name servers by the four new ones from your DNS zone (on the page you just left), one by one.
 
 :    * Click on {==Update==}.
+:    * Click on ***Dashboard*** in the left menu.
+:    * Look the *Alerts* board. On the first line, you can see that your nameservers' update are in progress. 
+:    * Wait a few minutes and refresh the page.
+:    * Now your nameservers are successfully updated.
 
 !!! success "Your DNS nameservers now match your domain name."
 
