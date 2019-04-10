@@ -41,25 +41,31 @@
 
 **Install Runcloud on your Lightsail instance**
 
-:    * Click on *Connect a New Server*.
-:    * Name your server with your website name.
-:    * Copy/paste the static IP of your instance in the form input.
-:    * Put *AWS* as a Server Provider.
+:    * Close the *Route 53* window.
+:    * On the *Amazon Lightsail* page, click on ***Home***.
+:    * Copy your server's IP address (the numbers you can find under your instance's name, in the grey rectangle).
+:    * Go back on your ***Runcloud dashboard***.
+:    * Click on ***Connect a New Server***.
+:    * In the first field, name your server with your website name.
+:    * Copy/paste the static IP of your instance in the second input.<br>
+*You will find it on your Lightsail page, next to your instance name.*
+
+:    * Then, put ***AWS*** as a Server Provider in the third field.
 :    * Click on {==Connect this server==}.
-:    * RunCloud is going to generate an installation command on your server. Copy it by clicking on the green icon on the right.
-:    * Go back on Lightsail and connect to your SSH instance by clicking on *Connect*.
+:    * *RunCloud is going to generate an installation command on your server.* Copy it by clicking on the ***green icon*** on the right.
+:    * Go back on Lightsail and connect to your SSH instance by clicking ***on the three dots*** next to your instance's name. Then click on ***Connect***.
 :    * Once you are in the instance terminal, type the command below to obtain the admin rights, then press <kbd>Enter</kbd>.
 ``` sh
 sudo su
 ```
 
-:    * Click on the orange icon at the bottom right of the terminal and paste the installation command in the window.
+:    * Click on the ***orange icon*** at the bottom right of the terminal and paste the installation command you just copied in the window.
 :    * Click on the black part of the terminal, do a right click to paste the command inside, then press <kbd>Enter</kbd>.
 
 
 !!! warning "Installation"
 
-    The command is going to install Runcloud. DO NOT LEAVE the terminal before the process is done. It can take around 10 minutes.
+    The command is going to install Runcloud. **DO NOT LEAVE** the terminal before the process is done. It can take around 10 minutes.
 
 ***
 
@@ -67,9 +73,14 @@ sudo su
 
 ***
 
-**Save your MySQL credentials**
+**Save your MySQL<a href="/help/glossary/#mysql" target="_blank">&#185;</a> credentials**
 
-:    *  Once the process is done, copy the MySQL login and password and paste it on a secure document on your computer! To copy on a terminal, you have to select what you want to copy, then click on the orange icon at the bottom right. You will find what you just select. You can now from this place, copy the content.
+:    *  Once the process is done, your ***database MySQL passwords*** will appear. Copy and paste it on a secure document on your computer! 
+
+:    *  To copy on a terminal, you have to select what you want to copy, then click on the orange icon at the bottom right. You will find what you just select. You can now from this place, copy the content.
+
+:    *  Open a text file so you can keep your MySQL access and save it in a secure place.<br>
+*<a href="/help/glossary/#mysql" target="_blank">Click here</a> to know more about MySQL.*
 
 !!! success "You now have access to the admin interface of your Runcloud.io instance!"
 
@@ -85,14 +96,25 @@ sudo su
 
 :    * On the left menu, click on {==Web Application==}.
 :    * Click on {==Create Application==}.
-:    * Name your application with the name of your future website this way : `*.VotreNomDeDomaine.com`
+:    * Fill out the form by starting with naming your application with your website's name.
+:    * Add your domain name this way :
+``` sh
+*.VotreNomDeDomaine.com
+```
+
 :    * Add the domain name that you use for your instance.
 :    * Choose the User by default *Runcloud*.
-:    * Leave the by default Public Path.
-:    * Select the most recent PHP version.
-:    * Select *NGINX + Apache2 Hybrid (You will be able to use .htaccess)*.
-:    * Choose the *Production* mode.
-:    * Let the *Advanced Settings* box unchecked, so you can keep the by default settings.
+:    * Leave the by default *Public Path*.
+:    * In the drop down menu, select the most recent PHP version.
+:    * Select ***NGINX + Apache2 Hybrid (You will be able to use .htaccess)***.
+:    * Choose the ***Production*** mode.
+:    * Click on the *Advanced Settings* box.
+:    * Scroll down the page to this field: *MAX_EXECUTION_TIME*. <br>
+Write ***300*** in the field by replacing its content.
+
+:    * Then go to the *MAX_EXECUTION_TIME* field.<br>
+Write ***3000*** in the field by replacing its content.
+
 :    * Click on {==Add Web Application==}.
 
 !!! success "A space for an application is now available on your Lightsail instance."
@@ -108,7 +130,7 @@ sudo su
 **Wordpress installation**
 
 :    * On the left menu, click on {==Script Installer==}.
-:    * Select the *Wordpress* script.
+:    * In the drop down menu, select the ***Wordpress*** script.
 :    * Click on {==Install==}.
 
 ***
@@ -116,7 +138,14 @@ sudo su
 **Domain name configuration**
 
 :    * On the left menu, click on {==Domain Name==}.
-:    * Add the domains names `www.example.com` and `example.com` to the existing list.
+:    * Add the domain name `www.example.com` to the field.
+:    * Click on {==Attach Domain Name==}.
+:    * Add the domain name `example.com` to the field.
+:    * Click on {==Attach Domain Name==}.
+
+!!! warning "The next step is only for the people that created a subdomain. If you did, it was when we configured your <a href="/instance-creation/#dns-zone" target="_blank">DNS zone</a>."
+:    * Click on {==Attach Domain Name==}.
+:    * Add your subdomain and domain name `SubDomain.example.com` to the field.
 :    * Click on {==Attach Domain Name==}.
 
 ***
@@ -124,11 +153,12 @@ sudo su
 **Creation of the SSL security certificate**
 
 :    * On the left menu, click on {==SSL/TLS==}.
-:    * Check the box *Enable HSTS*.
-:    * Select *Let's Encrypt* as an SSL method.
-:    * Select *Http-01*.
-:    * Select *Live* as an environment.
+:    * Scroll down the page, check the box ***Enable HSTS***.
+:    * Select ***Let's Encrypt*** as an SSL method.
+:    * Select ***Http-01***.
+:    * Select ***Live*** as an environment.
 :    * Click on {==Submit==}.
+:    * Click on {==Create Let's Encrypt Request==}.
 
 !!! success "Wordpress is now installed on your Lightsail instance. The domain name configuration is correct and the SSL security certificate is now activated."
 
@@ -142,13 +172,10 @@ sudo su
 
 **Database creation**
 
-**By default application**
-
-:    * On the top right corner, click on {==More==} and select *Set as default Web Application* then click on {==Set As Default==}
-:    * Come back to the homepage by clicking on *Back to web apps*.
+:    * Come back to the homepage by clicking on ***Back to web apps*** on the left.
 :    * On the left menu, click on {==Database==}.
-:    * Click on *Create Database*.
-:    * Name your database as you wish.
+:    * Click on ***Create Database***.
+:    * Name your database as you wish. Your website's name is a good option.
 :    * Leave the field *Collation* empty by default.
 :    * Click on {==Add Database==}.
 
@@ -160,24 +187,44 @@ sudo su
 
 **Database admin user creation**
 
-:    * Click on *Create Database User*.
-:    * In *Database User*, create your login, save it in a separate file and store it in a secured place.
-:    * Generate a password and copy/paste, save it in a separate file and store it in a secured place.
-:    * Click on *Add Database User*.
+:    * Click on ***Create Database User***.
+:    * In *Database User*, create your login, **save it in a file and store it in a secured place**.
+:    * Generate a password and **copy it**! **Then, save it in a file and store it in a secured place**.
+:    * Click on ***Add Database User***.
 
 !!! info "Information"
     
     You need an admin account to access the Wordpress dashboard. This account will have all the rights on your website. Once the admin login/password created, you must keep it in a secure place/file.
 
-***
+<!-- ***
 
 **Linking the admin account to your database**
 
-:    * Click on *Attach User*.
+:    * Click on ***Attach User***.
 :    * Select the admin username in the drop-down list.
-:    * Click on *Attach User*.
+:    * Click on ***Attach User***.
 
-!!! success "The database linked to an admin account is now available for Wordpress."
+!!! success "The database linked to an admin account is now available for Wordpress." -->
+
+***
+
+## Services install
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/FjCZo9eb1Yk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Let's activate services on Runcloud**
+
+:    * Click on {==Services==} on the left menu.
+:    * Scroll down and click on the ***setting icon*** next to the **Redis** logo.
+:    * Click on ***Start***, then again on the {==Start==} button.
+:    * Click on the ***setting icon*** next to the **Memcached** logo.
+:    * Click on ***Start***, then again on the {==Start==} button.
+:    * Click on the ***setting icon*** next to the **Beanstalkd** logo.
+:    * Click on ***Start***, then again on the {==Start==} button.
+
+!!! success "Redis is now active and set on your Runcloud account."
 
 ***
 
@@ -191,37 +238,21 @@ sudo su
 
 :    * Click on {==SSH Key==} on the left menu.
 :    * Click on {==Add SSH Key==}.
-:    * Name your public SSH key.
+:    * Name your public SSH key in the *Label* field.
 :    * Go to your `.ssh` file.
 :    * Open `id_rsa.pub` with a text editor
-:    * Copy / paste the public key in the Runcloud.io form input.
+:    * Copy the public key and paste it in the *Public Key* field of  Runcloud.io.
 :    * Click on {==Add==}.
 
 !!! success "Your SSH public key is now available. You will be able to connect remotely to your server through RunCloud.io."
 
 ***
 
-## Redis install
-
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/FjCZo9eb1Yk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
-**Let's activate Redis on Runcloud**
-
-:    * Click on {==Services==} on the left menu.
-:    * Scroll down and click on *setting icon* of *Redis*.
-:    * Click on *Start*, then again on the {==Start==} button.
-:    * Click on {==Web Application==} on the left menu.
-:    * Click on your application's name. On the next page, click on *Settings* on the left menu.
-:    * Scroll down until you see the field *MAX_EXECUTION_TIME*. Write *300* on the field and *300* on the next field *MAX_INPUT_TIME*.
-:    * Scroll down and click on {==Update Web Application Settings==}.
-
-!!! success "Redis is now active and set on your Runcloud account."
-
-***
-
 ## Wordpress configurations
+
+:    * Click on ***Web application*** in the left menu.
+:    * At the right, on the *Options* column, click on the {==Cog icon==}. 
+:    * Select ***Set as default Web Application*** then click on {==Set As Default==}.
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/xcMjKatVbqQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
@@ -230,35 +261,31 @@ sudo su
 **Wordpress database linking**
 
 !!! info "Information" 
-    You can now access your website! Type your domain name `https://example.com` on the URL search bar of your browser. You will then have access to the Wordpress installation page.
+    You can now access your website! <br>Type your domain name `https://example.com` on the URL search bar of your browser. You will then have access to the Wordpress installation page.
 
 :    * Select your language.
-:    * Click on the {==Let's go!==} button.
-:    * Inject your Runcloud.io database name.
-:    * Copy/paste the Runcloud.io administrator database name. (A)
-:    * Copy/paste the Runcloud.io database password. (A)
+:    * Click on {==Continue==} then on {==Let's go!==} button.
+:    * Inject your Runcloud.io database name (we defined it on the <a href="/run-cloud/#database" target="_blank">Database</a> step).
+:    * Copy/paste your Runcloud.io ***administrator database name*** (we also did that on the <a href="/run-cloud/#database" target="_blank">Database</a> step).
+:    * Copy/paste your Runcloud.io ***database password*** that you pasted in a file (again if you forgot, we did that during the <a href="/run-cloud/#database" target="_blank">Database</a> step).
 :    * Leave the "by default" *Database Host* to `localhost`.
-:    * Change your prefix with something else than `wp_`, but keep the same format.
+:    * Change your prefix's letters with something else than `wp_`, but keep the same format.
 :    * Click on {==Submit==}.
 :    * Click on {==Run the installation==}.
-
-***
-
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TRinVkDEo2E?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Website and admin account configurations**
 
 !!! info "Save your login!" 
-    You are going to create admin access to your Wordpress website. You must keep your login/password combination in a secure place!
+    You are going to create admin access to your Wordpress website. **You must keep your login/password combination in a secure place!**
 
-:    * Give your website a title.
-:    * Chose a login, save it in a separate file and store it in a secured place.
-:    * Generate a password, save it in a separate file and store it in a secured place.
-:    * Add your admin e-mail address.
+:    * Give your website a ***title***.
+:    * Chose a ***login***, save it in a file and store it in a secured place.
+:    * Generate a ***password***, copy and save it in a file and store it in a secured place.
+:    * Add your admin ***e-mail*** address.
 :    * Leave the *Search Engine Visibility* box unchecked.
 :    * Click on {==Install Wordpress==}.
-:    * You can now {==Log In==} to your Wordpress.
+:    * You can now {==Log In==} to your Wordpress website.
 
 !!! success "You now have access to your Wordpress interface."

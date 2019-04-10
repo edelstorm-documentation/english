@@ -1,4 +1,4 @@
-# Content Delivery Network <small>- AWS</small>
+ # Content Delivery Network <small>- AWS</small>
 
 ## S3 Bucket
 
@@ -14,24 +14,20 @@
 
 :    * Go on your AWS management console, search for the service *S3* and click on it.
 :    * Now that you are in the S3 interface, click on {==Create bucket==}.
-:    * Name your bucket and choose the same region that you choose for your Lightsail instance.
+:    * Name your bucket and leave the by default region: US East (N. Virginia).
 :    * Click on {==Next==}.
 :    * Leave the option by default and click on {==Next==}.
 :    * Uncheck all the boxes so your bucket becomes public.
 :    * Click on {==Next==}.
-:    * Check that everything is good and click on {==Create bucket==}.
+:    * Click on {==Create bucket==}.
 
 !!! success "A storage S3 public bucket is now available! It will enable faster loading of your media on Wordpress."
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/R1d245Z0Z0k?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
 **S3 bucket permissions**
 
-:    * Click on your S3 bucket, then click on {==Permissions==}.
+:    * Click on your S3 bucket, then click on {==Permissions==} in the right menu.
 :    * Click on {==Bucket Policy==}.
 :    * Copy / paste the following policy on the editor : 
 ``` sh
@@ -51,8 +47,9 @@
 }
 ```
 
-:    * Don't forget to switch *YourBucketName* with the name you gave your bucket.
+:    * Don't forget to switch ***YourBucketName*** with the name you gave your bucket.
 :    * Once the policy edited, click on {==Save==}.
+:    * Click on the ***AWS*** logo at the top left of the page.
 
 ***
 
@@ -63,8 +60,7 @@
 ***
 
 **IAM policy initialization**
-
-:    * Go back to the Management Console by clicking on the AWS top left logo.
+ 
 :    * Search for the IAM service and click on the result.
 :    * In the left menu, click on {==Policies==}.
 :    * Click on {==Create policy==}.
@@ -115,8 +111,15 @@
 :    * Check the *Programmatic access* box.
 :    * Click on {==Next: Permissions==}.
 :    * Click on *Attach existing policies*.
-:    * Type your IAM policy name in the search bar.
-:    * Check the box to select your IAM policy and click on {==Next: Tags==}.
+:    * Type your IAM policy's name in the search bar.
+:    * Check the box to select your IAM policy
+:    * Type ***S3*** in the search bar.
+:    * Check the box to select this policy : *AmazonS3FullAccess*.
+:    * Type ***Cloudfront*** in the search bar.
+:    * Check the box to select this policy : *CloudFrontFullAccess*.
+:    * Finally, type ***Admin*** in the search bar.
+:    * Check the box to select this policy : *AdministratorAccess*.
+:    * Click on {==Next: Tags==}.
 :    * Click on {==Next: Review==}.
 :    * Click on {==Create user==}.
 :    * To keep your access in a separate file, click on {==Download .csv==}.
@@ -125,6 +128,7 @@
 
 !!! success "Congratulations! Your IAM user is now liked to the right IAM policy and you have the two access keys."
 
+<!-- 
 ***
 
 ## IAM key injection
@@ -150,7 +154,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 :    * Then go to your IAM interface so you can replace *YourAccessKeyID* with your access key ID and *YourAccessKeySecret* with your secret access key.
 
-:    * Type <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.
+:    * Type <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes. -->
 
 ***
 
@@ -163,7 +167,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 **AWS Certificate creation**
 
 :    * Go back to the Management Console by clicking on the AWS top left logo.
-:    * On the top right corner, select *US East (N. Virginia)* location. (I)
+:    * On the top right corner, select *US East (N. Virginia)* location.
 :    * Search for the AWS service *Certificate Manager* and click on it.
 :    * In the left section *Provision certificates*, click on {==Get started==}.
 :    * Check the *Request a public certificate* box and click on {==Request a certificate==}.
@@ -173,19 +177,16 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 ***
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/CM8FkHJJoOI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-***
-
 **Domain name DNS validation**
 
 :    * Wait for a moment, AWS is going to generate a DNS CNAME configuration. It will enable you to verify your domain name.
-:    * Copy the beginning of the CNAME like so : `_55deac851379bd6906fd5f90ed2e95b3`
-:    * Go to your Amazon Lightsail interface. Click on {==Networking==} then on your DNS zone.
+:    * Copy the beginning of the CNAME. Copy the serie of letters and numbers, stop just before your domain name's dot. 
+:    * Go to your Amazon Lightsail interface. Click on {==Networking==} then on your DNS zone's name.
 :    * Click on {==Add record==}.
 :    * Select *CNAME* as a record type. Paste the beginning of the CNAME you copied on the *Subdomain* field. Then copy the *Value* you can find on the *AWS Certificate Manager* page and paste it in the *Maps to* field.
-:    * Click on the green button to save.
-:    * Go back to the *AWS Certificate Manager*, click on {==Continue==} and wait while your domain name gets validated.
+:    * Click on the ***green button*** to save.
+:    * Go back to the *AWS Certificate Manager*, click on {==Continue==} and wait a few minutes while your domain name gets validated.
+:    * Refresh your page to see if your domain name gets validated.
 
 !!! success "Congratulations, you now have generated an AWS certificate for your domain name."
 
@@ -204,9 +205,13 @@ define( 'AS3CF_SETTINGS', serialize( array(
 :    * Click on {==Create distribution==}.
 :    * In the *Web* section, click on {==Get started==}.
 :    * For the *Origin domain name* filed, select your S3 bucket.
-:    * In *Alternate domain name (CNAMEs)*, write this: `cdn1.example.com`. Replace *example.com* with your domain name.
+:    * In *Viewer Protocol Policy*, check the ***Redirect HTTP yo HTTPS*** box.
+:    * In *Cached HTTP methods*, check the ***OPTIONS*** box.
+:    * In *Compress Objects Automatically*, check the ***Yes*** box.
+:    * In *Alternate domain name (CNAMEs)*, write this: `cdn.example.com`. Replace *example.com* with your domain name.
 :    * Check the *Custom SSL Certificate (example.com)* box.
-:    * Select the ACM certificate matching your domain name.
+:    * In the next empty field, select the SSL certificate matching your domain name.
+:    * Write your ***domain name*** in the *Comment* field, so you know for which domain name is this distribution. 
 :    * Click on {==Create distribution==}.
 
 ***
@@ -219,8 +224,9 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 :    * Click on the Cloudfront distribution ID.
 :    * Copy *Domain name* content.
-:    * Go back to the Lightsail interface, in the Networking section then in your domain name's DNS zone.
-:    * Add a record and choose *CNAME record* on the first field. For the *subdomain* field type `cdn1` and for the *Maps to* field paste the content you just copied. Then save.
+:    * Go back to the Lightsail interface, in the *Networking* section then in your domain name's DNS zone.
+:    * Add a record and choose *CNAME record* on the first field. For the *subdomain* field type `cdn` and for the *Maps to* field paste the content you just copied. 
+:    * Then save by clicking on the ***green button***.
 
 ***
 
@@ -233,13 +239,28 @@ define( 'AS3CF_SETTINGS', serialize( array(
 **WP Offload Media plugin installation**
 
 :    * Go to your Wordpress administration homepage.
-:    * Click on {==Plugin > Add New==} on the left menu.
-:    * Type *Amazon S3* on the search bar.
-:    * Install and activate the *WP Offload Media Lite for Amazon S3* plugin.
-:    * In the *Installed Plugins* menu, delete the by default applications.
-:    * In the plugins menu, click on *Settings*.
-:    * Once there, put your S3 bucket name in the field and click on *Save Bucket Setting*.
-:    * In the *URL REWRITING* tab, enable the *Custom Domain (CNAME)* option and put `cdn1.example.com`. Replace `example.com` by your domain name.
+:    * Copy the ***access keys in wp-config.php***.
+:    * Go to the Runcloud page, you shloud be on the *Web application* page.
+:    * click on your application's name.
+:    * Click on ***File Manager*** in the left menu.
+:    * Select ***wp-config.php*** on the list, then scroll up to click on ***View/Edit*** in the blue menu.
+:    * Scroll the editor downuntil you find this line of code: ***define( 'DB_COLLATE', '')***.
+:    * Skip a line and write this:
+``` sh
+/** WP Offload */
+```
+
+:    * Skip a line again and paste the wp-config.php access key.
+:    *  Replace the stars next to *access-key-id* with your *IAM Access key ID* (we saved it at the end of <a href="/content-delivery-network/#iam-user" target="_blank">this step</a>).
+:    * Replace the stars next to *secret-access-key* with your *IAM secret access key* (we saved it at the end of <a href="/content-delivery-network/#iam-user" target="_blank">this step</a>).
+:    * For Mac users, press the keys <kbd>cmd</kbd> and <kbd>s</kbd>.
+:    * For the Windows users, press the keys <kbd>ctrl</kbd> and <kbd>s</kbd>.
+
+***
+
+:    * Go back to the Wordpress page, scroll down and click on {==Next==}.
+:    * Once there, put your S3 bucket name in the field and click on {==Save Bucket Setting==}.
+:    * In the *URL REWRITING* tab, enable the *Custom Domain (CNAME)* option and put `cdn.example.com`. Replace `example.com` by your domain name.
 :    * Enable *Force HTTPS* option.
 :    * Click on *Save changes*.
 

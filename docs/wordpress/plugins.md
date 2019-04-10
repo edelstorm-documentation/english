@@ -26,14 +26,14 @@
         * *`Do you want Wordfence to stay up-to-date automatically`*, click on {==*Yes, enable auto-update*==}.
         * *`To make your website as secure as possible, take a moment to optimize the WordfenceWeb Application Firewall`*, click on {==*Click here to configure*==}.
 
-:    * On the new page, a window appears. Select ***Manuel Configuration*** in the drop menu. Click on {==*Continue*==}.
+:    * On the new page, a window appears. Select ***Manual Configuration*** in the drop menu. Click on {==*Continue*==}.
 :    * You can now see a sequence of characters, we are going to use a modified version of this to install Wordfence on your server. So ignore this sequence of characters, keep the window open and move on to the next step!
 
 ***
 
-:    * Go back to your Lightsail instance and go to the *Homepage*. Click on the three little dots at the right of your instance insert.
-:    * Click on *Connexion*.
-:    * Once you are inside your server's terminal, type directly the command below:
+:    * Go back to your Lightsail instance and go to the *Homepage*. Click on the three little orange dots at the right of your instance insert.
+:    * Click on *Connect*.
+:    * Once you are inside your server's terminal, type or copy/paste directly the command below:
 ``` sh
 sudo nano ../../etc/php-extra/DomainName.conf
 ```
@@ -64,13 +64,17 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 :    * Go back on your Wordpress page. Click on {==*Close*==}.
 :    * In the left Wordfence menu, click on *All options*.
-:    * Scroll down and click on the *Import/Export Options* button.
-:    * In the token field, paste the token below, then click on the *Import Wordfence Options* button:
+:    * Scroll down and click on the {==*Import/Export Options*==} button.
+:    * In the token field, paste the token below, then click on the {==*Import Wordfence Options*==} button:
 ``` sh
-28fcd2d531bca2da79409a53e36f26a7066b3be83f6f9938f6fdfa24a8b681e89af7bf1be829ee88905edb0d4173d99d1cac1ba448f15e0e6c683665a33e848e
+f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9fdd5dad999a7e7b366ab1ed45489be70f05a3daefa02bdeb
 ```
 
 :    * Click on *Reload*. 
+:    * In the left Wordfence menu, click on ***All options***.
+:    * Scroll down to the *Firewall Options* part. Click on ***Basic Firewall Options***
+:    * Click on the *Web Application Firewall Status* drop down menu and select ***Enabled and Protecting***.
+:    * Click on {==Save changes==}.
 
 !!! success "Wordfence is now set up."
 
@@ -107,12 +111,16 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 :    * In the drop menu click on *Optimal*.
 :    * Un-check *Send anonymous statistics*.
 :    * Click on {==*Save*==}.
+:    * On the new page, click on the ***Advanced*** tab.
+:    * Scroll down to *Eliminate render-blocking Javascript and CSS in above-the-fold content*. Click on the ***green button*** to Cliquez sur le ***bouton vert*** pour deactivate this option.
+:    * Do the same thing for the 2 next options, *Optimize images* and *Prioritize visible content*.
+:    *  Scroll up the page and click on {==Save==}.
 
 !!! success "PageSpeed Ninja is now installed."
 
 ***
 
-## Really simple SSL
+<!-- ## Really simple SSL
 
 !!! question "Really simple SSL"
 
@@ -132,7 +140,7 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 !!! success "Really simple SSL is now installed."
 
-***
+*** -->
 
 ## Redirection
 
@@ -159,11 +167,9 @@ php_admin_value[auto_prepend_file] = '/home/runcloud/webapps/RuncloudApplication
 
 ***
 
-:    * You are now on the *Options* page. Click on the *Redirects. link the top of the page. 
-:    * In the *Add new redirection* section, write **https://* in the first field.
-:    * Then go to your instance to copy your IP address. Paste it after the *https://*.
-:    * Next to the *Add Redirect* button, click on the wheelwork.
-:    * In the second drop menu of the *When matched* section, select ***308 - Permanent Redirect***.
+:    * You are now on the *Options* page. Click on the *Redirects*. link the top of the page.
+:    * Go on your Lightsail page and copy your instance's ***IP address***.
+:    * In the *Add new redirection* section, write ***https://*** in the first field, then paste the ***IP address***.
 :    * In the *Target URL* field, type the following address, but replace *YourDomainName.com* with your domain name :
 ``` sh
 https://YourDomainName.com

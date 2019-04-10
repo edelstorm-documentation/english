@@ -8,8 +8,8 @@
 
 **<a href="/help/glossary/#domain-name" target="_blank">Domain name</a> system (DNS) in the cloud<a href="https://aws.amazon.com/fr/route53/" target="_blank">&#185;</a>**
 
-:    * Select your geographic zone at the top right of the page.
-:    * Type {==Route 53==} in the research bar, then click on the result.
+:    * Select your ***geographic zone*** at the top right of the page.
+:    * Type ***Route 53*** in the research bar, then click on the result.
 :    * Choose the option on the right: {==Register domain name==}.
 
 ***
@@ -22,8 +22,8 @@
 
 **Check the domain name availability**
 
-:    * Type your domain name and choose an <a href="/help/glossary/#domain-name-extension" target="_blank">extension</a> for your future website.<br>
-The specified price is due annually.
+:    * Type your ***domain name*** and choose an <a href="/help/glossary/#domain-name-extension" target="_blank">extension</a> for your future website.<br>
+*The specified price is due annually.*
 
 :    * Once you have chosen an available domain name, add it to the cart, then click on {==Continue==}.
 
@@ -77,7 +77,7 @@ The specified price is due annually.
 **Delete your default hosted zone**
 
 :    * Once the domain name registered, click on {==Hosted zones==}.
-:    * Select your domain name, click on the third button {==Delete hosted zone==}, then on {==Confirm==}.<br>
+:    * Select your ***domain name***, click on the third button {==Delete hosted zone==}, then on {==Confirm==}.<br>
 
 !!! info "Deleting the default hosted zone will allow your future <a href="/help/glossary/#server" target="_blank">server</a> to take over."
 

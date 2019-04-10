@@ -17,10 +17,10 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 **Fill out the sign-up form**
 
-:    * Put an e-mail address that you currently use.
-:    * Create a password that has at least 8 characters, one capital letter, one number and a non-alphanumeric character like: <kbd>!</kbd> <kbd>@</kbd> <kbd>#</kbd> <kbd>(</kbd> <kbd>?</kbd>.
-:    * Put your password a second time to make sure that you wrote it without any mistake.
-:    * Choose a name for your AWS account. It can be your name, your company's name or your future website's name.
+:    * Put an ***e-mail address*** that you currently use.
+:    * Create a ***password*** that has at least 8 characters, one capital letter, one number and a non-alphanumeric character like: <kbd>!</kbd> <kbd>@</kbd> <kbd>#</kbd> <kbd>(</kbd> <kbd>?</kbd>.
+:    * Put your ***password*** a second time to make sure that you wrote it without any mistake.
+:    * Choose ***a name for your AWS account***. *It can be your name, your company's name or your future website's name.*
 :    * Click on {==*Continue*==}.
 
 ***
@@ -33,12 +33,12 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 **Fill out the contact form**
 
-:    * Choose the account type.
-:    * Put your full name.
-:    * Put your phone number with the telephone area code of your country.
-:    * Select your country.
-:    * Put your address, city, state, and postcode.
-:    * Check the box to agree with your <a href="https://aws.amazon.com/fr/agreement/" target="_blank">client contract</a>.
+:    * Choose the ***account type***.
+:    * Put your ***full name***.
+:    * Put your ***phone number*** with the telephone area code of your country.
+:    * Select your ***country***.
+:    * Put your ***address***, city, state, and postcode.
+:    * ***Check the box*** to agree with your <a href="https://aws.amazon.com/fr/agreement/" target="_blank">client contract</a>.
 :    * Click on {==*Create an account and continue*==}.
 
 ***
@@ -60,9 +60,9 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 **Fill the credit card form**
 
-:    * Put your card number.
-:    * Put the expiration date.
-:    * Put the full name of the cardholder.
+:    * Put your ***card number***.
+:    * Put the ***expiration date***.
+:    * Put the ***full name*** of the cardholder.
 :    * Select your billing address.
 :    * You can now submit this information securely by clicking on {==*Secure Submit*==}.
 
@@ -83,8 +83,8 @@ Go to the <a href="https://portal.aws.amazon.com/billing/signup#/start" target="
 
 Now, AWS is going to check that you are a humain and not a robot.
 
-:    * Select your country and type your phone number.
-:    * Complete the Captcha by typing the letters and numbers that you can see on the image.
+:    * Select your ***country*** and type your ***phone number***.
+:    * ***Complete the Captcha*** by typing the letters and numbers that you can see on the image.
 :    * Click on {==*Contact me*==}.
 
 ***
@@ -97,7 +97,7 @@ Now, AWS is going to check that you are a humain and not a robot.
 
 **AWS is calling you**
 
-:    * Type the four numbers you see on your computer screen on your phone.
+:    * ***Type on your phone the four numbers*** you see on your computer screen.
 
 ***
 
@@ -109,7 +109,7 @@ Now, AWS is going to check that you are a humain and not a robot.
 
 **Wait a minute...**
 
-:    * When this confirmation message appears on the screen, it means that the operation was a success.
+:    * *When this confirmation message appears on the screen, it means that the operation was a success.*
 :    * You can now click on {==Continue==}.
 
 ***
@@ -142,8 +142,8 @@ Now, AWS is going to check that you are a humain and not a robot.
 
 **You can now connect to your AWS account**
 
-:    * Put your account e-mail then click on {==Next==}.
-:    * Put the password you chose, click on {==Connexion==}.
+:    * Put your ***account e-mail*** then click on {==Next==}.
+:    * Put the ***password*** you chose, click on {==Connexion==}.
 
 ***
 

@@ -14,12 +14,12 @@
 
 **Sécurisation des communications entre votre ordinateur et votre futur serveur**
 
-:    * {==Pour les ordinateurs Mac==} En haut à droite de votre écran, lancez une recherche Spotlight en cliquant sur la loupe. Tapez *Terminal* puis appuyez sur <kbd>Entrer</kbd>.
+:    * {==Pour les ordinateurs Mac==} En haut à droite de votre écran, lancez une recherche Spotlight en cliquant sur la loupe. Tapez ***Terminal*** puis appuyez sur <kbd>Entrer</kbd>.
 :    * {==Pour les ordinateurs Windows==} Plusieurs solutions en fonction de la version de votre OS. 
-        * Soit, dans le menu *Démarrer*, tapez dans la barre de recherche *cmd*. <br>
+        * Soit, dans le menu *Démarrer*, tapez dans la barre de recherche ***cmd***. <br>
         Sélectionnez le premier résultat ( *Command Prompt* ), en faisant un clic droit puis sélectionnez : *exécuter en tant qu'administrateur*.
         * Soit, ouvrez la barre de recherche de l'ordinateur en cliquant sur votre bureau (cliquez sur votre fond d'écran) puis en appuyant en même temps sur les touches <kbd>⊞Win</kbd> et <kbd>S</kbd>. <br>
-        Tapez : *cmd* dans le champ de recherche. Sélectionnez le premier résultat ( *Command Prompt* ), en faisant un clic droit puis sélectionnez : *exécuter en tant qu'administrateur*.
+        Tapez : ***cmd*** dans le champ de recherche. Sélectionnez le premier résultat ( *Command Prompt* ), en faisant un clic droit puis sélectionnez : *exécuter en tant qu'administrateur*.
 
 :    * Une fois dans votre <a href="/aide/glossaire/#terminal" target="_blank">terminal</a>, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
@@ -62,26 +62,26 @@ ssh-keygen -t rsa
 
 ## Création de l'instance
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/sFDD7W2IQgI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gF4tAzemagk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
 **Options de l'instance Amazon Lightsail**
 
 :    * **Retournez sur votre navigateur web**. Vous avez normalement laissé votre fenêtre AWS zone hébergée ouverte (voir étape précédente <a href="/nom-de-domaine/" target="_blank">Nom de domaine</a>). <br>
-Faites un **clic droit sur le logo AWS** à droite et ouvrez dans un nouvel onglet. 
+Faites un clic droit sur le logo ***AWS*** à droite et ouvrez dans un nouvel onglet. 
 
-:    * Vous vous retrouvez sur votre console de management AWS. Cherchez le service *Lightsail* dans la barre recherche et cliquez dessus.
+:    * Vous vous retrouvez sur votre console de management AWS. Cherchez le service ***Lightsail*** dans la barre recherche et cliquez dessus.
 :    * Définissez la langue que vous souhaitez utiliser pour l'interface.
 :    * Cliquez sur {==Créer une instance==}.
 :    * **Choisissez l'emplacement de l'instance.** Choisissez la région se rapprochant le plus de vos futurs utilisateurs.<br>
         *Si vous ciblez un public européen francophone, vous pouvez choisir Paris, si vous ciblez des utilisateurs japonais, choisissez Tokyo... Le but est de permettre à vos utilisateurs de charger plus rapidement votre site.*
 :    * Laissez la zone de disponibilité de l'instance par défaut.
-:    * Choisissez *Linux/Unix* comme plateforme.
-:    * Dans : *Sélectionner un plan*, cliquez sur l'onglet *Système d'exploitation uniquement*, puis sélectionnez *Ubuntu 16.04 LTS* comme système d'exploitation.
+:    * Choisissez ***Linux/Unix*** comme plateforme.
+:    * Dans : *Sélectionner un plan*, cliquez sur l'onglet ***Système d'exploitation uniquement***, puis sélectionnez ***Ubuntu 18.04 LTS*** comme système d'exploitation.
 :    * Nous n'ajouterons pas de script de lancement. (voir <a href="/aide/glossaire/#script-de-lancement" target="_blank">glossaire</a>.)
-:    * Cliquez sur *Modifier une paire de clés SSH* et cliquez sur *Charger un nouveau* puis sur {==Charger==}. 
-:    * Cliquez sur *Choisir un fichier* et choisissez le fichier `id_rsa.pub` dans votre dossier `~/.ssh` puis cliquez sur {==Charger une clé==}.<br>
+:    * Cliquez sur ***Modifier une paire de clés SSH*** et cliquez sur ***Charger un nouveau*** puis sur {==Charger==}. 
+:    * Cliquez sur ***Choisir un fichier*** et choisissez le fichier `id_rsa.pub` dans votre dossier `~/.ssh` puis cliquez sur {==Charger une clé==}.<br>
 *Le chargement peut prendre quelques minutes.*<br> 
 *Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.*
 
@@ -100,7 +100,7 @@ Faites un **clic droit sur le logo AWS** à droite et ouvrez dans un nouvel ongl
 
 ## Firewall & IP Statique
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/T_i428AF0Tg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Y8-gIGv1zW4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
@@ -121,7 +121,11 @@ Faites un **clic droit sur le logo AWS** à droite et ouvrez dans un nouvel ongl
 
 :    * Remontez un peu la page et cliquez sur {==Créer une IP Statique==}.
 :    * L'emplacement de l'IP Statique doit être similaire à celui de votre instance.
-:    * Dans *Identifiez votre adresse IP statique*, nommez votre IP statique de la façon suivante, mais avec VOTRE nom de domaine complet : *StaticIp-VotreNomDeDomaine*.
+:    * Dans *Identifiez votre adresse IP statique*, nommez votre IP statique de la façon suivante, mais avec VOTRE nom de domaine complet :
+``` sh
+StaticIp-VotreNomDeDomaine
+```
+
 :    * Cliquez sur {==Créer==}.
 
 !!! info "Informations"
@@ -155,19 +159,23 @@ Faites un **clic droit sur le logo AWS** à droite et ouvrez dans un nouvel ongl
        **Pour se faire**, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'***icone verte*** pour valider cette action.
 :    * Cliquez à nouveau sur ***Ajouter un enregistrement***
 :    * Ajoutez un second enregistrement de type A pour `www.VotreNomDeDomaine.com` pointant vers votre IP statique.<br><br>
-       **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'***icone verte*** pour valider cette action.
+       **Pour se faire**, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'***icone verte*** pour valider cette action.<br>
+
+:    * **La prochaine étape vous sert à enregister un <a href="/aide/glossaire/#sous-domaine" target="_blank">sous-domaine</a>**, si vous avez besoin de créer un e-shop par exemple. Ce n'est donc pas une étape obligatoire et vous pourrez ajouter un sous-domaine plus tard. Cependant, l'ajout sera alors payant via Runcloud (voir la video).
+:    * Ajoutez un troisième enregistrement de type A pour `SousDomaine.VotreNomDeDomaine.com` pointant vers votre IP statique.<br><br>
+       **Pour se faire**, tapez <kbd>VotreSousDomaine</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'***icone verte*** pour valider cette action.
 
 !!! success "Votre instance possède une zone DNS et son IP statique pointe vers votre nom de domaine."
 
 ***
 
-## Noms de Serveurs
+## Serveurs de Noms
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/44dl6vCcAmU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
-**Injection des noms de serveurs pour votre nom de domaine**
+**Injection des serveurs de noms pour votre nom de domaine**
 
 :    * Sous les enregistrements de la zone DNS se trouve une section *Serveurs de noms*.
 :    * Retournez sur la page *Route 53* que vous avez laissée ouverte.<br>
@@ -179,6 +187,10 @@ Si vous l'avez fermé, faites un clique droit, ouvrir dans un nouvel onglet sur 
 Vous devez maintenant remplacer un à un les serveurs de noms actuels, par les quatre nouveaux noms de serveurs de votre zone DNS. Vous pouvez les retrouver sur la page Lightsail que vous venez de quitter.
 
 :    * Cliquez sur {==Mettre à jour==}.
+:    * Dans le menu de gauche, cliquez sur ***Tableau de bord***.
+:    * Regardez le tableau de l'encart *Alertes*. Vous pouvez voir sur la première ligne que vos serveurs de noms sont en cours de mise à jour.
+:    * Attendez quelques minutes puis rafraîchissez la page. 
+:    * Il est désormais indiqué que vos serveurs de noms ont été correctement mis à jour.
 
 !!! success "Les noms des serveurs de votre zone DNS correspondent à votre nom de domaine."
 
