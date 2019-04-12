@@ -73,7 +73,7 @@ f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9
 :    * Click on *Reload*. 
 :    * In the left Wordfence menu, click on ***All options***.
 :    * Scroll down to the *Firewall Options* part. Click on ***Basic Firewall Options***
-:    * Click on the *Web Application Firewall Status* drop down menu and select ***Enabled and Protecting***.
+:    * Click on the *Web Application Firewall Status* drop-down menu and select ***Enabled and Protecting***.
 :    * Click on {==Save changes==}.
 
 !!! success "Wordfence is now set up."
@@ -108,13 +108,13 @@ f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9
 :    * Type *PageSpeed Ninja* in the search space at the top right. 
 :    * Choose the *PageSpeed Ninja* plugin, click on *Install*, then *Activate*.
 :    * A message appears at the top of your page. Click on *Settings Page*.
-:    * In the drop menu click on *Optimal*.
+:    * In the drop-down menu click on *Optimal*.
 :    * Un-check *Send anonymous statistics*.
 :    * Click on {==*Save*==}.
 :    * On the new page, click on the ***Advanced*** tab.
-:    * Scroll down to *Eliminate render-blocking Javascript and CSS in above-the-fold content*. Click on the ***green button*** to Cliquez sur le ***bouton vert*** pour deactivate this option.
+:    * Scroll-down to *Eliminate render-blocking Javascript and CSS in above-the-fold content*. Click on the ***green button*** to deactivate this option.
 :    * Do the same thing for the 2 next options, *Optimize images* and *Prioritize visible content*.
-:    *  Scroll up the page and click on {==Save==}.
+:    *  Scroll-up the page and click on {==Save==}.
 
 !!! success "PageSpeed Ninja is now installed."
 
@@ -214,7 +214,7 @@ https://YourDomainName.com
 
 ***
 
-## Redis Object Cache
+<!-- ## Redis Object Cache
 
 !!! question "Redis"
 
@@ -235,7 +235,7 @@ https://YourDomainName.com
 
 !!! success "Redis is now installed."
 
-***
+*** -->
 
 ## Yoast SEO
 
@@ -255,9 +255,8 @@ https://YourDomainName.com
 :    * Choose the *Yoast SEO* plugin, click on *Install*, then *Activate*.
 :    * Click on *Settings* under *Yoast SEO*.
 :    * In *First-time SEO configuration*, click on *Configuration wizard*.
-:    * Cliquez on {==*Configure Yoast SEO*==}.
-:    * Cliquez on {==*Next*==}.
-:    * Select what type of website you are creating, then click on {==*Next*==}.
+:    * Select ***Option A***. Your website is ready to be indexed. Click on {==*Next*==}.
+:    * Select what ***type of website*** you are creating, then click on {==*Next*==}.
 :    * Choose if your website will be introducing a company or an individual. Fill out the field depending on your answer then click on {==*Next*==}.
 :    * Complete only if you want to or can then click on {==*Next*==}.
 :    * On the next page, click on {==*Next*==} and again on {==*Next*==}.
@@ -367,11 +366,33 @@ https://YourDomainName.com
 
 ***
 
+## Easy Updates Manager
+
+!!! question "Easy Updates Manager"
+
+    We are about to install Easy Updates Manager, this extension allows you to manage Wordpress updates. It makes it possible, for example, to prevent automatic updates.
+
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ImS61sdT608?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Easy Updates Manager install**
+
+:    * Click on *Plugins* in the left menu, then *Add New*.
+:    * Type *Easy Updates Manager* in the search space at the top right. 
+:    * Choose the *Easy Updates Manager* plugin, click on *Install*, then *Activate*.
+:    * Click on *Configure* under *Google Analytics Dashboard*.
+:    * A message appears at the top of the page. You can click on the top right link ***Dismiss (6 months)***.
+:    * In the *Automatic updates* block, click on ***Everything***.
+
+***
+
 ## 10 plugins to activate
 
 ??? note "What are those plugins for?""
 
-    **WPS Hide Login**: To log in your Wordpress dashboard you generally have to add */wp-login* after your domain name. For security reasons, this plugin allows you to change the URL of the login form page. For example: https://edelstom.io/entrer.<br>
+    **WPS Hide Login**: To log in your Wordpress dashboard you generally have to add */wp-login* after your domain name. For security reasons, this plugin allows you to change the URL of the login form page. For example https://edelstom.io/entrer.<br>
 
     **404 page - your smart custom 404 error page**: Create your custom 404 error page just like any other page using the WordPress Page Editor. Users will encounter this page if they try to connect to a non-existing page or one that does not exist anymore.<br>
 
@@ -387,9 +408,11 @@ https://YourDomainName.com
 
     **Disable Gutenberg**: Let you use the classic Wordpress editor. *Gutenberg* is the new Wordpress editor, but this editor is not approved by the Wordpress community. <br>
 
-    **Imsanity**:  Automatically resizes huge image uploads down to a size that is more reasonable for display in a browser, yet still more than large enough for typical website use.<br>
+    **Disable XML-RPC**: Is a system that allows remote updates to WordPress from other applications.
 
-    **Easy Updates Manager**: Allows you to manage the Wordpress updates. You can, for example, prevent some automatic updates.
+    **Page Specific Menu Items*: Allow to choose a specific menu for specific post or page.
+
+    **SSL Insecure Content Fixer**: Will solve most insecure content warnings.
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Z8gHm_MH1KM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
@@ -399,18 +422,17 @@ https://YourDomainName.com
 
 :    * Click on *Plugins* in the left menu, then *Add New*.
 :    * Copy paste the following plugins in the search space at the top right. <br>Then click on *Install*.
-``` sh
-404 page - your smart custom 404 error page
-Disable Gutenberg
-Duplicate Page
-Easy Updates Manager
-Force Regenerate Thumbnails
-Imsanity
-Loco Translate
-SVG Support
-WP Retina 2x
-WPS Hide Login
-```
+        * 404 page - your smart custom 404 error page
+        * Disable Gutenberg
+        * Duplicate Page
+        * Force Regenerate Thumbnails
+        * Loco Translate
+        * SVG Support
+        * WP Retina 2x
+        * WPS Hide Login
+        * Disable XML-RPC
+        * Page Specific Menu Items
+        * SSL Insecure Content Fixer
 
 :    * Once every plugin install, go on the left menu and click on *Installed Plugins*.
 :    * Select all the plugins you just installed. Then go back at the top of the page and click on *Bulk actions*, then *Activate* and finally click on {==*Apply*==}.
@@ -433,6 +455,10 @@ WPS Hide Login
 
     **Super progressive web app**: This plugin combines the best of mobile web and the best of mobile apps to create a great mobile web experience. 
 
+    **Elementor**: Is a page builder. Create websites using an  intuitive drag and drop interface.
+
+    **Redis Object Cache**: This plugin will make your medias loading faster.
+
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gDGP0jE49-4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
@@ -441,14 +467,34 @@ WPS Hide Login
 
 :    * Click on *Plugins* in the left menu, then *Add New*.
 :    * Copy paste the following plugins in the search space at the top right. <br>Then click on *Install*.
-``` sh
-Cookie Notice (par dFactory)
-Crisp Live Chat
-Disable Comments
-Ultimate Member
-Super progressive web app
-```
+        * Cookie Notice (par dFactory)
+        * Crisp Live Chat
+        * Disable Comments
+        * Ultimate Member
+        * Super progressive web app
+        * Elementor
+        * Redis Object Cache
 
 !!! success "Your 5 plugins are now installed!"
 
 ***
+
+## Snapshots
+
+!!! question "What is Snapshot use for?"
+
+    The Snapshot option allows you to save all of the work done on your instance. This includes everything you can have done on your site. <br>
+    A Snapshot cost (0.05$ per month). <br>
+    Keep at least one snapshot of your instance to make sure you do not lose your work if something goes wrong. You can delete them as you wish.
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gDGP0jE49-4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Save your instance and website**
+
+:    * Go to your Amazon Lightsail page.
+:    * Click on your ***instance's anme*** then on ***Snapshots***.
+:    * Click on the {==Create a Snapshot==} button.
+
+!!! success "Your 5 plugins are now installed!"

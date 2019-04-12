@@ -13,12 +13,12 @@
 **Extension Offload**
 
 :    * Dans le menu de gauche, cliquez sur ***Extensions***, puis ***Extensions installées***.
-:    * Sélectionnez les deux extensions : *Akismet Anti-Spam *et *Hello Dolly*. 
+:    * Sélectionnez les deux extensions : *Akismet Anti-Spam* et *Hello Dolly*. 
 :    * Supprimez-les les en sélectionnant l'action *Supprimer* dans le menu déroulant *Actions groupées*, oui sen cliquant sur {==Appliquer==}.
 :    * Dans le menu de gauche, cliquez sur ***Ajouter***.
 :    * Dans la barre de recherche, tapez ***Offload***.
 :    * Choisissez *WP Offload media Lite for Amazon S3, DigitalOcean Spaces, and Google Cloud Storage* en cliquant sur le bouton {==Intaller==}.
-:    * Attendez que l'intallation se finisse et cliquez sur {==Activer==}.
+:    * Attendez que l'installation se finisse et cliquez sur {==Activer==}.
 :    * Une fois sur la page *Extensions installées*, cliquez sur ***réglages*** sous WP Offload media Lite.
 
 
@@ -26,9 +26,9 @@
 
 **Création d'un compartiment S3**
 
-:    * Allez sur votre console de management AWS, cherchez le service *S3* dans la barre de recherche et cliquez dessus.
+:    * Allez sur votre console de management AWS, cherchez le service ***S3*** dans la barre de recherche et cliquez dessus.
 :    * Une fois sur l'interface S3, cliquez sur le bouton {==Créer un compartiment==}.
-:    * Nommez votre compartiment et laisser la région par défaut : US East (N. Virginia).
+:    * Nommez votre compartiment et laissez la région par défaut : US East (N. Virginia).
 :    * Cliquez sur {==Suivant==}.
 :    * Laissez les options par défaut et cliquez sur {==Suivant==}.
 :    * Décochez toutes les cases pour rendre public votre compartiment.
@@ -41,7 +41,7 @@
 
 **Permissions du compartiment S3**
 
-:    * Cliquez sur votre compartiment S3 et dans le menu de droite, cliquez sur {==Autorisations==}.
+:    * Cliquez sur votre ***compartiment S3*** et dans le menu de droite, cliquez sur {==Autorisations==}.
 :    * Cliquez sur {==Statégies de compartiment==}.
 :    * Dans l'éditeur, copiez / collez cette stratégie : 
 ``` sh
@@ -122,8 +122,8 @@
 :    * Choisissez un nom pour votre utilisateur IAM.
 :    * Cochez la case *Accès par programmation*.
 :    * Cliquez sur {==Suivant : Autorisations==}.
-:    * Cliquez sur *Attacher directement les stratégies existantes*.
-:    * Dans la barre de recherche, tapez le nom de votre stratégie IAM.
+:    * Cliquez sur ***Attacher directement les stratégies existantes***.
+:    * Dans la barre de recherche, tapez le ***nom de votre stratégie IAM***.
 :    * Sélectionnez votre stratégie IAM en cochant la case. 
 :    * Dans la barre de recherche, tapez ***S3***.
 :    * Sélectionnez la stratégie: *AmazonS3FullAccess* en cochant la case.
@@ -177,31 +177,31 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 **Création du certificat AWS**
 
-:    * Revenez sur la console de management en cliquant sur le logo AWS en haut à gauche.
+:    * Revenez sur la console de management en cliquant sur le ***logo AWS*** en haut à gauche.
 :    * En haut à droite, sélectionnez l'enplacement *US East (N. Virginia)*.
-:    * Cherchez le service AWS *Certificate Manager* et cliquez dessus. 
-:    * Dans la section de gauche *Allouer les certificats*, cliquez sur {==Démarrage==}.
+:    * Cherchez le service AWS ***Certificate Manager*** et cliquez dessus. 
+:    * Dans la section de gauche ***Allouer les certificats***, cliquez sur {==Démarrage==}.
 :    * Cochez la case *Demander un certificat public* et cliquez sur {==Demander un certificat==}.
 :    * Fournissez votre nom de domaine de cette façon : `*.exemple.com` et cliquez sur {==Suivant==}.
 :    * Cochez la case *Validation DNS* et cliquez sur {==Vérification==}.
-:    * Validez les informations fournient et cliquez sur {==Confirmer et demander==}.
+:    * Validez les informations fournies et cliquez sur {==Confirmer et demander==}.
 
 ***
 
-**Validation DNS du nom de domaine fournit**
+**Validation DNS du nom de domaine fourni**
 
 :    * Patientez un instant, AWS va générer une configuration DNS CNAME pour vous permettre de vérifier votre nom de domaine.
-:    * Cliquez sur la petite flêche à gauche de votre nom de domaine.
-:    * Copiez le début du nom CNAME. Copiez la suite de chiffres et lettres, arrêtez vous avant le point de votre nom de domaine.
+:    * Cliquez sur la ***petite flèche à gauche*** de votre nom de domaine.
+:    * Copiez le début du nom CNAME. Copiez la suite de chiffres et lettres, arrêtez-vous avant le point de votre nom de domaine.
 :    * Rendez-vous dans votre interface Amazon Lightsail, cliquez sur {==Mise en réseau==} puis sur le nom de votre zone DNS.
 :    * Cliquez sur {==Ajoutez un enregistrement==}.
 :    * Sélectionnez *CNAME* comme type d'engistrement.
 :    * Collez la suite de chiffres et lettres dans le *champ sous-domaine*.
-:    * Retournez sur la page précédante *AWS certificate Manager* et copier la suite de chiffres et de lettres du champ *Valeur*.
+:    * Retournez sur la page précédente *AWS certificate Manager* et copier la suite de chiffres et de lettres du champ *Valeur*.
 :    * Retournez sur Amazon Lightsail et collez la suite dans le champ *Est résolu en*.
 :    * Cliquez sur le ***bouton vert***.
 :    *  Revenez sur *AWS Certicate Manager*, cliquez sur {==Continuer==} et patientez quelques minutes pendant la validation votre nom de domaine.
-:    *  En rechargant la page, vous pourrez voir si votre nom de domaine a bien été validé. 
+:    *  En rechargeant la page, vous pourrez voir si votre nom de domaine a bien été validé. 
 
 !!! success "Félicitations vous avez généré un certicat AWS pour votre nom de domaine."
 
@@ -215,8 +215,8 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 **Création du Content Delivery Network**
 
-:    * Revenez sur la console de management en cliquant sur le logo AWS en haut à gauche.
-:    * Cherchez le service AWS *Cloudfront* et cliquez dessus.
+:    * Revenez sur la console de management en cliquant sur le ***logo AWS*** en haut à gauche.
+:    * Cherchez le service AWS ***Cloudfront*** et cliquez dessus.
 :    * Cliquez sur {==Créer une distribution==}.
 :    * Dans la section *Web*, cliquez sur {==Mise en route==}.
 :    * Pour le *nom de domaine d'origine*, sélectionnez votre compartiment S3.
@@ -225,8 +225,8 @@ define( 'AS3CF_SETTINGS', serialize( array(
 :    * Dans *Compresser automatiquement les objets*, cochez la case ***Oui***.
 :    * Dans *Autre nom de domaine (CNAME)*, tapez le sous-domaine `cdn.exemple.com`. Remplacez *exemple.com* pour votre nom de domaine.
 :    * Cochez la case *Certificat SSL Personnalisé (exemple.com)*
-:    * Cliquez sur le champ vide en dessous et sélectionnez le certificat SSL correspondant à votre nom de domaine.
-:    * Enfin, dans le champ *Commentaire*, écrivez votre ***nom de domaine***. Pour savoir à quel nom de domaine correspond cette distribution 
+:    * Cliquez sur ***le champ vide*** en dessous et sélectionnez le ***certificat SSL correspondant à votre nom de domaine***.
+:    * Enfin, dans le champ *Commentaire*, écrivez votre ***nom de domaine***. Pour savoir à quel nom de domaine correspond cette distribution.
 :    * Cliquez sur {==Créer une distribution==}.
 
 ***
@@ -237,7 +237,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 
 **Mapping CNAME Cloudfront et Amazon Lightsail**
 
-:    * Cliquez sur l'ID de la distribution Cloudfront que vous venez de créer.
+:    * Cliquez sur l'***ID de la distribution Cloudfront*** que vous venez de créer.
 :    * Copiez le contenu de la section *Nom de domaine*.
 :    * Revenez dans votre interface Lightsail, dans la section *Mise en réseau* puis dans la zone DNS de votre nom de domaine.
 :    * Ajoutez un enregistrement, choisissez le type *CNAME*. Dans le champ *Sous domaine* tapez `cdn`, puis collez le contenu que vous venez de copier dans le second champ de droit. 
@@ -256,7 +256,7 @@ define( 'AS3CF_SETTINGS', serialize( array(
 :    * Allez sur votre interface d'administration Wordpress.
 :    * Copiez l'***access keys in wp-config.phpp***.
 :    * Rendez-vous sur votre interface Runcloud. Vous avez normalement toujours la page *Web application* ouverte.
-:    * Cliquez sur le nom de votre application.
+:    * Cliquez sur le ***nom de votre application***.
 :    * Dans le menu de gauche, cliquez sur ***File Manager***.
 :    * Sélectionnez ***wp-config.php*** dans la liste, puis remontez la page et cliquez sur ***View/Edit*** dans le menu bleu.
 :    * Descendez l'éditeur jusqu'à trouver la ligne de code ***define( 'DB_COLLATE', '')***.
@@ -268,16 +268,16 @@ define( 'AS3CF_SETTINGS', serialize( array(
 :    * Allez à la ligne et collez la clé d'acces wp-config.php.
 :    * Remplacez les étoiles de la ligne *access-key-id* par votre clé d'accès IAM (nous l'avons enregistré à la fin de <a href="/content-delivery-network-fr/#utilisateur-iam" target="_blank">cette étape</a>).
 :    * Remplacez les étoiles de la ligne *secret-access-key* par votre clé secrète d'accès IAM (nous l'avons enregistré à la fin de <a href="/content-delivery-network-fr/#utilisateur-iam" target="_blank">cette étape</a>).
-:    * Pour les utilisateur Mac, pressez les touches <kbd>cmd ou command</kbd> et <kbd>s</kbd>.
-:    * Pour les utilisateur Windows, pressez les touches <kbd>ctrl</kbd> et <kbd>s</kbd>.
+:    * Pour les utilisateurs Mac, pressez les touches <kbd>cmd ou command</kbd> et <kbd>s</kbd>.
+:    * Pour les utilisateurs Windows, pressez les touches <kbd>ctrl</kbd> et <kbd>s</kbd>.
 
 ***
 
 :    * Retournez sur la page Wordpress, descendez en bas de la page et cliquez sur {==Next==}.
-:    * Dans le champ *Bucket*, tapez le nom de votre compartiment Amazon S3.
+:    * Dans le champ *Bucket*, tapez le ***nom de votre compartiment Amazon S3***.
 :    * Cliquez sur le bouton {==Save Bucket Setting ==}.
 :    * Dans la section *URL REWRITING*, activez l'option *Custom Domain (CNAME)* et inscrivez `cdn.exemple.com`. Remplacer `exemple.com` par votre nom de domaine.
-:    * Activez l'option *Force HTTPS*.
-:    * Cliquez sur *Sauvegarder*.
+:    * Activez l'option ***Force HTTPS***.
+:    * Cliquez sur ***Sauvegarder***.
 
 !!! success "Félicitations, vous avez correctement configuré Amazon Cloudfront CDN pour votre site Wordpress."

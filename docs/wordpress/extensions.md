@@ -12,7 +12,7 @@
 
 ***
 
-**Installer de Wordfence sur votre serveur**
+**Installer Wordfence sur votre serveur**
  
 :    * Dans le menu de gauche, cliquez sur *Extensions*, puis sur *Ajouter une extension*.
 :    * Dans la barre de recherche en haut à droite, tapez *Wordfence*. 
@@ -25,12 +25,12 @@
         * *`Do you want Wordfence to stay up-to-date automatically`*, cliquez sur {==*Yes, enable auto-update*==}.
         * *`To make your website as secure as possible, take a moment to optimize the WordfenceWeb Application Firewall`*, cliquez sur le bouton {==*Click here to configure*==}.
 
-:    * Sur la nouvelle page une fenêtre apparait. Dans le menu déroulant sélectionnez ***Manual Configuration***. Cliquez sur le bouton {==*Continue*==}.
-:    * Une suite de caractère est disponible, nous allons utiliser une version modifiée de cette suite pour installer Wordfence sur votre serveur. Donc ignorez cette fenêtre, gardez-la ouverte et passez à l'étape suivante. 
+:    * Sur la nouvelle page, une fenêtre apparaît. Dans le menu déroulant, sélectionnez ***Manual Configuration***. Cliquez sur le bouton {==*Continue*==}.
+:    * Une suite de caractère est disponible, nous allons utiliser une version modifiée de cette suite pour installer Wordfence sur votre serveur. Donc, ignorez cette fenêtre, gardez-la ouverte et passez à l'étape suivante. 
 
 ***
 
-:    * Rendez-vous sur la page d'accueil de votre instance Lightsail. Cliquez sur les trois petits points orange à coté du nom de votre instance et sélectionnez *Connexion*.
+:    * Rendez-vous sur la page d'accueil de votre instance Lightsail. Cliquez sur les trois petits points orange à côté du nom de votre instance et sélectionnez *Connexion*.
 :    * Une fois à l'intérieur du terminal de votre serveur, tapez ou copiez/collez directement la commande ci-dessous :
 ``` sh
 sudo nano ../../etc/php-extra/nomdedomaine.conf
@@ -84,7 +84,7 @@ f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9
 
 :    * Dans le menu de gauche, cliquez sur *Live Traffic*. Ici vous pouvez voir en live les utilisateurs se connectant à votre site.
 :    * Dans le menu de gauche, cliquez sur *Scan*. Cliquez sur le bouton {==Scan==} pour vérifier la sécurité sur votre site. 
-        * En descendant un peu sur la page, vous verrez les résultats du scan. Cliquez sur l'oeil barré *Ignore* et sélectionnez *Always Ignore*, répétez l'operation pour tous les résultats.
+        * En descendant un peu sur la page, vous verrez les résultats du scan. Cliquez sur l'oeil barré *Ignore* et sélectionnez *Always Ignore*, répétez l'opération pour tous les résultats.
 :    * Dans le menu de gauche, cliquez sur *Blocking*. Ici vous pouvez créer des règles pour bloquer l'accès de votre site à certains utilisateurs.
 
 ***
@@ -105,13 +105,13 @@ f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9
 :    * Dans le menu de gauche, cliquez sur *Extensions*, puis sur *Ajouter une extension*.
 :    * Dans la barre de recherche en haut à droite, tapez *PageSpeed Ninja*. 
 :    * Choisissez l'extension *PageSpeed Ninja*, cliquez sur *Installer*, puis sur *Activer*.
-:    * Un message apparait en haut de votre page, cliquez sur le lien *Page réglages*.
+:    * Un message apparaît en haut de votre page, cliquez sur le lien *Page réglages*.
 :    * Dans le menu déroulant, sélectionnez *Optimal*.
 :    * Désélectionnez *Send anonymous statistics*.
 :    * Cliquez sur le bouton {==*Save*==}.
 :    * Sur la nouvelle page, cliquez sur l'onglet ***Advanced***.
 :    * Descendez la page jusqu'à l'onglet *Eliminate render-blocking Javascript and CSS in above-the-fold content*. Cliquez sur le ***bouton vert*** pour désactiver cette option.
-:    * Répetez l'opération pour les 2 options suivantes, *Optimize images* et *Prioritize visible content*.
+:    * Répétez l'opération pour les 2 options suivantes, *Optimize images* et *Prioritize visible content*.
 :    *  Remontez la page et cliquez sur le bouton {==Save==}.
 
 !!! success "PageSpeed Ninja est correctement installé ."
@@ -224,7 +224,7 @@ https://VotreNomDeDomaine.com
 
 ***
 
-## Redis Object Cache
+<!-- ## Redis Object Cache
 
 !!! question "Redis"
 
@@ -245,7 +245,7 @@ https://VotreNomDeDomaine.com
 
 !!! success "Redis est correctement installé."
 
-***
+*** -->
 
 ## Yoast SEO
 
@@ -265,9 +265,8 @@ https://VotreNomDeDomaine.com
 :    * Choisissez l'extension *Yoast SEO*, cliquez sur *Installer*, puis sur *Activer*.
 :    * Cliquez sur *Réglages* sous *Yoast SEO*.
 :    * Dans le 1er encart *First-time SEO configuration*, cliquez sur le lien *Configuration wizard*.
-:    * Cliquez sur le bouton {==*Configure Yoast SEO*==}.
-:    * Cliquez sur le bouton {==*Next*==}.
-:    * Sélectionnez le type de site de votre site (blog, shop en ligne, portfolio...), puis cliquez sur {==*Next*==}.
+:    * Sélectionnez l'***Option A***. Votre site est prêt à être indexé. Cliquez sur {==*Next*==}.
+:    * Sélectionnez le ***type de site*** (blog, shop en ligne, portfolio...), puis cliquez sur {==*Next*==}.
 :    * Choisissez si votre site représente une entreprise ou un particulier. Complétez le champ en fonction de votre réponse, puis cliquez sur {==*Next*==}.
 :    * Il n'est pas nécessaire de fournir des liens si vous ne le voulez/pouvez pas, cliquez sur {==*Next*==}.
 :    * Sur la page suivante, cliquez sur {==*Next*==} et à nouveau cliquez sur {==*Next*==}.
@@ -379,6 +378,28 @@ https://VotreNomDeDomaine.com
 
 ***
 
+## Easy Updates Manager
+
+!!! question "Easy Updates Manager"
+
+    Nous sommes sur le point d'installer Easy Updates Manager. Cette extension permet de manager les mises à jour Wordpress. Elle rend possible, par exemple, d'empêcher les mises à jour automatiques.
+
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ImS61sdT608?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Installation de Easy Updates Manager**
+
+:    * Dans le menu de gauche, cliquez sur *Extensions*, puis sur *Ajouter une extension*.
+:    * Dans la barre de recherche en haut à droite, tapez *Easy Updates Manager*.
+:    * Choisissez l'extension *Easy Updates Manager*, cliquez sur *Installer*, puis sur *Activer*.
+:    * Cliquez sur *Configurer* sous *Google Analytics Dashboard*.
+:    * Un encart apparaît en haut de la page. Vous pouvez cliquer sur le lien à droite ***Dismiss (6 months)***.
+:    * Dans la partie *Automatic updates*, cliquez sur ***Everything***.
+
+***
+
 ## 10 extensions à activer
 
 ??? note "À quoi servent ces 10 extensions ?"
@@ -399,9 +420,14 @@ https://VotreNomDeDomaine.com
 
     **Disable Gutenberg** : Permet de continuer à utiliser l'éditeur classique de Wordpress. *Gutenberg* est un nouvel éditeur qui n'est pas validé par la communauté Wordpress. Nous le désactivons donc. <br>
 
-    **Imsanity** : Redimnsionne les images trop importante uploadées sur le site.<br>
+    **Disable XML-RPC** : Vise à normaliser les communications entre les différentes applications.
 
-    **Easy Updates Manager** : Permet de manager les mises à jour Wordpress. Elle rend possible, par exemple, d'empêcher les mises à jours automatiques.
+    **Page Specific Menu Items* : Permet de choisir un menu spécifique pour un post ou une page spécifique.
+
+    **SSL Insecure Content Fixer** : Résoudra la plupart des avertissements de contenu non sécurisés.
+
+    <!-- **Imsanity** : Redimnsionne les images trop importante uploadées sur le site.<br> -->
+    
 
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Z8gHm_MH1KM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
@@ -411,18 +437,17 @@ https://VotreNomDeDomaine.com
 
 :    * Dans le menu de gauche, cliquez sur *Extensions*, puis sur *Ajouter une extension*.
 :    * Dans la barre de recherche, en haut à droite, copier-coller les noms des 10 extensions ci-dessous. <br>Une fois l'extension trouvée, cliquez sur *Installer*.
-``` sh
-404 page - your smart custom 404 error page
-Disable Gutenberg
-Duplicate Page
-Easy Updates Manager
-Force Regenerate Thumbnails
-Imsanity
-Loco Translate
-SVG Support
-WP Retina 2x
-WPS Hide Login
-```
+        * 404 page - your smart custom 404 error page
+        * Disable Gutenberg
+        * Duplicate Page
+        * Force Regenerate Thumbnails
+        * Loco Translate
+        * SVG Support
+        * WP Retina 2x
+        * WPS Hide Login
+        * Disable XML-RPC
+        * Page Specific Menu Items
+        * SSL Insecure Content Fixer
 
 :    * Une fois toutes les extensions installées, rendez-vous dans le menu de gauche et cliquez sur *Extensions installées*.
 :    * Sélectionnez toutes les extensions que vous venez d'installer. Retournez en haut de la page, cliquez sur *Actions groupées* puis sur *Activer* et enfin sur le bouton {==*Appliquer*==}.
@@ -445,6 +470,10 @@ WPS Hide Login
 
     **Super progressive web app** : Cette extensions associe le meilleur du Web mobile et le meilleur des applications mobiles pour créer une expérience Web mobile supérieure.
 
+    **Elementor** : Est un plugin de constructeur de page. Ils vous permettent avec une interface très simple et intuitive (souvent drag & drop) de créer des mises en forme complexes pour vos pages.
+
+    **Redis Object Cache** : L'extension permet d'accélérer le chargement des medias de votre site.
+
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gDGP0jE49-4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
@@ -453,14 +482,34 @@ WPS Hide Login
 
 :    * Dans le menu de gauche, cliquez sur *Extensions*, puis sur *Ajouter une extension*.
 :    * Dans la barre de recherche, en haut à droite, copier-coller les noms des 7 extensions ci-dessous. Nous vous avons indiqué pour certains l'auteur de l'extension pour que vous évitiez d'en sélectionner une autre similaire. <br>Une fois l'extension trouvée, cliquez sur *Installer*.
-``` sh
-Cookie Notice (par dFactory)
-Crisp Live Chat
-Disable Comments
-Ultimate Member
-Super progressive web app
-```
+        * Cookie Notice (par dFactory)
+        * Crisp Live Chat
+        * Disable Comments
+        * Ultimate Member
+        * Super progressive web app
+        * Elementor
+        * Redis Object Cache
 
 !!! success "Vos 5 extensions sont correctement installées."
 
 ***
+
+## Snapshots
+
+!!! question "À quoi sert l'option Snapshot ?"
+
+    L'option Snapshot vous permet de sauvegarder l'ensemble de votre travail réalisé sur votre instance. Cela inclut tout ce que vous pouvez avoir fait sur votre site. <br>
+    Un Snapshot est payant (0,05$ par mois). <br>
+    Conservez au moins un Snapshot de votre instance pour être sûr de ne pas perdre votre travail en cas de problème. Vous pouvez les supprimer à votre guise.
+
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gDGP0jE49-4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
+***
+
+**Sauvegarder votre instance et site**
+
+:    * Rendez-vous sur votre page Amazon Lightsail.
+:    * Cliquez sur le ***nom de votre instance*** puis sur ***Snapshots***.
+:    * Cliquez sur le bouton {==Créer un Snapshot==}.
+
+!!! success "Vos 5 extensions sont correctement installées."
