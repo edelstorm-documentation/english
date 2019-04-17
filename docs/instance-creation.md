@@ -41,18 +41,32 @@ ssh-keygen -t rsa
 
 **Tracking your SSH key<a href="/help/glossary/#ssh"" target="_blank">&#185;</a>**
 
-{==For Mac computers==} 
+{==For Mac computers==}:
 :    * Open your Finder, click on the top menu and choose **Go**, then click on **Go to file...**
 :    * In the search bar, type this command and hit <kbd>Enter</kbd>.
 ``` sh
 ~/.ssh
 ```
 
-:    * Once you are in the file {==.ssh==}, drag the file icon you can see at the top of the Finder windows, on your favorites. This will make it more easy for you to access it for the next step.
+:    * Once you are in the file ***.ssh***, drag the file icon you can see at the top of the Finder windows, on your favorites. This will make it more easy for you to access it for the next step.
 
-{==For Windows computers==} 
-:    * 
-:    * 
+{==For Windows computers==}, two methods:
+:    * Open your ***Files Explorer***.
+:    * Click on ***This PC***  on the left in the shortcut bar.
+:    * Go to ***Windows (C:)***.
+:    * Then go to the ***Users file***.
+:    * Select the ***.ssh*** file.
+:    * Do a right click and select ***Create a shortcut*** and choose your desktop as a location. 
+:    * You now have access to your SSH file from your desktop.
+
+**Or**
+
+:    * Open your ***Files Explorer***.
+:    * Click at the top right on the ***search bar***.
+:    * Type ***.ssh***
+:    * Select the ***.ssh*** file.
+:    * Do a right click and select ***Create a shortcut*** and choose your desktop as a location. 
+:    * You now have access to your SSH file from your desktop.
 
 !!! success "Your computer generated SSH keys that you can find easily from its file!"
 

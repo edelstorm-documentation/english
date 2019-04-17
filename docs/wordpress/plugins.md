@@ -80,14 +80,12 @@ f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9
 
 ***
 
-!!! warning "**A COMPLETER**"
-
 **Wordfence options**
 
-:    * In the left menu, click on *Live Traffic*. You can find here a live vision of the users connected to your website.
-:    * In the left menu, click on *Scan*. Click on the *Scan* button to scan your website and to check if everything is secured 
-        * Scroll down a little bit and you will see the scan results. For the first one, click on the eye icon *Ignore* and select *Ignore until the files changes*. Repeat the same action for the other results but this time select *Always Ignore*.
-:    * In the left menu, click on *Blocking*. Here you can create rules that will block some users from accessing your website.
+:    * In the left menu, click on ***Live Traffic***. You can find here a live vision of the users connected to your website.
+:    * In the left menu, click on ***Scan***. Click on the {==Scan==} button to scan your website and to check if everything is secured. 
+        * Scroll down a little bit and you will see the scan results. Click on the eye icon ***Ignore*** and select ***Always Ignore***. Repeat the same action for the other results.
+:    * In the left menu, click on ***Blocking***. Here you can create rules that will block some users from accessing your website.
 
 ***
 

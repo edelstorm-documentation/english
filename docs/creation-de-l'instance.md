@@ -43,18 +43,32 @@ ssh-keygen -t rsa
 
 **Localisation de votre paire de clés SSH<a href="/aide/glossaire/#ssh" target="_blank">&#185;</a>**
 
-{==Pour les ordinateurs Mac==} 
+{==Pour les ordinateurs Mac==} : 
 :    * Ouvrez votre Finder, cliquez en haut dans la barre de menu sur **Aller**, puis cliquez sur **Aller au dossier...**
 :    * Dans la barre de recherche, tapez cette commande et appuyez sur <kbd>Entrer</kbd>.
 ``` sh
 ~/.ssh
 ```
 
-:    * Une fois dans le dossier {==.ssh==} faites glisser l'icône dossier en haut de la fenêtre du Finder dans votre barre de favoris. Cela vous permettra d'y accéder plus facilement pour la prochaine étape.
+:    * Une fois dans le dossier ***.ssh*** faites glisser l'icône dossier en haut de la fenêtre du Finder dans votre barre de favoris. Cela vous permettra d'y accéder plus facilement pour la prochaine étape.
 
-{==Pour les ordinateurs Windows==} 
-:    * 
-:    * 
+{==Pour les ordinateurs Window==}, deux méthodes :
+:    * Ouvrez votre ***Explorateur de Fichiers***.
+:    * Cliquez à gauche sur ***Ce PC*** dans la barre des raccourcis.
+:    * Allez dans votre disque dur sur lequel Windows est installé (souvent ***Windows (C:)***).
+:    * Allez dans le dossier ***Utilisateurs*** (Users file en anglais).
+:    * Sélectionnez le dossier ***.ssh***
+:    * Faites un clic droit puis sélectionnez ***Créer un raccourci*** et choisissez votre bureau comme emplacement.
+:    * Vous avez maintenant accès au fichier SSH depuis votre bureau.
+
+**Ou**
+
+:    * Ouvrez votre ***Explorateur de Fichiers***.
+:    * Cliquez en haut à droite dans la ***barre de recherche***.
+:    * Tapez ***.ssh***
+:    * Sélectionnez le dossier ***.ssh***
+:    * Faites un clic droit puis sélectionnez ***Créer un raccourci*** et choisissez votre bureau comme emplacement.
+:    * Vous avez maintenant accès au fichier SSH depuis votre bureau.
 
 !!! success "Votre machine a généré votre paire de clés SSH que vous pouvez facilement localiser à partir de son dossier !"
 

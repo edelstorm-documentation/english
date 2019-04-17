@@ -78,14 +78,12 @@ f1a72f34230a092898ba44e33687965f7c0e2a5ccb8421a1fde1da6d40ad912ab4fa2e305656d0e9
 
 ***
 
-!!! warning "**A COMPLETER**"
-
 **Les options de Wordfence** 
 
-:    * Dans le menu de gauche, cliquez sur *Live Traffic*. Ici vous pouvez voir en live les utilisateurs se connectant à votre site.
-:    * Dans le menu de gauche, cliquez sur *Scan*. Cliquez sur le bouton {==Scan==} pour vérifier la sécurité sur votre site. 
-        * En descendant un peu sur la page, vous verrez les résultats du scan. Cliquez sur l'oeil barré *Ignore* et sélectionnez *Always Ignore*, répétez l'opération pour tous les résultats.
-:    * Dans le menu de gauche, cliquez sur *Blocking*. Ici vous pouvez créer des règles pour bloquer l'accès de votre site à certains utilisateurs.
+:    * Dans le menu de gauche, cliquez sur ***Live Traffic***. Ici vous pouvez voir en live les utilisateurs se connectant à votre site.
+:    * Dans le menu de gauche, cliquez sur ***Scan***. Cliquez sur le bouton {==Scan==} pour vérifier la sécurité sur votre site. 
+        * En descendant un peu sur la page, vous verrez les résultats du scan. Cliquez sur l'oeil barré ***Ignore*** et sélectionnez ***Always Ignore***, répétez l'opération pour tous les résultats.
+:    * Dans le menu de gauche, cliquez sur ***Blocking***. Ici vous pouvez créer des règles pour bloquer l'accès de votre site à certains utilisateurs.
 
 ***
 
