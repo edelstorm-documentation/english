@@ -1,8 +1,9 @@
-# Thème <small>- Installation & Configuration</small>
+# Thème <small>- Installation & découverte de Wordpress</small>
 
 {==
 
-Nous allons installer le thème Stack sur le site d'Evento market.
+Nous sommes sur le point d'installer un thème à votre Wordpress. Nous utilisons ci-dessous l'exemple du thème Slack. Cette méthode est valable pour tout autre thème.
+<!-- Si vous souhaitez faire l'acquisition d'un thème e-commerce ou d'un des thèmes que nous proposons dans cette documentation, vous pouvez également vous rendre directement au module correspondant *lien*. -->
 
 ==}
 
@@ -14,9 +15,8 @@ Nous allons installer le thème Stack sur le site d'Evento market.
 
 **Rendez-vous sur le site d'<a href="https://themeforest.net/" target="_blank">Evento - Themeforest</a>.**
 
-:    * Cliquez sur le bouton *Sign In* en haut à droite. Puis sur le lien *New here? Create an Envato account* pour créer un compte.
-:    * Complètez le formulaire avec votre Prénom, Nom, Nom de compte, Email, Mot de passe, cochez la case *I agree...* et cochez la case *I am not a robot*.
-:    * Confirmez votre adresse email en cliquant sur le lien envoyé par Evento par email.
+:    * Cliquez sur le bouton {==Sign In==} en haut à droite. Puis sur le lien ***New here? Create an Envato account*** pour créer un compte.
+:    * Complétez le formulaire avec votre Prénom, Nom, Nom de compte, Email, Mot de passe, cochez la case *I agree...* et cochez la case *I am not a robot*.
 
 ***
 
@@ -26,12 +26,12 @@ Nous allons installer le thème Stack sur le site d'Evento market.
 
 **Achat du thème**
  
-:    * Sur la page d'accueil, tapez *Stack* dans la barre de recherche et sélectionnez *Stack in Wordpress*.
-:    * Cliquez sur le bouton chariot vert à coté du résultat : *Stack - Multi-Purpose WordPress Theme with Variant* by *tommusrhodus*. 
-:    * Cliquez sur le bouton {==*Add to Cart*==}, puis  {==*Go to Checkout*==}.
+:    * Sur la page d'accueil, tapez ***Stack*** dans la barre de recherche et sélectionnez ***Stack in Wordpress***.
+:    * Cliquez sur le bouton {==chariot vert==} à côté du résultat : *Stack - Multi-Purpose WordPress Theme with Variant* by *tommusrhodus*. 
+:    * Cliquez sur {==*Add to Cart*==}, puis sur {==*Go to Checkout*==}.
 :    * Cliquez sur le bouton  {==*Secure Checkout*==} et finalisez votre achat.
 
-!!! success "Vous avez acheté le thème Stack."
+!!! success "Vous avez acheté un thème pour votre site."
 
 ***
 
@@ -41,51 +41,47 @@ Nous allons installer le thème Stack sur le site d'Evento market.
 
 **Téléchargement du thème**
 
-:    * Cliquez sur le nom de votre compte en haut à droite puis sélectionnez *Downloads* dans le menu déroulant.
-:    * Cliquez sur le bouton {==*Download*==} à coté du thème Stack. Puis cliquez sur *All files & documentation*.
+:    * Cliquez sur le nom de votre compte en haut à droite puis sélectionnez ***Downloads*** dans le menu déroulant.
+:    * Cliquez sur le bouton {==*Download*==} à côté du thème Stack. Puis cliquez sur ***All files & documentation***.
 :    * Votre thème est maintenant téléchargé sur votre ordinateur.
+:    * Rendez-vous dans votre dossier téléchargement et ***dézippez / décompressez*** le dossier en double cliquant dessus pour les {==utilisateurs de Mac==} ou en faisant un clic droit, *extraire les fichiers* pour {==les utilisateurs Windows==}
 
 ***
 
 :    * Retournez sur votre page Wordpress.
-:    * Dans le menu de gauche, cliquez sur *Apparence*, puis *Thèmes*.
-:    * Vous êtes maintenant sur la page *Thèmes* et vous pouvez y retrouver trois thèmes. Nous allons faire un peu de ménage avant d'installer votre nouveau thème.
-:    * Cliquez sur l'image du thème *Twenty Seventeen*, sur le bouton *Détails du thèmes*.
+:    * Dans le menu de gauche, cliquez sur ***Apparence***, puis ***Thèmes***.
+:    * Vous êtes maintenant sur la page *Thèmes* où vous pouvez retrouver trois thèmes. Nous allons faire un peu de ménage avant d'installer votre nouveau thème.
+:    * Cliquez sur l'image du thème ***Twenty Seventeen***, sur le bouton {==Détails du thème==}.
 :    * En bas à droite, cliquez sur *Supprimer* en rouge. Confirmez en cliquant sur le bouton {==*Ok*==}.
-:    * Cliquez sur l'image du thème *Twenty Sixteen*, sur le bouton *Détails du thèmes*. 
+:    * Cliquez sur l'image du thème *Twenty Sixteen*, sur le bouton {==Détails du thème==}. 
 :    * En bas à droite, cliquez sur *Supprimer* en rouge. Confirmez en cliquant sur le bouton {==*Ok*==}.
 
 ***
 
 ***Nous allons maintenant installer le nouveau thème.***
 
-:    * Cliquez sur le bouton {==*Ajouter*==}. Puis, cliquez sur le bouton {==*Téléverser un thème*==}.
-:    * Un encart apparait, cliquez sur le bouton {==*Choisir un fichier*==}.
-        * Dans le dossier que vous venez de télécharger, sélectionnez le fichier .zip : *stackWPTheme.zip*.
+:    * Cliquez sur le bouton {==*Ajouter*==}, puis sur le bouton {==*Téléverser un thème*==}.
+:    * Un encart apparaît, cliquez sur le bouton {==*Choisir un fichier*==}.
+        * Dans le dossier que vous venez de télécharger, sélectionnez le fichier .zip : ***stackWPTheme.zip***.
         * Cliquez sur le bouton {==*Ouvrir*==}. 
         * Cliquez sur {==*Installer*==}.
 
 ***
 
-:    * Vous êtes sur une nouvelle page, cliquez sur le lien *Retourner sur la page thèmes*.
-:    * Vous êtes de retour sur la page *Thèmes* et ***nous allons maintenant intaller le thème enfant*** (voir <a href="/aide/glossaire/#theme-enfant" target="_blank">Glossaire</a>). 
-:    * Cliquez sur le bouton {==*Ajouter*==}. Puis, cliquez sur le bouton {==*Téléverser un thème*==}.
-:    * Un encart apparait, cliquez sur le bouton {==*Choisir un fichier*==}.
-        * Dans le dossier que vous venez de télécharger, cliquez sur le dossier *Developers*. Puis sélectionnez le fichier .zip : *stack-child.zip*.
-        * Cliquez sur le bouton {==*Ouvrir*==}. 
-        * Cliquez sur {==*Installer*==}.
+:    * Vous êtes sur une nouvelle page, cliquez sur le lien ***Activer***.
+:    * Vous voici sur la page d'installation du thème. Cliquez sur {==Start==} puis sur {==Install==}.
+:    * Vous venez d'installer le thème enfant. (Rdv dans le <a href="/aide/glossaire/#theme-wordpress-et-theme-enfant" target="_blank">Glossaire</a> pour en savoir plus.)
+:    * Vous pouvez cliquez sur ***Advanced*** sous le titre *Install Plugins* pour voir ce qui va être installer, puis cliquez sur {==Install==}.<br>
+L'installation peut prendre 5 bonnes minutes.
 
-:    * Vous êtes sur une nouvelle page, cliquez sur le lien *Activer*.
+:    * Pour la partie  *Import content*, sélectionnez ***Stack + Variant Demo Data*** dans le menu déroulant. <br> 
+(*Choisissez toujours d'ajouter la "Demo data" ou le contenu de demo pour vos futurs thèmes*.)
+:    * Cliquez sur ***Advanced*** puis sur {==Install==}.<br>
+L'installation peut prendre plus de 20 minutes. Armez vous d'un livre ou d'Instagram.
 
-***
+:    * Cliquez sur {==View your website==}.
 
-***Nous allons maintenant installer les extensions liées au thème.***
-
-:    * Un encart apparait en haut de la page. Cliquez sur le lien *Commencer l'installation des extensions*.
-:    * Sélectionnez toutes les extentions sauf *Visual Composer*.
-:    * Sélectionnez *Installer* dans le menu déroulant *Actions groupées*. Puis cliquez sur le bouton {==*Appliquer*==}.
-
-!!! success "Le thème est bien installé sur votre site."
+!!! success "Tada ! Le thème, le thème enfant et le contenu de demo sont installés sur votre Wordpress."
 
 ***
 
@@ -93,29 +89,17 @@ Nous allons installer le thème Stack sur le site d'Evento market.
 
 ***
 
-**Installation du contenu demo**
+**Réglages des extensions**
 
-:    * Dans le menu de gauche, cliquez sur *Extensions* puis *Ajouter*.
-:    * Vous serez redirigé vers la page de configuration de l'extension *WooCommerce* permettant d'ajouter un e-shop à votre site. 
-:    * Descendez en bas de la page et cliquez sur le lien *Pas maintenant*.<br>
-Si vous n'êtes pas automatiquement redirigé, cette étape n'est pas importante donc ce n'est pas grave.
+:    * Retournez sur votre Dashboard Wordpress.
+:    * Cliquez sur ***Dismiss*** dans l'encart relatif à *Easy Updates Manager*.
+:    * Cliquez sur ***No thanks*** dans l'encart relatif à *Smush*.
+:    * Cliquez sur le bouton {==*Installer le block produits WooCommerce*==}. Puis sur le bouton {==*Activer*==}.
+:    * Dans le menu de gauche, rendez-vous sur ***Extensions***, cliquez sur ***Extensions installées***.
+:    * Descendez la page et cherchez l'extension ***WPBakeryPage Builder***. Cliquez sur ***Désactiver***.
+:    * En haut de la page, cliquez sur ***Dismiss this notice*** dans l'encart relatif à *Visual composer*.
+:    * Descendez la page et cherchez l'extension ***Redis Object Cache***. Cliquez sur ***Activer***.
+:    * Descendez à nouveau la page pour cherchez l'extension ***Redis Object Cache***. Cliquez sur ***Réglages***.
+:    * Cliquez sur le bouton {==*Enable Object Cache*==}.
 
-:    * Des encarts sont apparus en haut de la page. Cliquez sur le bouton {==*Installer le block produits WooCommerce*==}. Puis sur le bouton {==*Activer*==}.
-:    * Cliquez sur *Dismiss this notice* dans l'encart relatifà Visual Composer.
-
-***
-
-:    * Dans le menu de gauche, cliquez sur *Extensions*, puis sur *Ajouter*.
-:    * Dans la barre de recherche, tapez *WXR*. Installez l'extension *Attachment Importer* by *Toasted Lime*. Après l'intallation, cliquez sur {==*Activer*==}.
-:    * Dans le menu de gauche, cliquez sur *Outils* puis sur *Importer*.
-:    * Descendez en bas de la page et cliquez sur le lien *Installer* sous *WordPress*.
-:    * Cliquez ensuite sur *Lancer l’importateur*. Vous êtes sur une nouvelle page, cliquez sur le bouton {==*Choisir un fichier*==}.
-:    * Dans le dossier que vous avez téléchargé précedement. Rendez-vous dans le dossier *Demo Data* puis sélectionnez le fichier *demo-data-variant.xml*.
-:    * Cliquez sur le bouton {==*Ouvrir*==}, puis sur le bouton {==*Téléverser les fichiers et les importer*==}.
-:    * Cliquez sur le bouton *Soumettre*.
-:    * Une fois l'importation faite, rendez-vous dans le menu de gauche et cliquez sur *Importer*, toujours dans le menu *Outils*.
-:    * Sous *Attachment Importer*, cliquez sur le lien *Lancer l’importateur*. Vous êtes sur une nouvelle page, cliquez sur le bouton {==*Choisir un fichier*==}.
-:    * Dans le dossier que vous avez téléchargé précedement. Rendez-vous dans le dossier *Demo Data* puis sélectionnez le fichier *demo-data-variant.xml*.
-:    * Cliquez sur le bouton {==*Ouvrir*==}, puis sur le bouton {==*Téléverser les fichiers*==}.
-
-!!! success "Vous avez installé le contenu demo sur votre site."
+!!! success "Vous avez correctement configuré les extensions liées au thème."
