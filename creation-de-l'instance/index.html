@@ -102,7 +102,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="amber">
   
     <svg class="md-svg">
       <defs>
@@ -454,8 +454,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../wordpress/theme-fr/" title="Thème" class="md-nav__link">
+      Thème
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../wordpress/plugins/" title="Plugins" class="md-nav__link">
       Plugins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wordpress/theme/" title="Theme" class="md-nav__link">
+      Theme
     </a>
   </li>
 
@@ -570,8 +594,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generer-une-paire-de-cles-ssh" title="Générer une paire de clés SSH" class="md-nav__link">
-    Générer une paire de clés SSH
+  <a href="#generer-une-paire-de-cles-ssh" title="Générer une paire de clés SSH&#185;" class="md-nav__link">
+    Générer une paire de clés SSH&#185;
   </a>
   
 </li>
@@ -598,8 +622,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#noms-de-serveurs" title="Noms de Serveurs" class="md-nav__link">
-    Noms de Serveurs
+  <a href="#serveurs-de-noms" title="Serveurs de Noms" class="md-nav__link">
+    Serveurs de Noms
   </a>
   
 </li>
@@ -715,8 +739,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generer-une-paire-de-cles-ssh" title="Générer une paire de clés SSH" class="md-nav__link">
-    Générer une paire de clés SSH
+  <a href="#generer-une-paire-de-cles-ssh" title="Générer une paire de clés SSH&#185;" class="md-nav__link">
+    Générer une paire de clés SSH&#185;
   </a>
   
 </li>
@@ -743,8 +767,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#noms-de-serveurs" title="Noms de Serveurs" class="md-nav__link">
-    Noms de Serveurs
+  <a href="#serveurs-de-noms" title="Serveurs de Noms" class="md-nav__link">
+    Serveurs de Noms
   </a>
   
 </li>
@@ -780,7 +804,7 @@
 </pre></div>
 
 </div>
-<h2 id="generer-une-paire-de-cles-ssh">Générer une paire de clés SSH<a class="headerlink" href="#generer-une-paire-de-cles-ssh" title="Permanent link">&para;</a></h2>
+<h2 id="generer-une-paire-de-cles-ssh">Générer une paire de clés SSH<a href="/aide/glossaire/#ssh"" target="_blank">&#185;</a><a class="headerlink" href="#generer-une-paire-de-cles-ssh" title="Permanent link">&para;</a></h2>
 <p><a href="../assets/images/aws/creation-instance/fr/1.gif" target="_blank"><img alt="Générer une paire de clé SSH sur Mac" src="../assets/images/aws/creation-instance/fr/1.gif"></a></p>
 
 <hr />
@@ -788,21 +812,23 @@
 <dt><strong>Sécurisation des communications entre votre ordinateur et votre futur serveur</strong></dt>
 <dd>
 <ul>
-<li><mark class="critic">Pour les ordinateurs Mac</mark> En haut à droite de votre écran, lancer une recherche Spotlight, tapez <em>Terminal</em> puis appuyez sur <kbd>Entrer</kbd>.</li>
+<li><mark class="critic">Pour les ordinateurs Mac</mark> En haut à droite de votre écran, lancez une recherche Spotlight en cliquant sur la loupe. Tapez <strong><em>Terminal</em></strong> puis appuyez sur <kbd>Entrer</kbd>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li><mark class="critic">Pour les ordinateurs Windows</mark> Plusieurs solutions en fonction de la version de votre OS. <ul>
-<li>Soit, dans le menu <em>Démarrer</em>, tapez dans la barre de recherche <em>cmd</em>. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez <em>exécuter en tant qu'administrateur</em>.</li>
-<li>Soit, ouvrez la barre de recherche de l'ordinateur en vous rendant sur votre bureau puis en tapant <kbd>⊞Win</kbd> + <kbd>S</kbd>. Tapez <em>cmd</em> dans le champ de recherche. Sélectionnez le premier résultat (Command Prompt), en faisant un clic droit puis sélectionnez <em>exécuter en tant qu'administrateur</em>.</li>
+<li>Soit, dans le menu <em>Démarrer</em>, tapez dans la barre de recherche <strong><em>cmd</em></strong>. <br>
+Sélectionnez le premier résultat ( <em>Command Prompt</em> ), en faisant un clic droit puis sélectionnez : <em>exécuter en tant qu'administrateur</em>.</li>
+<li>Soit, ouvrez la barre de recherche de l'ordinateur en cliquant sur votre bureau (cliquez sur votre fond d'écran) puis en appuyant en même temps sur les touches <kbd>⊞Win</kbd> et <kbd>S</kbd>. <br>
+Tapez : <strong><em>cmd</em></strong> dans le champ de recherche. Sélectionnez le premier résultat ( <em>Command Prompt</em> ), en faisant un clic droit puis sélectionnez : <em>exécuter en tant qu'administrateur</em>.</li>
 </ul>
 </li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Une fois dans votre terminal, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
+<li>Une fois dans votre <a href="/aide/glossaire/#terminal" target="_blank">terminal</a>, tapez la commande ci-dessous et appuyez sur <kbd>Entrer</kbd>.
 <div class="codehilite"><pre><span></span>ssh-keygen -t rsa
 </pre></div></li>
 </ul>
@@ -814,7 +840,7 @@
 </dd>
 <dd>
 <ul>
-<li>Définissez un mot de passe et appuyez sur <kbd>Entrer</kbd>.</li>
+<li>Une petite clé s'affiche. Il est temps de définir un mot de passe <mark class="critic">(voir note ci-dessous)</mark> et appuyez sur <kbd>Entrer</kbd>.</li>
 </ul>
 </dd>
 <dd>
@@ -825,15 +851,16 @@
 </dl>
 <div class="admonition note">
 <p class="admonition-title">À savoir</p>
-<p>Lorsque vous tapez votre mot de passe dans un terminal, vous ne pourrez pas le voir se former sur votre écran.<br>
-C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour le terminal vous êtes bien en train de taper. Vous devez donc le définir à l'aveugle !</p>
+<p>Lorsque vous tapez votre mot de passe dans un terminal, vous ne <strong>pourrez pas le voir se former sur votre écran</strong>.<br>
+C'est <strong>comme si vous n'étiez pas en train de taper sur votre clavier</strong>, mais pour le terminal vous êtes bien en train de taper. Vous devez donc le définir à l'aveugle !</p>
 </div>
 <hr />
 <p><a href="../assets/images/aws/creation-instance/fr/2.gif" target="_blank"><img alt="Localiser une paire de clé SSH sur Mac" src="../assets/images/aws/creation-instance/fr/2.gif"></a></p>
 
 <hr />
+<p><strong>Localisation de votre paire de clés SSH<a href="/aide/glossaire/#ssh" target="_blank">&#185;</a></strong></p>
 <dl>
-<dt><strong>Localisation de votre paire de clés SSH</strong></dt>
+<dt><mark class="critic">Pour les ordinateurs Mac</mark> :</dt>
 <dd>
 <ul>
 <li>Ouvrez votre Finder, cliquez en haut dans la barre de menu sur <strong>Aller</strong>, puis cliquez sur <strong>Aller au dossier...</strong></li>
@@ -848,7 +875,74 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </dd>
 <dd>
 <ul>
-<li>Une fois dans le dossier <mark class="critic">.ssh</mark> faites glisser l'icône dossier en haut de la fenêtre du Finder dans votre barre de favoris. Cela vous permettra d'y accéder plus facilement pour la prochaine étape.</li>
+<li>Une fois dans le dossier <strong><em>.ssh</em></strong> faites glisser l'icône dossier en haut de la fenêtre du Finder dans votre barre de favoris. Cela vous permettra d'y accéder plus facilement pour la prochaine étape.</li>
+</ul>
+</dd>
+<dt><mark class="critic">Pour les ordinateurs Window</mark>, deux méthodes :</dt>
+<dd>
+<ul>
+<li>Ouvrez votre <strong><em>Explorateur de Fichiers</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez à gauche sur <strong><em>Ce PC</em></strong> dans la barre des raccourcis.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Allez dans votre disque dur sur lequel Windows est installé (souvent <strong><em>Windows (C:)</em></strong>).</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Allez dans le dossier <strong><em>Utilisateurs</em></strong> (Users file en anglais).</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez le dossier <strong><em>.ssh</em></strong></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Faites un clic droit puis sélectionnez <strong><em>Créer un raccourci</em></strong> et choisissez votre bureau comme emplacement.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous avez maintenant accès au fichier SSH depuis votre bureau.</li>
+</ul>
+</dd>
+<dt><strong>Ou</strong></dt>
+<dd>
+<ul>
+<li>Ouvrez votre <strong><em>Explorateur de Fichiers</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez en haut à droite dans la <strong><em>barre de recherche</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Tapez <strong><em>.ssh</em></strong></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez le dossier <strong><em>.ssh</em></strong></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Faites un clic droit puis sélectionnez <strong><em>Créer un raccourci</em></strong> et choisissez votre bureau comme emplacement.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous avez maintenant accès au fichier SSH depuis votre bureau.</li>
 </ul>
 </dd>
 </dl>
@@ -857,14 +951,20 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </div>
 <hr />
 <h2 id="creation-de-linstance">Création de l'instance<a class="headerlink" href="#creation-de-linstance" title="Permanent link">&para;</a></h2>
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/sFDD7W2IQgI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gF4tAzemagk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <dl>
 <dt><strong>Options de l'instance Amazon Lightsail</strong></dt>
 <dd>
 <ul>
-<li>Dans votre console de management AWS, cherchez le service <em>Lightsail</em> dans la barre recherche et cliquez dessus.</li>
+<li><strong>Retournez sur votre navigateur web</strong>. Vous avez normalement laissé votre fenêtre AWS zone hébergée ouverte (voir étape précédente <a href="/nom-de-domaine/" target="_blank">Nom de domaine</a>). <br>
+Faites un clic droit sur le logo <strong><em>AWS</em></strong> à droite et ouvrez dans un nouvel onglet. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Vous vous retrouvez sur votre console de management AWS. Cherchez le service <strong><em>Lightsail</em></strong> dans la barre recherche et cliquez dessus.</li>
 </ul>
 </dd>
 <dd>
@@ -879,38 +979,40 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </dd>
 <dd>
 <ul>
-<li>Choisissez l'emplacement de l'instance. Choisissez la région se rapprochant le plus de vos futurs utilisateurs.<br>
+<li><strong>Choisissez l'emplacement de l'instance.</strong> Choisissez la région se rapprochant le plus de vos futurs utilisateurs.<br>
     <em>Si vous ciblez un public européen francophone, vous pouvez choisir Paris, si vous ciblez des utilisateurs japonais, choisissez Tokyo... Le but est de permettre à vos utilisateurs de charger plus rapidement votre site.</em></li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Laissez par défaut la zone de disponibilité de l'instance.</li>
+<li>Laissez la zone de disponibilité de l'instance par défaut.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Choisissez <em>Linux/Unix</em> comme plateforme.</li>
+<li>Choisissez <strong><em>Linux/Unix</em></strong> comme plateforme.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur l'onglet <em>Système d'exploitation uniquement</em> et sélectionnez <em>Ubuntu 16.04 LTS</em> comme système d'exploitation.</li>
+<li>Dans : <em>Sélectionner un plan</em>, cliquez sur l'onglet <strong><em>Système d'exploitation uniquement</em></strong>, puis sélectionnez <strong><em>Ubuntu 18.04 LTS</em></strong> comme système d'exploitation.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Nous n'ajouterons pas de script de lancement. (I)</li>
+<li>Nous n'ajouterons pas de script de lancement. (voir <a href="/aide/glossaire/#script-de-lancement" target="_blank">glossaire</a>.)</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <em>Modifier une paire de clés SSH</em> et cliquez sur <em>Charger un nouveau</em> puis sur <mark class="critic">Charger</mark>. </li>
+<li>Cliquez sur <strong><em>Modifier une paire de clés SSH</em></strong> et cliquez sur <strong><em>Charger un nouveau</em></strong> puis sur <mark class="critic">Charger</mark>. </li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <em>Choisir un fichier</em> et choisissez le fichier <code class="codehilite">id_rsa.pub</code> dans votre dossier <code class="codehilite">~/.ssh</code> puis cliquez sur <mark class="critic">Charger une clé</mark>. Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.</li>
+<li>Cliquez sur <strong><em>Choisir un fichier</em></strong> et choisissez le fichier <code class="codehilite">id_rsa.pub</code> dans votre dossier <code class="codehilite">~/.ssh</code> puis cliquez sur <mark class="critic">Charger une clé</mark>.<br>
+<em>Le chargement peut prendre quelques minutes.</em><br> 
+<em>Fournir votre clé SSH publique vous permettra de sécuriser les communications entre votre machine et votre instance Amazon Lightsail.</em></li>
 </ul>
 </dd>
 <dd>
@@ -920,7 +1022,7 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </dd>
 <dd>
 <ul>
-<li>Nommez votre instance, de préférence avec votre nom de domaine. (A)</li>
+<li>Nommez votre instance, de préférence avec votre <a href="/aide/glossaire/#nom-de-domaine" target="_blank">nom de domaine</a>.</li>
 </ul>
 </dd>
 <dd>
@@ -943,35 +1045,40 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </div>
 <hr />
 <h2 id="firewall-ip-statique">Firewall &amp; IP Statique<a class="headerlink" href="#firewall-ip-statique" title="Permanent link">&para;</a></h2>
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/T_i428AF0Tg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Y8-gIGv1zW4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <dl>
 <dt><strong>Ouverture des ports HTTPS &amp; FTP</strong></dt>
 <dd>
 <ul>
-<li>Cliquez sur l'instance et allez dans l'onglet <em>Mise en réseau</em>.</li>
+<li>L'encart de votre instance est passée de gris à orange. Elle est donc prête à être utilisée.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Dans la section <em>Par-feu</em>, cliquez sur <em>Ajouter un autre élément</em>.</li>
+<li>Cliquez sur l'instance, ou plus précisément sur le <strong><em>nom de votre instance</em></strong>, puis cliquez sur l'onglet <strong><em>Mise en réseau</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Dans le champ <em>Personnaliser, sélectionnez : *HTTPS</em>.<br>
-    Cette étape permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance.</li>
+<li>Descendez la page jusqu'à la section <em>Par-feu</em>, cliquez sur <strong><em>Ajouter un autre élément</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <em>Ajouter un autre élément</em>.</li>
+<li>Dans le champ <em>Personnaliser</em> cliquez sur le menu déroulant et sélectionnez : <strong><em>HTTPS</em></strong>.<br>
+    <em>Cette étape permet de sécuriser les communications entre vos utilisateurs, les applications externes et votre instance. <a href="/aide/glossaire/#https" target="_blank">Cliquez ici pour en savoir plus sur le https</a>.</em></li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Laissez le champ <em>Personnaliser</em> et ajoutez le port <em>34210</em>.</li>
+<li>Cliquez sur <strong><em>Ajouter un autre élément</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Préoccupez-vous uniquement du dernier champ <em>Plage de ports</em> et ajoutez le port suivant <strong><em>34210</em></strong>.</li>
 </ul>
 </dd>
 <dd>
@@ -985,7 +1092,7 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 <dt><strong>Fixation de l'adresse IP dynamique</strong></dt>
 <dd>
 <ul>
-<li>Cliquez sur <mark class="critic">Attacher une IP Statique</mark> puis cliquez sur <mark class="critic">Créer une IP Statique</mark>.</li>
+<li>Remontez un peu la page et cliquez sur <mark class="critic">Créer une IP Statique</mark>.</li>
 </ul>
 </dd>
 <dd>
@@ -995,7 +1102,9 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </dd>
 <dd>
 <ul>
-<li>Nommez votre IP statique de cette façon, avec votre nom de domaine : <em>StaticIp-VotreNomDeDomaine</em>.</li>
+<li>Dans <em>Identifiez votre adresse IP statique</em>, nommez votre IP statique de la façon suivante, mais avec VOTRE nom de domaine complet :
+<div class="codehilite"><pre><span></span>StaticIp-VotreNomDeDomaine
+</pre></div></li>
 </ul>
 </dd>
 <dd>
@@ -1006,7 +1115,7 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </dl>
 <div class="admonition info">
 <p class="admonition-title">Informations</p>
-<p>Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire qu'à chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une IP statique est gratuite lorsqu'elle est attachée à une instance.</p>
+<p>Par défaut, votre instance a une adresse IP dynamique. C'est-à-dire qu'à chaque fois que vous redémarrez votre instance, son adresse IP change. Pour que votre site web soit joignable depuis une adresse unique, il faut lier votre instance à une IP statique. Une <a href="/aide/glossaire/#ip-statique" target="_blank">IP statique</a> est gratuite lorsqu'elle est attachée à une instance.</p>
 </div>
 <div class="admonition success">
 <p class="admonition-title">Les ports HTTPS et FTP sont ouvert et votre instance Lightsail possède une adresse IP statique.</p>
@@ -1020,17 +1129,17 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 <dt><strong>Association de votre instance à votre nom de domaine</strong></dt>
 <dd>
 <ul>
-<li>En haut à gauche, cliquez sur <em>Accueil</em> puis sur l'onglet <em>Mise en réseau</em>.</li>
+<li>En haut à gauche, cliquez sur <strong><em>Accueil</em></strong> puis sur l'onglet <strong><em>Mise en réseau</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <mark class="critic">Créer une zone DNS</mark>.</li>
+<li>Cliquez sur <mark class="critic">Créer une zone DNS</mark>. <a href="/aide/glossaire/#zone-dns" target="_blank">Cliquez ici pour en savoir plus sur la zone DNS</a>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Dans le champ, spécifiez votre nom de domaine. (A)</li>
+<li>Dans le premier champ, spécifiez votre nom de domaine.</li>
 </ul>
 </dd>
 <dd>
@@ -1049,24 +1158,35 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 <dt><strong>Création des enregistrements pour votre zone DNS</strong></dt>
 <dd>
 <ul>
-<li>Cliquez sur <em>Ajouter un enregistrement</em>.</li>
+<li>Cliquez sur <strong><em>Ajouter un enregistrement</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Ajoutez un premier enregistrement de type A pour <code class="codehilite">@.VotreNomDeDomaine.com</code> pointant vers votre IP statique. <br><br>
-   <strong>Pour se faire</strong>, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.</li>
+   <strong>Pour se faire</strong>, tapez <kbd>@</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'<strong><em>icone verte</em></strong> pour valider cette action.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez à nouveau sur <em>Ajouter un enregistrement</em></li>
+<li>Cliquez à nouveau sur <strong><em>Ajouter un enregistrement</em></strong></li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Ajoutez un second enregistrement de type A pour <code class="codehilite">www.VotreNomDeDomaine.com</code> pointant vers votre IP statique.<br><br>
-   <strong>Pour se faire</strong>, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'icone verte pour valider cette action.</li>
+   <strong>Pour se faire</strong>, tapez <kbd>www</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'<strong><em>icone verte</em></strong> pour valider cette action.<br></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>La prochaine étape vous sert à enregister un <a href="/aide/glossaire/#sous-domaine" target="_blank">sous-domaine</a></strong>, si vous avez besoin de créer un e-shop par exemple. Ce n'est donc pas une étape obligatoire et vous pourrez ajouter un sous-domaine plus tard. Cependant, l'ajout sera alors payant via Runcloud (voir la video).</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez un troisième enregistrement de type A pour <code class="codehilite">SousDomaine.VotreNomDeDomaine.com</code> pointant vers votre IP statique.<br><br>
+   <strong>Pour se faire</strong>, tapez <kbd>VotreSousDomaine</kbd> dans le 1er champ qui se présente à vous à gauche. Puis sélectionnez à droite l'adresse IP statique que nous venons de créer. Cliquez sur l'<strong><em>icone verte</em></strong> pour valider cette action.</li>
 </ul>
 </dd>
 </dl>
@@ -1074,12 +1194,12 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 <p class="admonition-title">Votre instance possède une zone DNS et son IP statique pointe vers votre nom de domaine.</p>
 </div>
 <hr />
-<h2 id="noms-de-serveurs">Noms de Serveurs<a class="headerlink" href="#noms-de-serveurs" title="Permanent link">&para;</a></h2>
+<h2 id="serveurs-de-noms">Serveurs de Noms<a class="headerlink" href="#serveurs-de-noms" title="Permanent link">&para;</a></h2>
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/44dl6vCcAmU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <dl>
-<dt><strong>Injection des noms de serveurs pour votre nom de domaine</strong></dt>
+<dt><strong>Injection des serveurs de noms pour votre nom de domaine</strong></dt>
 <dd>
 <ul>
 <li>Sous les enregistrements de la zone DNS se trouve une section <em>Serveurs de noms</em>.</li>
@@ -1087,32 +1207,49 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </dd>
 <dd>
 <ul>
-<li>En haut à droite, cliquez sur <em>AWS</em> pour accèder à la console de management.</li>
+<li>Retournez sur la page <em>Route 53</em> que vous avez laissée ouverte.<br>
+Si vous l'avez fermé, faites un clique droit, ouvrir dans un nouvel onglet sur <strong><em>AWS</em></strong> haut à droite de votre page. Une fois sur votre console, cherchez <em>Route 53</em> dans la barre de recherche et cliquez dessus.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cherchez le service <em>Route 53</em> dans la barre de recherche et cliquez dessus.</li>
+<li>Dans le menu de gauche, cliquez sur <strong><em>Domaines enregistrés</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Dans le menu de gauche, cliquez sur <em>Domaines enregistrés</em>.</li>
+<li>Cliquez sur votre <strong><em>nom de domaine</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur votre nom de domaine.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Sur la droite, cliquez sur <em>Ajouter/Modifier les noms de serveurs</em> et remplacez un à un les serveurs de noms actuels par les quatre nouveaux noms de serveurs de votre zone DNS.</li>
+<li>Sur la droite, cliquez sur <strong><em>Ajouter/Modifier les noms de serveurs</em></strong>.<br>
+Vous devez maintenant remplacer un à un les serveurs de noms actuels, par les quatre nouveaux noms de serveurs de votre zone DNS. Vous pouvez les retrouver sur la page Lightsail que vous venez de quitter.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Cliquez sur <mark class="critic">Mettre à jour</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans le menu de gauche, cliquez sur <strong><em>Tableau de bord</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Regardez le tableau de l'encart <em>Alertes</em>. Vous pouvez voir sur la première ligne que vos serveurs de noms sont en cours de mise à jour.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Attendez quelques minutes puis rafraîchissez la page. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Il est désormais indiqué que vos serveurs de noms ont été correctement mis à jour.</li>
 </ul>
 </dd>
 </dl>
@@ -1146,6 +1283,9 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 </ul>
 </dd>
 </dl>
+<div class="admonition info">
+<p class="admonition-title"><a href="/aide/glossaire/#ssh" target="_blank">Cliquez ici</a> pour en savoir plus sur le SSH.</p>
+</div>
 <hr />
 <p><a href="../assets/images/aws/creation-instance/fr/4.png" target="_blank"><img alt="Connexion SSH Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/fr/4.png"></a></p>
 
@@ -1195,7 +1335,7 @@ C'est comme si vous n'étiez pas en train de taper sur votre clavier, mais pour 
 <dt><strong>Tags</strong></dt>
 <dd>
 <ul>
-<li>Vous pouvez ajouter des tags à votre instance pour l'identifier plus facilement si vous en avez plusieurs.</li>
+<li>Vous pouvez ajouter des tags à votre instance pour l'identifier plus facilement, si vous en avez plusieurs.</li>
 </ul>
 </dd>
 </dl>

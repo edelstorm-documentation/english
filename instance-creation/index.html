@@ -102,7 +102,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="amber">
   
     <svg class="md-svg">
       <defs>
@@ -414,8 +414,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generate-an-ssh-key" title="Generate an SSH key" class="md-nav__link">
-    Generate an SSH key
+  <a href="#generate-an-ssh-key" title="Generate an SSH key&#185;" class="md-nav__link">
+    Generate an SSH key&#185;
   </a>
   
 </li>
@@ -442,8 +442,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#serveurs-de-noms" title="Serveurs de noms" class="md-nav__link">
-    Serveurs de noms
+  <a href="#nameservers" title="Nameservers" class="md-nav__link">
+    Nameservers
   </a>
   
 </li>
@@ -527,8 +527,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../wordpress/theme-fr/" title="Thème" class="md-nav__link">
+      Thème
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../wordpress/plugins/" title="Plugins" class="md-nav__link">
       Plugins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wordpress/theme/" title="Theme" class="md-nav__link">
+      Theme
     </a>
   </li>
 
@@ -715,8 +739,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#generate-an-ssh-key" title="Generate an SSH key" class="md-nav__link">
-    Generate an SSH key
+  <a href="#generate-an-ssh-key" title="Generate an SSH key&#185;" class="md-nav__link">
+    Generate an SSH key&#185;
   </a>
   
 </li>
@@ -743,8 +767,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#serveurs-de-noms" title="Serveurs de noms" class="md-nav__link">
-    Serveurs de noms
+  <a href="#nameservers" title="Nameservers" class="md-nav__link">
+    Nameservers
   </a>
   
 </li>
@@ -780,7 +804,7 @@
 </pre></div>
 
 </div>
-<h2 id="generate-an-ssh-key">Generate an SSH key<a class="headerlink" href="#generate-an-ssh-key" title="Permanent link">&para;</a></h2>
+<h2 id="generate-an-ssh-key">Generate an SSH key<a href="/help/glossary/#ssh" target="_blank">&#185;</a><a class="headerlink" href="#generate-an-ssh-key" title="Permanent link">&para;</a></h2>
 <p><a href="../assets/images/aws/creation-instance/en/1.gif" target="_blank"><img alt="Generate an SSH key on Mac" src="../assets/images/aws/creation-instance/en/1.gif"></a></p>
 
 <hr />
@@ -788,14 +812,14 @@
 <dt><strong>Securing communications between your computer and your future server</strong></dt>
 <dd>
 <ul>
-<li><mark class="critic">For the Mac users</mark> At the top right of your computer screen, click on the magnifier icon, start a Spotlight research. Type <em>Terminal</em> then hit <kbd>Enter</kbd>.</li>
+<li><mark class="critic">For the Mac users</mark> At the top right of your computer screen, click on the magnifier icon, start a Spotlight research. Type <strong><em>Terminal</em></strong> then hit <kbd>Enter</kbd>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li><mark class="critic">For the Windows users</mark> Two ways depending on your OS version. <ul>
-<li>In the <em>Start</em> menu, type <em>cmd</em> in the search bar. Select the first result (Command Prompt), by doing a click right and select the <em>execute as an administrator</em> mode.</li>
-<li>Or, open your computer search bar from your desktop by typing <kbd>⊞Win</kbd> + <kbd>S</kbd>. Then, type <em>cmd</em> in the research field. Select the first result (Command Prompt), by doing a click right and select the <em>execute as an administrator</em> mode.</li>
+<li>In the <em>Start</em> menu, type <strong><em>cmd</em></strong> in the search bar. Select the first result (Command Prompt), by doing a right click and select the <em>execute as an administrator</em> mode.</li>
+<li>Or, open your computer search bar from your desktop by hitting <kbd>⊞Win</kbd> then <kbd>S</kbd>. Then, type <strong><em>cmd</em></strong> in the research field. Select the first result (Command Prompt), by doing a click right and select the <em>execute as an administrator</em> mode.</li>
 </ul>
 </li>
 </ul>
@@ -809,7 +833,17 @@
 </dd>
 <dd>
 <ul>
-<li>Then, you can name your keys, then hit <kbd>Enter</kbd>.</li>
+<li>You can now name your keys, then press <kbd>Enter</kbd>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>A little key appear on the terminal. It's time to choose a password <mark class="critic">(have a look at the note down below)</mark> and press <kbd>Enter</kbd>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type your password again and press <kbd>Enter</kbd>.</li>
 </ul>
 </dd>
 </dl>
@@ -818,24 +852,13 @@
 <p>When you type your password in a terminal, what you type will not appear on the screen. It's like your not typing, but you are!<br>
 So you will have to type it blindly.</p>
 </div>
-<dl>
-<dd>
-<ul>
-<li>Choose a password and hit <kbd>Enter</kbd>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Type your password again and hit <kbd>Enter</kbd>.</li>
-</ul>
-</dd>
-</dl>
 <hr />
 <p><a href="../assets/images/aws/creation-instance/en/2.gif" target="_blank"><img alt="Localize an SSH key on Mac" src="../assets/images/aws/creation-instance/en/2.gif"></a></p>
 
 <hr />
+<p><strong>Tracking your SSH key<a href="/help/glossary/#ssh"" target="_blank">&#185;</a></strong></p>
 <dl>
-<dt><strong>Tracking your SSH key</strong></dt>
+<dt><mark class="critic">For Mac computers</mark>:</dt>
 <dd>
 <ul>
 <li>Open your Finder, click on the top menu and choose <strong>Go</strong>, then click on <strong>Go to file...</strong></li>
@@ -850,7 +873,74 @@ So you will have to type it blindly.</p>
 </dd>
 <dd>
 <ul>
-<li>Once you are in the file <mark class="critic">.ssh</mark>, drag the file icon you can see at the top of the Finder windows, on your favorites. This will make it more easy for you to access it for the next step.</li>
+<li>Once you are in the file <strong><em>.ssh</em></strong>, drag the file icon you can see at the top of the Finder windows, on your favorites. This will make it more easy for you to access it for the next step.</li>
+</ul>
+</dd>
+<dt><mark class="critic">For Windows computers</mark>, two methods:</dt>
+<dd>
+<ul>
+<li>Open your <strong><em>Files Explorer</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>This PC</em></strong>  on the left in the shortcut bar.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Go to <strong><em>Windows (C:)</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Then go to the <strong><em>Users file</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Select the <strong><em>.ssh</em></strong> file.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Do a right click and select <strong><em>Create a shortcut</em></strong> and choose your desktop as a location. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>You now have access to your SSH file from your desktop.</li>
+</ul>
+</dd>
+<dt><strong>Or</strong></dt>
+<dd>
+<ul>
+<li>Open your <strong><em>Files Explorer</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click at the top right on the <strong><em>search bar</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type <strong><em>.ssh</em></strong></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Select the <strong><em>.ssh</em></strong> file.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Do a right click and select <strong><em>Create a shortcut</em></strong> and choose your desktop as a location. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>You now have access to your SSH file from your desktop.</li>
 </ul>
 </dd>
 </dl>
@@ -859,14 +949,20 @@ So you will have to type it blindly.</p>
 </div>
 <hr />
 <h2 id="instance-creation">Instance creation<a class="headerlink" href="#instance-creation" title="Permanent link">&para;</a></h2>
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/NG6jjPI0bRg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/gF4tAzemagk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <dl>
 <dt><strong>Amazon Lightsail instance options</strong></dt>
 <dd>
 <ul>
-<li>Go on your AWS management console, search for the service <em>Lightsail</em> and click on it.</li>
+<li><strong>Go on your web navigator</strong>. You should still have the AWS hosted zone page open (see last step <a href="/domain-name/" target="_blank">Domain name</a>). <br>
+Do a right click on the <strong><em>AWS</em></strong> logo at the right and open in a new tab.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>You now are on your AWS management console. Search for the service <strong><em>Lightsail</em></strong> and click on it.</li>
 </ul>
 </dd>
 <dd>
@@ -881,7 +977,7 @@ So you will have to type it blindly.</p>
 </dd>
 <dd>
 <ul>
-<li>Choose an instance location. Choose the region that is the closest to where your future users will be located.<br> 
+<li><strong>Choose an instance location</strong>. Choose the region that is the closest to where your future users will be located.<br> 
     <em>If you target users in Europe, you can choose Frankfurt, if you target users in Japan, you should choose Tokyo. The goal is to enable a quicker loading of your website to the users.</em></li>
 </ul>
 </dd>
@@ -892,27 +988,29 @@ So you will have to type it blindly.</p>
 </dd>
 <dd>
 <ul>
-<li>Choose <em>Linux/Unix</em> as a platform.</li>
+<li>Choose <strong><em>Linux/Unix</em></strong> as a platform.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on the tab <em>OS Only</em> and choose <em>Ubuntu 16.04 LTS</em> as an operating system.</li>
+<li>In <em>Select a blueprint</em>, click on the tab <strong><em>OS Only</em></strong> and choose <strong><em>Ubuntu 18.04 LTS</em></strong> as an operating system.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Don't add any shell script. (I)</li>
+<li>Don't add any shell script (to read more about it <a href="/help/glossary/#shell-script" target="_blank">click here</a>).</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Change SSH key pair</em> and on <em>Upload New</em> then on <mark class="critic">Upload</mark>. </li>
+<li>Click on <strong><em>Change SSH key pair</em></strong> and on <strong><em>Upload New</em></strong> then on <mark class="critic">Upload</mark>. </li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Choose a file</em> and choose <code class="codehilite">id_rsa.pub</code> file in your <code class="codehilite">~/.ssh</code> folder, then click on <mark class="critic">Upload key</mark>. Providing your public SSH key will enable you to secure the communication between your computer and your Amazon Lightsail instance.</li>
+<li>Click on <strong><em>Choose a file</em></strong> and choose <code class="codehilite">id_rsa.pub</code> file in your <code class="codehilite">~/.ssh</code> folder, then click on <mark class="critic">Upload key</mark>. <br>
+<em>It can take some time to load</em><br>
+<em>Providing your public SSH key will enable you to secure the communication between your computer and your Amazon Lightsail instance.</em></li>
 </ul>
 </dd>
 <dd>
@@ -922,7 +1020,7 @@ So you will have to type it blindly.</p>
 </dd>
 <dd>
 <ul>
-<li>Name your instance, with your domain name preferably. (A)</li>
+<li>Name your instance, with your <a href="/help/glossary/#domain-name" target="_blank">domain name</a> preferably.</li>
 </ul>
 </dd>
 <dd>
@@ -945,35 +1043,40 @@ So you will have to type it blindly.</p>
 </div>
 <hr />
 <h2 id="firewall-static-ip">Firewall &amp; Static IP<a class="headerlink" href="#firewall-static-ip" title="Permanent link">&para;</a></h2>
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/aBRPNBX_XMc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Y8-gIGv1zW4?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <dl>
 <dt><strong>Opening of the HTTPS &amp; FTP ports</strong></dt>
 <dd>
 <ul>
-<li>Click on your instance and go to the <em>Networking</em> section.</li>
+<li>You instance logo has changed from gray to orange. It is ready to get used!</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In the <em>Firewall</em> section, click on <em>Add another</em>.</li>
+<li>Click on your instance and go to the <strong><em>Networking</em></strong> section.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In the <em>Custom</em> field select <em>HTTPS</em>.<br>
-    This will secure the communications between your users the external applications and your instance.</li>
+<li>Scroll dpwn to the <em>Firewall</em> section, click on <strong><em>Add another</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Add another</em>.</li>
+<li>In the <em>Custom</em> field, click on the dropdown menu and select <strong><em>HTTPS</em></strong>.<br>
+    <em>This will secure the communications between your users the external applications and your instance. <a href="/help/glossary/#https" target="_blank">Click here to know more more about https</a>.</em></li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Write <em>34210</em> to the <em>Port</em> field. </li>
+<li>Click on <strong><em>Add another</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Write <strong><em>34210</em></strong> to the <em>Port</em> field ad that's it. </li>
 </ul>
 </dd>
 <dd>
@@ -987,7 +1090,7 @@ So you will have to type it blindly.</p>
 <dt><strong>Dynamic IP fixation</strong></dt>
 <dd>
 <ul>
-<li>Click on <mark class="critic">Attach static IP</mark> and click on <mark class="critic">Create static IP</mark>.</li>
+<li>Scroll up ad click on <mark class="critic">Create static IP</mark>.</li>
 </ul>
 </dd>
 <dd>
@@ -997,7 +1100,9 @@ So you will have to type it blindly.</p>
 </dd>
 <dd>
 <ul>
-<li>Name your static IP this way, with YOUR domain name: <em>StaticIp-YourDomainName</em>.</li>
+<li>In <em>Identify your static IP</em>, name your static IP this way, with YOUR domain name: 
+<div class="codehilite"><pre><span></span>StaticIp-YourDomainName
+</pre></div></li>
 </ul>
 </dd>
 <dd>
@@ -1008,10 +1113,10 @@ So you will have to type it blindly.</p>
 </dl>
 <div class="admonition info">
 <p class="admonition-title">Dynamic IP and static IP</p>
-<p>By default, your instance has a dynamic IP. Meaning that each time you restart your instance, your IP address changes. You need a static IP so your website is reachable from a unique address. A static IP is free when it is linked to an instance.</p>
+<p>By default, your instance has a dynamic IP. Meaning that each time you restart your instance, your IP address changes. You need a static IP so your website is reachable from a unique address. A <a href="/help/glossary/#static-ip" target="_blank">static IP</a> is free when it is linked to an instance.</p>
 </div>
 <div class="admonition success">
-<p class="admonition-title">HTTPS and FTP are now opened and the instance has a static IP.</p>
+<p class="admonition-title">The HTTPS and FTP ports are now opened and the instance has a static IP.</p>
 </div>
 <hr />
 <h2 id="dns-zone">DNS zone<a class="headerlink" href="#dns-zone" title="Permanent link">&para;</a></h2>
@@ -1021,17 +1126,17 @@ So you will have to type it blindly.</p>
 <dt><strong>Combination of your instance and domain name</strong></dt>
 <dd>
 <ul>
-<li>On the top left corner, click on <em>Home</em> then go to the <em>Networking</em> tab.</li>
+<li>On the top left corner, click on <strong><em>Home</em></strong> then go to the <strong><em>Networking</em></strong> tab.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <mark class="critic">Create DNS zone</mark>.</li>
+<li>Click on <mark class="critic">Create DNS zone</mark>.  <a href="/help/glossary/#dns-zone-domain-name-system" target="_blank">Click here to know more about the DNS Zone</a>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In the field, write your domain name. (A)</li>
+<li>In the field, write your domain name.</li>
 </ul>
 </dd>
 <dd>
@@ -1050,24 +1155,40 @@ So you will have to type it blindly.</p>
 <dt><strong>Creation of DNS records</strong></dt>
 <dd>
 <ul>
-<li>Click on <em>Add record</em>.</li>
+<li>Click on <strong><em>Add record</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Add a first type A record for <code class="codehilite">@.YourDomainName.com</code> pointing to your static IP. <br><br>
-   <strong>To do so</strong>, type <kbd>@</kbd> on the first field on the left. Then select the static IP you just created on the right.</li>
+   <strong>To do so</strong>, type <kbd>@</kbd> on the first field on the left. Then select the static IP you just created on the right. Click on the <strong><em>green icon</em></strong> to save.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Add record</em> again.</li>
+<li>Click on <strong><em>Add record</em></strong> again.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Add a second type A for <code class="codehilite">www.YourDomainName.com</code> pointing to your static IP.<br><br>
-   <strong>To do so</strong>, type <kbd>www</kbd> on the first field on the left. Then select the static IP you just created on the right.</li>
+   <strong>To do so</strong>, type <kbd>www</kbd> on the first field on the left. Then select the static IP you just created on the right. Click on the <strong><em>green icon</em></strong> to save.<br></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li><strong>Now, the next step is if you want to register a <a href="/help/glossary/#subdomain" target="_blank">subdomain</a></strong>, if you need to create an e-shop for example. This step is not mandatory and you will be able to add a subdomain later. Though, you will have to pay because of Runcloud (see the video).</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>Add record</em></strong> again.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Add a second type A for <code class="codehilite">SubDomain.YourDomainName.com</code> pointing to your static IP.<br><br>
+   <strong>To do so</strong>, type <kbd>YourSubDomain</kbd> on the first field on the left. Then select the static IP you just created on the right. Click on the <strong><em>green icon</em></strong> to save.</li>
 </ul>
 </dd>
 </dl>
@@ -1075,7 +1196,7 @@ So you will have to type it blindly.</p>
 <p class="admonition-title">Your instance has a DNS zone and its static IP point to your domain name.</p>
 </div>
 <hr />
-<h2 id="serveurs-de-noms">Serveurs de noms<a class="headerlink" href="#serveurs-de-noms" title="Permanent link">&para;</a></h2>
+<h2 id="nameservers">Nameservers<a class="headerlink" href="#nameservers" title="Permanent link">&para;</a></h2>
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/uVV-diKCHcM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
@@ -1088,32 +1209,49 @@ So you will have to type it blindly.</p>
 </dd>
 <dd>
 <ul>
-<li>On the top right corner, click on <em>AWS</em> to open the management console.</li>
+<li>Go back on the <em>Route 53</em> page you left open.<br>
+If you closed it then do a right click on <strong><em>AWS</em></strong>, at the top right corner. Then, search for <em>Route 53</em> in the search bar and click on it.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Search for <em>Route 53</em> in the search bar and click on it.</li>
+<li>On the left side of the interface, click on <strong><em>Registered domains</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>On the left side of the interface, click on <em>Registered domains</em>.</li>
+<li>Click on your <strong><em>domain name</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on your domain name.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>On the right, click on <em>Add or edit name servers</em>. Then, replace one by one the actuals name servers by the four new ones from your DNS zone.</li>
+<li>On the right, click on <strong><em>Add or edit name servers</em></strong>.<br> 
+Then, you have to replace the actuals name servers by the four new ones from your DNS zone (on the page you just left), one by one.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Click on <mark class="critic">Update</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>Dashboard</em></strong> in the left menu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Look the <em>Alerts</em> board. On the first line, you can see that your nameservers' update are in progress. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Wait a few minutes and refresh the page.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Now your nameservers are successfully updated.</li>
 </ul>
 </dd>
 </dl>
@@ -1147,6 +1285,9 @@ So you will have to type it blindly.</p>
 </ul>
 </dd>
 </dl>
+<div class="admonition info">
+<p class="admonition-title"><a href="/help/glossary/#ssh" target="_blank">CLick here</a> to learn more about the SSH.</p>
+</div>
 <hr />
 <p><a href="../assets/images/aws/creation-instance/en/4.png" target="_blank"><img alt="SSH Connexion Instance Amazon Lightsail" src="../assets/images/aws/creation-instance/en/4.png"></a></p>
 

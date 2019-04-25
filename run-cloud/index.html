@@ -102,7 +102,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="amber">
   
     <svg class="md-svg">
       <defs>
@@ -461,6 +461,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#services-install" title="Services install" class="md-nav__link">
+    Services install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ssh-key" title="SSH Key" class="md-nav__link">
     SSH Key
   </a>
@@ -534,8 +541,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../wordpress/theme-fr/" title="Thème" class="md-nav__link">
+      Thème
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../wordpress/plugins/" title="Plugins" class="md-nav__link">
       Plugins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wordpress/theme/" title="Theme" class="md-nav__link">
+      Theme
     </a>
   </li>
 
@@ -757,6 +788,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#services-install" title="Services install" class="md-nav__link">
+    Services install
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#ssh-key" title="SSH Key" class="md-nav__link">
     SSH Key
   </a>
@@ -842,22 +880,43 @@
 <dt><strong>Install Runcloud on your Lightsail instance</strong></dt>
 <dd>
 <ul>
-<li>Click on <em>Connect a New Server</em>.</li>
+<li>Close the <em>Route 53</em> window.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Name your server with your website name.</li>
+<li>On the <em>Amazon Lightsail</em> page, click on <strong><em>Home</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Copy/paste the static IP of your instance in the form input.</li>
+<li>Copy your server's IP address (the numbers you can find under your instance's name, in the grey rectangle).</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Put <em>AWS</em> as a Server Provider.</li>
+<li>Go back on your <strong><em>Runcloud dashboard</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>Connect a New Server</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the first field, name your server with your website name.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copy/paste the static IP of your instance in the second input.<br>
+<em>You will find it on your Lightsail page, next to your instance name.</em></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Then, put <strong><em>AWS</em></strong> as a Server Provider in the third field.</li>
 </ul>
 </dd>
 <dd>
@@ -867,12 +926,12 @@
 </dd>
 <dd>
 <ul>
-<li>RunCloud is going to generate an installation command on your server. Copy it by clicking on the green icon on the right.</li>
+<li><em>RunCloud is going to generate an installation command on your server.</em> Copy it by clicking on the <strong><em>green icon</em></strong> on the right.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Go back on Lightsail and connect to your SSH instance by clicking on <em>Connect</em>.</li>
+<li>Go back on Lightsail and connect to your SSH instance by clicking <strong><em>on the three dots</em></strong> next to your instance's name. Then click on <strong><em>Connect</em></strong>.</li>
 </ul>
 </dd>
 <dd>
@@ -884,7 +943,7 @@
 </dd>
 <dd>
 <ul>
-<li>Click on the orange icon at the bottom right of the terminal and paste the installation command in the window.</li>
+<li>Click on the <strong><em>orange icon</em></strong> at the bottom right of the terminal and paste the installation command you just copied in the window.</li>
 </ul>
 </dd>
 <dd>
@@ -895,17 +954,28 @@
 </dl>
 <div class="admonition warning">
 <p class="admonition-title">Installation</p>
-<p>The command is going to install Runcloud. DO NOT LEAVE the terminal before the process is done. It can take around 10 minutes.</p>
+<p>The command is going to install Runcloud. <strong>DO NOT LEAVE</strong> the terminal before the process is done. It can take around 10 minutes.</p>
 </div>
 <hr />
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/0efKMExFMfY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <dl>
-<dt><strong>Save your MySQL credentials</strong></dt>
+<dt><strong>Save your MySQL<a href="/help/glossary/#mysql" target="_blank">&#185;</a> credentials</strong></dt>
 <dd>
 <ul>
-<li>Once the process is done, copy the MySQL login and password and paste it on a secure document on your computer! To copy on a terminal, you have to select what you want to copy, then click on the orange icon at the bottom right. You will find what you just select. You can now from this place, copy the content.</li>
+<li>Once the process is done, your <strong><em>database MySQL passwords</em></strong> will appear. Copy and paste it on a secure document on your computer! </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>To copy on a terminal, you have to select what you want to copy, then click on the orange icon at the bottom right. You will find what you just select. You can now from this place, copy the content.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Open a text file so you can keep your MySQL access and save it in a secure place.<br>
+<em><a href="/help/glossary/#mysql" target="_blank">Click here</a> to know more about MySQL.</em></li>
 </ul>
 </dd>
 </dl>
@@ -921,7 +991,7 @@
 <dt><strong>Come back to Runcloud.io, you should now have access to your dashboard</strong></dt>
 <dd>
 <ul>
-<li>In the left menu, click on <mark class="critic">Web Application</mark>.</li>
+<li>On the left menu, click on <mark class="critic">Web Application</mark>.</li>
 </ul>
 </dd>
 <dd>
@@ -931,7 +1001,14 @@
 </dd>
 <dd>
 <ul>
-<li>Name your application with the name of your future website this way : <code class="codehilite">*.VotreNomDeDomaine.com</code></li>
+<li>Fill out the form by starting with naming your application with your website's name.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Add your domain name this way :
+<div class="codehilite"><pre><span></span>*.VotreNomDeDomaine.com
+</pre></div></li>
 </ul>
 </dd>
 <dd>
@@ -946,27 +1023,39 @@
 </dd>
 <dd>
 <ul>
-<li>Leave the by default Public Path.</li>
+<li>Leave the by default <em>Public Path</em>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Select the most recent PHP version.</li>
+<li>In the drop down menu, select the most recent PHP version.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Select <em>NGINX + Apache2 Hybrid (You will be able to use .htaccess)</em>.</li>
+<li>Select <strong><em>NGINX + Apache2 Hybrid (You will be able to use .htaccess)</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Choose the <em>Production</em> mode.</li>
+<li>Choose the <strong><em>Production</em></strong> mode.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Let the <em>Advanced Settings</em> box unchecked, so you can keep the by default settings.</li>
+<li>Click on the <em>Advanced Settings</em> box.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Scroll down the page to this field: <em>MAX_EXECUTION_TIME</em>. <br>
+Write <strong><em>300</em></strong> in the field by replacing its content.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Then go to the <em>MAX_EXECUTION_TIME</em> field.<br>
+Write <strong><em>3000</em></strong> in the field by replacing its content.</li>
 </ul>
 </dd>
 <dd>
@@ -992,7 +1081,7 @@
 </dd>
 <dd>
 <ul>
-<li>Select the <em>Wordpress</em> script.</li>
+<li>In the drop down menu, select the <strong><em>Wordpress</em></strong> script.</li>
 </ul>
 </dd>
 <dd>
@@ -1006,12 +1095,42 @@
 <dt><strong>Domain name configuration</strong></dt>
 <dd>
 <ul>
-<li>In the left menu, click on <mark class="critic">Domain Name</mark>.</li>
+<li>On the left menu, click on <mark class="critic">Domain Name</mark>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Add the domains names <code class="codehilite">www.example.com</code> and <code class="codehilite">example.com</code> to the existing list.</li>
+<li>Add the domain name <code class="codehilite">www.example.com</code> to the field.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Attach Domain Name</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Add the domain name <code class="codehilite">example.com</code> to the field.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Attach Domain Name</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">The next step is only for the people that created a subdomain. If you did, it was when we configured your <a href="/instance-creation/#dns-zone" target="_blank">DNS zone</a>.</p>
+</div>
+<dl>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Attach Domain Name</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Add your subdomain and domain name <code class="codehilite">SubDomain.example.com</code> to the field.</li>
 </ul>
 </dd>
 <dd>
@@ -1025,32 +1144,37 @@
 <dt><strong>Creation of the SSL security certificate</strong></dt>
 <dd>
 <ul>
-<li>In the left menu, click on <mark class="critic">SSL/TLS</mark>.</li>
+<li>On the left menu, click on <mark class="critic">SSL/TLS</mark>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Check the box <em>Enable HSTS</em>.</li>
+<li>Scroll down the page, check the box <strong><em>Enable HSTS</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Select <em>Let's Encrypt</em> as an SSL method.</li>
+<li>Select <strong><em>Let's Encrypt</em></strong> as an SSL method.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Select <em>Http-01</em>.</li>
+<li>Select <strong><em>Http-01</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Select <em>Live</em> as an environment.</li>
+<li>Select <strong><em>Live</em></strong> as an environment.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Click on <mark class="critic">Submit</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Create Let's Encrypt Request</mark>.</li>
 </ul>
 </dd>
 </dl>
@@ -1062,32 +1186,26 @@
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/Wb7_7h03Zgc?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
-<p><strong>Database creation</strong></p>
 <dl>
-<dt><strong>By default application</strong></dt>
+<dt><strong>Database creation</strong></dt>
 <dd>
 <ul>
-<li>On the top right corner, click on <mark class="critic">More</mark> and select <em>Set as default Web Application</em> then click on <mark class="critic">Set As Default</mark></li>
+<li>Come back to the homepage by clicking on <strong><em>Back to web apps</em></strong> on the left.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Come back to the homepage by clicking on <em>Back to web apps</em>.</li>
+<li>On the left menu, click on <mark class="critic">Database</mark>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In the left menu, click on <mark class="critic">Database</mark>.</li>
+<li>Click on <strong><em>Create Database</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Create Database</em>.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Name your database as you wish.</li>
+<li>Name your database as you wish. Your website's name is a good option.</li>
 </ul>
 </dd>
 <dd>
@@ -1110,22 +1228,22 @@
 <dt><strong>Database admin user creation</strong></dt>
 <dd>
 <ul>
-<li>Click on <em>Create Database User</em>.</li>
+<li>Click on <strong><em>Create Database User</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In <em>Database User</em>, create your login, save it in a separate file and store it in a secured place.</li>
+<li>In <em>Database User</em>, create your login, <strong>save it in a file and store it in a secured place</strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Generate a password and copy/paste, save it in a separate file and store it in a secured place.</li>
+<li>Generate a password and <strong>copy it</strong>! <strong>Then, save it in a file and store it in a secured place</strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Add Database User</em>.</li>
+<li>Click on <strong><em>Add Database User</em></strong>.</li>
 </ul>
 </dd>
 </dl>
@@ -1133,27 +1251,61 @@
 <p class="admonition-title">Information</p>
 <p>You need an admin account to access the Wordpress dashboard. This account will have all the rights on your website. Once the admin login/password created, you must keep it in a secure place/file.</p>
 </div>
+<!-- ***
+
+**Linking the admin account to your database**
+
+:    * Click on ***Attach User***.
+:    * Select the admin username in the drop-down list.
+:    * Click on ***Attach User***.
+
+!!! success "The database linked to an admin account is now available for Wordpress." -->
+
+<hr />
+<h2 id="services-install">Services install<a class="headerlink" href="#services-install" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/FjCZo9eb1Yk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
 <hr />
 <dl>
-<dt><strong>Linking the admin account to your database</strong></dt>
+<dt><strong>Let's activate services on Runcloud</strong></dt>
 <dd>
 <ul>
-<li>Click on <em>Attach User</em>.</li>
+<li>Click on <mark class="critic">Services</mark> on the left menu.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Select the admin username in the drop-down list.</li>
+<li>Scroll down and click on the <strong><em>setting icon</em></strong> next to the <strong>Redis</strong> logo.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Attach User</em>.</li>
+<li>Click on <strong><em>Start</em></strong>, then again on the <mark class="critic">Start</mark> button.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on the <strong><em>setting icon</em></strong> next to the <strong>Memcached</strong> logo.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>Start</em></strong>, then again on the <mark class="critic">Start</mark> button.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on the <strong><em>setting icon</em></strong> next to the <strong>Beanstalkd</strong> logo.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>Start</em></strong>, then again on the <mark class="critic">Start</mark> button.</li>
 </ul>
 </dd>
 </dl>
 <div class="admonition success">
-<p class="admonition-title">The database linked to an admin account is now available for Wordpress.</p>
+<p class="admonition-title">Redis is now active and set on your Runcloud account.</p>
 </div>
 <hr />
 <h2 id="ssh-key">SSH Key<a class="headerlink" href="#ssh-key" title="Permanent link">&para;</a></h2>
@@ -1164,7 +1316,7 @@
 <dt><strong>Public SSH key setting for Runcloud.io</strong></dt>
 <dd>
 <ul>
-<li>Click on <mark class="critic">SSH Key</mark> in the left menu.</li>
+<li>Click on <mark class="critic">SSH Key</mark> on the left menu.</li>
 </ul>
 </dd>
 <dd>
@@ -1174,7 +1326,7 @@
 </dd>
 <dd>
 <ul>
-<li>Name your public SSH key.</li>
+<li>Name your public SSH key in the <em>Label</em> field.</li>
 </ul>
 </dd>
 <dd>
@@ -1189,7 +1341,7 @@
 </dd>
 <dd>
 <ul>
-<li>Copy / paste the public key in the Runcloud.io form input.</li>
+<li>Copy the public key and paste it in the <em>Public Key</em> field of  Runcloud.io.</li>
 </ul>
 </dd>
 <dd>
@@ -1203,13 +1355,30 @@
 </div>
 <hr />
 <h2 id="wordpress-configurations">Wordpress configurations<a class="headerlink" href="#wordpress-configurations" title="Permanent link">&para;</a></h2>
+<dl>
+<dd>
+<ul>
+<li>Click on <strong><em>Web application</em></strong> in the left menu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>At the right, on the <em>Options</em> column, click on the <mark class="critic">Cog icon</mark>. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Select <strong><em>Set as default Web Application</em></strong> then click on <mark class="critic">Set As Default</mark>.</li>
+</ul>
+</dd>
+</dl>
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/xcMjKatVbqQ?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <p><strong>Wordpress database linking</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Information</p>
-<p>You can now access your website! Type your domain name <code class="codehilite">https://example.com</code> on the URL search bar of your browser. You will then have access to the Wordpress installation page.</p>
+<p>You can now access your website! <br>Type your domain name <code class="codehilite">https://example.com</code> on the URL search bar of your browser. You will then have access to the Wordpress installation page.</p>
 </div>
 <dl>
 <dd>
@@ -1219,22 +1388,22 @@
 </dd>
 <dd>
 <ul>
-<li>Click on the <mark class="critic">Let's go!</mark> button.</li>
+<li>Click on <mark class="critic">Continue</mark> then on <mark class="critic">Let's go!</mark> button.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Inject your Runcloud.io database name.</li>
+<li>Inject your Runcloud.io database name (we defined it on the <a href="/run-cloud/#database" target="_blank">Database</a> step).</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Copy/paste the Runcloud.io administrator database name. (A)</li>
+<li>Copy/paste your Runcloud.io <strong><em>administrator database name</em></strong> (we also did that on the <a href="/run-cloud/#database" target="_blank">Database</a> step).</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Copy/paste the Runcloud.io database password. (A)</li>
+<li>Copy/paste your Runcloud.io <strong><em>database password</em></strong> that you pasted in a file (again if you forgot, we did that during the <a href="/run-cloud/#database" target="_blank">Database</a> step).</li>
 </ul>
 </dd>
 <dd>
@@ -1244,7 +1413,7 @@
 </dd>
 <dd>
 <ul>
-<li>Change your prefix with something else than <code class="codehilite">wp_</code>, but keep the same format.</li>
+<li>Change your prefix's letters with something else than <code class="codehilite">wp_</code>, but keep the same format.</li>
 </ul>
 </dd>
 <dd>
@@ -1259,33 +1428,30 @@
 </dd>
 </dl>
 <hr />
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/TRinVkDEo2E?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-<hr />
 <p><strong>Website and admin account configurations</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Save your login!</p>
-<p>You are going to create admin access to your Wordpress website. You must keep your login/password combination in a secure place!</p>
+<p>You are going to create admin access to your Wordpress website. <strong>You must keep your login/password combination in a secure place!</strong></p>
 </div>
 <dl>
 <dd>
 <ul>
-<li>Give your website a title.</li>
+<li>Give your website a <strong><em>title</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Chose a login, save it in a separate file and store it in a secured place.</li>
+<li>Chose a <strong><em>login</em></strong>, save it in a file and store it in a secured place.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Generate a password, save it in a separate file and store it in a secured place.</li>
+<li>Generate a <strong><em>password</em></strong>, copy and save it in a file and store it in a secured place.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Add your admin e-mail address.</li>
+<li>Add your admin <strong><em>e-mail</em></strong> address.</li>
 </ul>
 </dd>
 <dd>
@@ -1300,7 +1466,7 @@
 </dd>
 <dd>
 <ul>
-<li>You can now <mark class="critic">Log In</mark> to your Wordpress.</li>
+<li>You can now <mark class="critic">Log In</mark> to your Wordpress website.</li>
 </ul>
 </dd>
 </dl>

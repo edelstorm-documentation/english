@@ -102,7 +102,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="amber">
   
     <svg class="md-svg">
       <defs>
@@ -454,8 +454,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../wordpress/theme-fr/" title="Thème" class="md-nav__link">
+      Thème
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../wordpress/plugins/" title="Plugins" class="md-nav__link">
       Plugins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wordpress/theme/" title="Theme" class="md-nav__link">
+      Theme
     </a>
   </li>
 
@@ -617,6 +641,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation-de-services" title="Installation de services" class="md-nav__link">
+    Installation de services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#cle-ssh" title="Clé SSH" class="md-nav__link">
     Clé SSH
   </a>
@@ -757,6 +788,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#installation-de-services" title="Installation de services" class="md-nav__link">
+    Installation de services
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#cle-ssh" title="Clé SSH" class="md-nav__link">
     Clé SSH
   </a>
@@ -826,7 +864,7 @@
 </dd>
 </dl>
 <div class="admonition success">
-<p class="admonition-title">Vous avez un compte Runcloud.io</p>
+<p class="admonition-title">Vous venez de créer un compte Runcloud.io !</p>
 </div>
 <hr />
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
@@ -837,22 +875,43 @@
 <dt><strong>Installation de Runcloud sur votre instance Lightsail</strong></dt>
 <dd>
 <ul>
-<li>Cliquez sur <em>Connect a New Server</em>.</li>
+<li>Fermez la fenêtre <em>Route 53</em>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Nommez votre serveur avec le nom de votre site web.</li>
+<li>Sur la page <em>Amazon Lightsail</em> cliquez sur <strong><em>Accueil</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Copiez/collez l'IP statique de votre instance Lightsail dans le champ du formulaire.</li>
+<li>Copier l'adresse IP de votre serveur. C'est la suite de chiffre se trouvant dans l'encart gris représentant votre instance.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Inscrivez <em>AWS</em> comme Server Provider.</li>
+<li>Retournez sur votre <strong><em>tableau de bord Runcloud</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <strong><em>Connect a New Server</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Dans le premier champ, nommez votre serveur avec le nom de votre site web.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Copiez/collez l'IP statique de votre instance Lightsail dans le deuxième champ.<br>
+<em>Vous la trouverez sur votre page Lightsail, à côté du nom de votre instance.</em></li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Puis, inscrivez <strong><em>AWS</em></strong> comme Server Provider dans le troisième champ.</li>
 </ul>
 </dd>
 <dd>
@@ -862,12 +921,12 @@
 </dd>
 <dd>
 <ul>
-<li>RunCloud.io va générer une commande d'installation pour votre serveur. Copiez-là en cliquant sur l'icône vert à droite de la commande.</li>
+<li><em>RunCloud.io va générer une commande d'installation pour votre serveur.</em> Copiez-là en cliquant sur <strong><em>l'icône vert</em></strong> à droite de la commande.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Revenez sur Lightsail et connectez-vous en SSH à votre instance en cliquant sur <em>Connexion</em>.</li>
+<li>Revenez sur Lightsail et connectez-vous en SSH à votre instance en cliquant sur les <strong><em>trois petits points</em></strong> à coté du nom de votre instance. Puis cliquez sur <strong><em>Connexion</em></strong>.</li>
 </ul>
 </dd>
 <dd>
@@ -879,7 +938,7 @@
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur l'icône orange en bas à droite de la fenêtre du terminal et collez la commande à l'intérieur.</li>
+<li>Cliquez sur <strong><em>l'icône orange</em></strong> en bas à droite de la fenêtre du terminal et collez la commande copiée précédemment à l'intérieur.</li>
 </ul>
 </dd>
 <dd>
@@ -890,22 +949,28 @@
 </dl>
 <div class="admonition warning">
 <p class="admonition-title">Installation</p>
-<p>La commande va alors installer Runcloud avec l'ensemble des configurations nécessaires à son fonctionnement. Surtout, NE QUITTEZ PAS le terminal avant la fin du processus qui dure une dizaine de minutes. </p>
+<p>La commande va alors installer Runcloud avec l'ensemble des configurations nécessaires à son fonctionnement. Surtout, <strong>NE QUITTEZ PAS</strong> le terminal avant la fin du processus qui dure une dizaine de minutes. </p>
 </div>
 <hr />
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/cwFqsujueXo?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
 <dl>
-<dt><strong>Sauvegarde de vos accès MySQL</strong></dt>
+<dt><strong>Sauvegarde de vos accès MySQL<a href="/aide/glossaire/#mysql" target="_blank">&#185;</a></strong></dt>
 <dd>
 <ul>
-<li>Une fois l'installation terminée, pensez impérativement à sauvegarder les mots de passe MySQL de votre base de données dans un endroit sécurisé sur votre ordinateur ! Pour copier/coller sur le terminal, il vous suffit de sélectionner ce que vous voulez copier, puis de cliquer sur l'icône orange en bas à droite. Vous y retrouverez ce que vous venez de sélectionner, vous pouvez alors, à partir de cet endroit, copier le contenu.</li>
+<li>Une fois l'installation terminée des <strong><em>passwords</em></strong> (mots de passe) MySQL de votre base de données s'affichent sur la console. Pensez impérativement à les copier puis coller dans un fichier sécurisé sur votre ordinateur ! </li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Ouvrez un fichier texte pour y stocker vos accès MySQL, sauvegardez-le ensuite dans un endroit sécurisé.</li>
+<li>Pour copier/coller sur le terminal, il vous suffit de sélectionner ce que vous voulez copier, puis de cliquer sur l'icône orange en bas à droite. Vous y retrouverez ce que vous venez de sélectionner, vous pouvez alors, à partir de cet endroit, copier le contenu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ouvrez un fichier texte pour y stocker vos accès MySQL, sauvegardez-le ensuite dans un endroit sécurisé.<br>
+<em><a href="/aide/glossaire/#mysql" target="_blank">Cliquez ici</a> pour en savoir plus sur MySQL.</em></li>
 </ul>
 </dd>
 </dl>
@@ -931,12 +996,14 @@
 </dd>
 <dd>
 <ul>
-<li>Nommez votre application avec le nom de votre futur site web.</li>
+<li>Remplissez le formulaire en commençant par nommer votre application avec le nom de votre futur site web.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Ajoutez le nom de domaine que vous utilisez pour votre instance de cette façon : <code class="codehilite">*.VotreNomDeDomaine.com</code></li>
+<li>Ajoutez le nom de domaine de votre site de cette façon :
+<div class="codehilite"><pre><span></span>*.VotreNomDeDomaine.com
+</pre></div></li>
 </ul>
 </dd>
 <dd>
@@ -946,32 +1013,43 @@
 </dd>
 <dd>
 <ul>
-<li>Laissez le chemin public (Public Path) par défaut.</li>
+<li>Laissez le chemin public, <em>Public Path</em>, par défaut.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Sélectionnez la version de PHP la plus avancée à disposition.</li>
+<li>Dans le menu déroulant, sélectionnez la version de PHP la plus avancée disponible.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Sélectionnez <em>NGINX + Apache2 Hybrid (You will be able to use .htaccess)</em>.</li>
+<li>Sélectionnez <strong><em>NGINX + Apache2 Hybrid (You will be able to use .htaccess)</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Choisissez le mode <em>Production</em>.</li>
+<li>Choisissez le mode <strong><em>Production</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Laissez la case <em>Advanced Settings</em> décochée pour obtenir l'ensemble des configurations par défaut.</li>
+<li>Cochez case <em>Advanced Settings</em>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <mark class="critic">Add Web Application</mark>.</li>
+<li>Descendez la page jusqu'à atteindre le champ : <em>MAX_EXECUTION_TIME</em>. <br>
+Écrivez <strong><em>300</em></strong> dans ce champ, en remplaçant son contenu actuel. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Puis dans le champ <em>MAX_EXECUTION_TIME</em>., remplacez le nombre actuel par <strong><em>3000</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Descendez jusqu'en bas de la page et cliquez sur le bouton <mark class="critic">Add Web Application</mark>.</li>
 </ul>
 </dd>
 </dl>
@@ -992,7 +1070,7 @@
 </dd>
 <dd>
 <ul>
-<li>Sélectionnez le script <em>Wordpress</em>.</li>
+<li>Dans le menu déroulant, sélectionnez le script <strong><em>Wordpress</em></strong>.</li>
 </ul>
 </dd>
 <dd>
@@ -1011,7 +1089,32 @@
 </dd>
 <dd>
 <ul>
-<li>Ajoutez votre nom de domaine sous ces deux formes : <code class="codehilite">www.exemple.com</code> et <code class="codehilite">exemple.com</code>, à la liste existante.</li>
+<li>Ajoutez votre nom de domaine sous cette forme : <code class="codehilite">www.exemple.com</code> dans le champ.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Attach Domain Name</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Ajoutez votre nom de domaine sous cette forme : <code class="codehilite">exemple.com</code>, dans le champ.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Attach Domain Name</mark>.</li>
+</ul>
+</dd>
+</dl>
+<div class="admonition warning">
+<p class="admonition-title">Attention, la prochaine  étape n'est à réaliser que si vous avez créé un sous-domaine lors de <a href="/creation-de-l'instance/#zone-dns" target="_blank">l'étape zone DNS</a>.</p>
+</div>
+<dl>
+<dd>
+<ul>
+<li>Ajoutez votre nom de domaine avec son sous-domaine sous cette forme : <code class="codehilite">SousDomaine.exemple.com</code>, dans le champ.</li>
 </ul>
 </dd>
 <dd>
@@ -1030,27 +1133,32 @@
 </dd>
 <dd>
 <ul>
-<li>Cochez la cache <em>Enable HSTS</em>.</li>
+<li>Descendez la page, cochez la cache <em>Enable HSTS</em>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Sélectionnez <em>Let's Encrypt</em> comme méthode SSL.</li>
+<li>Sélectionnez <strong><em>Let's Encrypt</em></strong> comme méthode SSL.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Sélectionnez <em>Http-01</em> comme méthode d'autorisation.</li>
+<li>Sélectionnez <strong><em>Http-01</em></strong> comme méthode d'autorisation.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Sélectionnez <em>Live</em> comme environnement.</li>
+<li>Sélectionnez <strong><em>Live</em></strong> comme environnement.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Cliquez sur <mark class="critic">Submit</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <mark class="critic">Create Let's Encrypt Request</mark>.</li>
 </ul>
 </dd>
 </dl>
@@ -1066,12 +1174,7 @@
 <dt><strong>Création de la base de données</strong></dt>
 <dd>
 <ul>
-<li>En haut à droite, cliquez sur <mark class="critic">More</mark> et sélectionnez <em>Set as default Web Application</em> puis <mark class="critic">Set As Default</mark></li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Revenez à l'accueil en cliquant sur <em>Back to web apps</em>.</li>
+<li>Revenez à l'accueil en cliquant sur <strong><em>Back to web apps</em></strong> à gauche.</li>
 </ul>
 </dd>
 <dd>
@@ -1081,12 +1184,12 @@
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <em>Create Database</em>.</li>
+<li>Cliquez sur <strong><em>Create Database</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Nommez votre base de données comme vous le souhaitez.</li>
+<li>Nommez votre base de données comme vous le souhaitez. Le nom de votre site est une bonne option.</li>
 </ul>
 </dd>
 <dd>
@@ -1096,7 +1199,7 @@
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <mark class="critic">Add Database</mark>.</li>
+<li>Cliquez sur <mark class="critic">Add Database</mark>. </li>
 </ul>
 </dd>
 </dl>
@@ -1109,50 +1212,84 @@
 <dt><strong>Création de l'administrateur de la base de données</strong></dt>
 <dd>
 <ul>
-<li>Cliquez sur <em>Create Database User</em>.</li>
+<li>Cliquez sur <strong><em>Create Database User</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Dans <em>Database User</em> créez votre identifiant, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+<li>Dans <em>Database User</em> créez votre identifiant, <strong>stockez cette information dans un fichier et sauvegardez-le dans un endroit sécurisé</strong> !</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Générez votre mot de passe, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+<li>Générez votre mot de passe et <strong>copiez le</strong> ! <strong>Stockez cette information dans un fichier et sauvegardez-le dans un endroit sécurisé</strong>!</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <em>Add Database User</em>.</li>
+<li>Cliquez sur <strong><em>Add Database User</em></strong>.</li>
 </ul>
 </dd>
 </dl>
 <div class="admonition info">
 <p class="admonition-title">Information</p>
-<p>Pour accéder à l'interface d'administration de Wordpress, il vous faut un compte administrateur qui aura les droits d'accès à la base de données. Sauvegardez impérativement ces informations dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</p>
+<p>Pour accéder à l'interface d'administration de Wordpress, il vous faut un compte administrateur qui aura les droits d'accès à la base de données. Sauvegardez impérativement ces informations dans un fichier et sauvegardez-le dans un endroit sécurisé !</p>
 </div>
+<!-- ***
+
+**Association du compte administrateur à la base de données**
+
+:    * Cliquez sur ***Attach User***.
+:    * Sélectionnez l'utilisateur administrateur dans la liste déroulante.
+:    * Cliquez sur ***Attach User***.
+
+!!! success "Une base de données lié à un administrateur est disponible pour Wordpress." -->
+
+<hr />
+<h2 id="installation-de-services">Installation de services<a class="headerlink" href="#installation-de-services" title="Permanent link">&para;</a></h2>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/FjCZo9eb1Yk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+
 <hr />
 <dl>
-<dt><strong>Association du compte administrateur à la base de données</strong></dt>
+<dt><strong>Activation services sur Runcloud</strong></dt>
 <dd>
 <ul>
-<li>Cliquez sur <em>Attach User</em>.</li>
+<li>Dans le menu de gauche, cliquez sur <mark class="critic">Services</mark>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Sélectionnez votre l'utilisateur administrateur dans la liste déroulante.</li>
+<li>Descendez un peu la page et cliquez sur l'<strong><em>icône de réglages</em></strong> à coté du logo de <strong>Redis</strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <em>Attach User</em>.</li>
+<li>Cliquez sur <strong><em>Start</em></strong>, puis sur le bouton <mark class="critic">Start</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur l'<strong><em>icône de réglages</em></strong> à coté du logo de <strong>Memcached</strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <strong><em>Start</em></strong>, puis sur le bouton <mark class="critic">Start</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur l'<strong><em>icône de réglages</em></strong> à coté du logo de <strong>Beanstalkd</strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Cliquez sur <strong><em>Start</em></strong>, puis sur le bouton <mark class="critic">Start</mark>.</li>
 </ul>
 </dd>
 </dl>
 <div class="admonition success">
-<p class="admonition-title">Une base de données lié à un administrateur est disponible pour Wordpress.</p>
+<p class="admonition-title">Redis est maintenant actif sur votre application Runcloud.</p>
 </div>
 <hr />
 <h2 id="cle-ssh">Clé SSH<a class="headerlink" href="#cle-ssh" title="Permanent link">&para;</a></h2>
@@ -1173,7 +1310,7 @@
 </dd>
 <dd>
 <ul>
-<li>Ajoutez un nom à votre clé SSH publique.</li>
+<li>Ajoutez un nom à votre clé SSH publique dans le champ <em>Label</em>.</li>
 </ul>
 </dd>
 <dd>
@@ -1188,7 +1325,7 @@
 </dd>
 <dd>
 <ul>
-<li>Copiez / collez la clé publique dans le champ Runcloud.io</li>
+<li>Copiez la clé et collez là dans le champ <em>Public Key</em> de Runcloud.io</li>
 </ul>
 </dd>
 <dd>
@@ -1205,35 +1342,52 @@
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/mqCtL375GDY?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 <hr />
-<p><strong>Association de la base de donnnées à Wordpress</strong></p>
+<dl>
+<dt><strong>Association de la base de donnnées à Wordpress</strong></dt>
+<dd>
+<ul>
+<li>Dans le menu de gauche cliquez sur <strong><em>Web application</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>À droite sur le tableau, cliquez sur l'<mark class="critic">icone rouage</mark> de la colone <em>Options</em>. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Sélectionnez <strong><em>Set as default Web Application</em></strong> puis cliquez sur le bouton <mark class="critic">Set As Default</mark>.</li>
+</ul>
+</dd>
+</dl>
 <div class="admonition info">
 <p class="admonition-title">Accéder à votre site web</p>
-<p>Vous pouvez maintenant accéder à votre site ! Tapez votre nom de domaine <code class="codehilite">https://example.com</code> dans la barre d'adresse URL  de votre navigateur, vous verrez alors la page d'installation classique de Wordpress.</p>
+<p>Vous pouvez maintenant accéder à votre site ! <br>Tapez votre nom de domaine <code class="codehilite">https://exemple.com</code> dans la barre d'adresse URL  de votre navigateur, vous verrez alors la page d'installation classique de Wordpress.</p>
 </div>
 <dl>
 <dd>
 <ul>
-<li>Sélectionnez la langue de votre choix.</li>
+<li>Sélectionnez la <strong><em>langue</em></strong> de votre choix.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <mark class="critic">C'est parti !</mark>.</li>
+<li>Cliquez sur <mark class="critic">Continuer</mark> puis sur <mark class="critic">C'est parti !</mark>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Entrez le nom de votre base de données Runcloud.io (A)</li>
+<li>Entrez le <strong><em>nom de votre base de données</em></strong> Runcloud.io (nous l'avons défini lors de l'étape <a href="/run-cloud-fr/#base-de-donnees" target="_blank">Base de données</a>).</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Copiez/collez le nom d'administrateur de la base de données Runcloud.io (A)</li>
+<li>Entrez le <strong><em>nom d'administrateur de votre base de données</em></strong> Runcloud.io (nous l'avons égalemnt défini lors de l'étape <a href="/run-cloud-fr/#base-de-donnees" target="_blank">Base de données</a>).</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Copiez/collez le mot de passe de la base de données Runcloud.io (A)</li>
+<li>Entrez le <strong><em>mot de passe de votre base de données</em></strong> Runcloud.io, que vous avez précedemment sauvegardé dans un fichier (nous l'avons aussi défini lors de l'étape <a href="/run-cloud-fr/#base-de-donnees" target="_blank">Base de données</a>).</li>
 </ul>
 </dd>
 <dd>
@@ -1243,53 +1397,50 @@
 </dd>
 <dd>
 <ul>
-<li>Changez votre préfixe de table par quelque chose d'autre que <code class="codehilite">wp_</code>, tout en gardant ce format.</li>
+<li>Changez les lettres de votre préfixe de table par quelque chose d'autre que <code class="codehilite">wp_</code>, tout en gardant ce format.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <mark class="critic">Valider</mark>.</li>
+<li>Cliquez sur <mark class="critic">Envoyer</mark>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Cliquez sur <mark class="critic">Démarrer l'installation</mark>.</li>
+<li>Cliquez sur <mark class="critic">Lancer l'installation</mark>.</li>
 </ul>
 </dd>
 </dl>
 <hr />
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/AYp36hsQ9vk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-<hr />
 <p><strong>Informations du site et création de l'utilisateur administrateur</strong></p>
 <div class="admonition info">
 <p class="admonition-title">Identifiants à retenir !</p>
-<p>Pour cette étape, vous allez créer les accès administrateur à votre site Wordpress. Conservez absolument ces informations dans un endroit sécurisé !</p>
+<p>Pour cette étape, vous allez créer les accès administrateur à votre site Wordpress. <strong>Conservez absolument ces informations dans un endroit sécurisé !</strong></p>
 </div>
 <dl>
 <dd>
 <ul>
-<li>Donnez un titre à votre site web.</li>
+<li>Donnez un <strong><em>titre</em></strong> à votre site web.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Définissez votre nom d'utilisateur, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+<li>Définissez votre <strong><em>nom d'utilisateur</em></strong>, stockez cette information dans un fichier et sauvegardez-le dans un endroit sécurisé !</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Générez un mot de passe, stockez cette information dans un fichier séparé et sauvegardez-le dans un endroit sécurisé !</li>
+<li>Générez un <strong><em>mot de passe</em></strong>, copiez le et stockez cette information dans un fichier et sauvegardez-le dans un endroit sécurisé !</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Ajoutez votre adresse e-mail d'administrateur.</li>
+<li>Ajoutez votre <strong><em>adresse e-mail</em></strong> d'administrateur.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Laissez la case <em>Search Engine Visibility</em> décochée.</li>
+<li>Laissez la case <em>Visibilité pour les moteurs de recheche</em> décochée.</li>
 </ul>
 </dd>
 <dd>

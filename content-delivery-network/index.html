@@ -102,7 +102,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="orange">
+    <body dir="ltr" data-md-color-primary="pink" data-md-color-accent="amber">
   
     <svg class="md-svg">
       <defs>
@@ -459,13 +459,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#iam-key-injection" title="IAM key injection" class="md-nav__link">
-    IAM key injection
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#certificate-manager" title="Certificate Manager" class="md-nav__link">
     Certificate Manager
   </a>
@@ -534,8 +527,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../wordpress/theme-fr/" title="Thème" class="md-nav__link">
+      Thème
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../wordpress/plugins/" title="Plugins" class="md-nav__link">
       Plugins
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../wordpress/theme/" title="Theme" class="md-nav__link">
+      Theme
     </a>
   </li>
 
@@ -743,13 +760,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#iam-key-injection" title="IAM key injection" class="md-nav__link">
-    IAM key injection
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#certificate-manager" title="Certificate Manager" class="md-nav__link">
     Certificate Manager
   </a>
@@ -797,10 +807,54 @@
 <p>S3 is a service that enables users to load your website’s media faster.</p>
 </div>
 <dl>
+<dt><strong>Offload plugin</strong></dt>
+<dd>
+<ul>
+<li>Click on <strong><em>Plugins</em></strong> in the left menu. Then on <strong><em>Installed Plugins</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Select: <em>Akismet Anti-Spam</em> and <em>Hello Dolly</em>. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Delete them by using the drop-down menu <strong><em>Bulk actions</em></strong>. Then click on <mark class="critic">Apply</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>Add</em></strong> in the left menu.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type <strong><em>Offload</em></strong> in the search bar.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Choose <em>WP Offload media Lite for Amazon S3, DigitalOcean Spaces, and Google Cloud Storage</em> by clicking on the <mark class="critic">Install</mark> button.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Wait until the install is finished and click on  <mark class="critic">Activate</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>settings</em></strong> under WP Offload media Lite.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<dl>
 <dt><strong>S3 bucket creation</strong></dt>
 <dd>
 <ul>
-<li>Go on your AWS management console, search for the service <em>S3</em> and click on it.</li>
+<li>Go on your AWS management console, search for the service <strong><em>S3</em></strong> and click on it.</li>
 </ul>
 </dd>
 <dd>
@@ -810,7 +864,7 @@
 </dd>
 <dd>
 <ul>
-<li>Name your bucket and choose the same region that you choose for your Lightsail instance.</li>
+<li>Name your bucket and leave the by default region: US East (N. Virginia).</li>
 </ul>
 </dd>
 <dd>
@@ -835,7 +889,7 @@
 </dd>
 <dd>
 <ul>
-<li>Check that everything is good and click on <mark class="critic">Create bucket</mark>.</li>
+<li>Click on <mark class="critic">Create bucket</mark>.</li>
 </ul>
 </dd>
 </dl>
@@ -843,14 +897,11 @@
 <p class="admonition-title">A storage S3 public bucket is now available! It will enable faster loading of your media on Wordpress.</p>
 </div>
 <hr />
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/R1d245Z0Z0k?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-<hr />
 <dl>
 <dt><strong>S3 bucket permissions</strong></dt>
 <dd>
 <ul>
-<li>Click on your S3 bucket, then click on <mark class="critic">Permissions</mark>.</li>
+<li>Click on your <strong><em>S3 bucket</em></strong>, then click on <mark class="critic">Permissions</mark> in the right menu.</li>
 </ul>
 </dd>
 <dd>
@@ -880,12 +931,17 @@
 </dd>
 <dd>
 <ul>
-<li>Don't forget to switch <em>YourBucketName</em> with the name you gave your bucket.</li>
+<li>Don't forget to switch <strong><em>YourBucketName</em></strong> with the name you gave your bucket.</li>
 </ul>
 </dd>
 <dd>
 <ul>
 <li>Once the policy edited, click on <mark class="critic">Save</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on the <strong><em>AWS</em></strong> logo at the top left of the page.</li>
 </ul>
 </dd>
 </dl>
@@ -898,12 +954,7 @@
 <dt><strong>IAM policy initialization</strong></dt>
 <dd>
 <ul>
-<li>Go back to the Management Console by clicking on the AWS top left logo.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Search for the IAM service and click on the result.</li>
+<li>Search for the <strong><em>IAM service</em></strong> and click on the result.</li>
 </ul>
 </dd>
 <dd>
@@ -994,7 +1045,7 @@
 </dd>
 <dd>
 <ul>
-<li>Check the <em>Programmatic access</em> box.</li>
+<li>Check the <strong><em>Programmatic access</em></strong> box.</li>
 </ul>
 </dd>
 <dd>
@@ -1004,17 +1055,52 @@
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Attach existing policies</em>.</li>
+<li>Click on <em>A**ttach existing policies**</em>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Type your IAM policy name in the search bar.</li>
+<li>Type your <strong><em>IAM policy's name</em></strong> in the search bar.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Check the box to select your IAM policy and click on <mark class="critic">Next: Tags</mark>.</li>
+<li>Check the box to select your IAM policy</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type <strong><em>S3</em></strong> in the search bar.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the box to select this policy: <strong><em>AmazonS3FullAccess</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Type <strong><em>Cloudfront</em></strong> in the search bar.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the box to select this policy: <strong><em>CloudFrontFullAccess</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Finally, type <strong><em>Admin</em></strong> in the search bar.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Check the box to select this policy: <strong><em>AdministratorAccess</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <mark class="critic">Next: Tags</mark>.</li>
 </ul>
 </dd>
 <dd>
@@ -1039,55 +1125,28 @@
 <div class="admonition success">
 <p class="admonition-title">Congratulations! Your IAM user is now liked to the right IAM policy and you have the two access keys.</p>
 </div>
-<hr />
-<h2 id="iam-key-injection">IAM key injection<a class="headerlink" href="#iam-key-injection" title="Permanent link">&para;</a></h2>
+<!-- 
+***
+
+## IAM key injection
+
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/_mJp7YdtVEk?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
-<hr />
-<dl>
-<dt><strong>IAM access key injection in Wordpress</strong></dt>
-<dd>
-<ul>
-<li>Go to your Runcloud.io homepage</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>On the left menu, click on <em>Web Applications</em> and click on your Wordpress application.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Click on <mark class="critic">File Manager</mark> in the left menu.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Select the <em>wp-config.php</em> file, then click on the <mark class="critic">View/Edit</mark> menu.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Once in the editor, copy/paste the command below after <code class="codehilite">define(&#39;WP_DEBUG&#39;, false);</code> : 
-<div class="codehilite"><pre><span></span>define<span class="o">(</span> <span class="s1">&#39;AS3CF_SETTINGS&#39;</span>, serialize<span class="o">(</span> array<span class="o">(</span>
-    <span class="s1">&#39;provider&#39;</span> <span class="o">=</span>&gt; <span class="s1">&#39;aws&#39;</span>,
-    <span class="s1">&#39;access-key-id&#39;</span> <span class="o">=</span>&gt; <span class="s1">&#39;YourAccessKeyID&#39;</span>,
-    <span class="s1">&#39;secret-access-key&#39;</span> <span class="o">=</span>&gt; <span class="s1">&#39;YourAccessKeySecret&#39;</span>,
-<span class="o">)</span> <span class="o">)</span> <span class="o">)</span><span class="p">;</span>
-</pre></div></li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Then go to your IAM interface so you can replace <em>YourAccessKeyID</em> with your access key ID and <em>YourAccessKeySecret</em> with your secret access key.</li>
-</ul>
-</dd>
-<dd>
-<ul>
-<li>Type <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes.</li>
-</ul>
-</dd>
-</dl>
+***
+
+**IAM access key injection in Wordpress**
+
+:    * Go to your Runcloud.io homepage
+:    * On the left menu, click on *Web Applications* and click on your Wordpress application.
+:    * Click on <mark class="critic">File Manager</mark> in the left menu.
+:    * Select the *wp-config.php* file, then click on the <mark class="critic">View/Edit</mark> menu.
+:    * Once in the editor, copy/paste the command below after `define('WP_DEBUG', false);` : 
+wzxhzdk:2
+
+:    * Then go to your IAM interface so you can replace *YourAccessKeyID* with your access key ID and *YourAccessKeySecret* with your secret access key.
+
+:    * Type <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your changes. -->
+
 <hr />
 <h2 id="certificate-manager">Certificate Manager<a class="headerlink" href="#certificate-manager" title="Permanent link">&para;</a></h2>
 <iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/PK7f-W6ZzCU?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
@@ -1097,17 +1156,17 @@
 <dt><strong>AWS Certificate creation</strong></dt>
 <dd>
 <ul>
-<li>Go back to the Management Console by clicking on the AWS top left logo.</li>
+<li>Go back to the Management Console by clicking on the ***AWS top ***left logo.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>On the top right corner, select <em>US East (N. Virginia)</em> location. (I)</li>
+<li>On the top right corner, select <strong><em>US East (N. Virginia)</em></strong> location.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Search for the AWS service <em>Certificate Manager</em> and click on it.</li>
+<li>Search for the AWS service <strong><em>Certificate Manager</em></strong> and click on it.</li>
 </ul>
 </dd>
 <dd>
@@ -1137,9 +1196,6 @@
 </dd>
 </dl>
 <hr />
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/CM8FkHJJoOI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
-
-<hr />
 <dl>
 <dt><strong>Domain name DNS validation</strong></dt>
 <dd>
@@ -1149,12 +1205,12 @@
 </dd>
 <dd>
 <ul>
-<li>Copy the beginning of the CNAME like so : <code class="codehilite">_55deac851379bd6906fd5f90ed2e95b3</code></li>
+<li>Copy the beginning of the CNAME. Copy the series of letters and numbers, stop just before your domain name's dot. </li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Go to your Amazon Lightsail interface. Click on <mark class="critic">Networking</mark> then on your DNS zone.</li>
+<li>Go to your Amazon Lightsail interface. Click on <mark class="critic">Networking</mark> then on your DNS zone's name.</li>
 </ul>
 </dd>
 <dd>
@@ -1164,17 +1220,22 @@
 </dd>
 <dd>
 <ul>
-<li>Select <em>CNAME</em> as a record type. Paste the beginning of the CNAME you copied on the <em>Subdomain</em> field. Then copy the <em>Value</em> you can find on the <em>AWS Certificate Manager</em> page and paste it in the <em>Maps to</em> field.</li>
+<li>Select <strong><em>CNAME</em></strong> as a record type. Paste the beginning of the CNAME you copied on the <em>Subdomain</em> field. Then copy the <em>Value</em> you can find on the <em>AWS Certificate Manager</em> page and paste it in the <em>Maps to</em> field.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on the green button to save.</li>
+<li>Click on the <strong><em>green button</em></strong> to save.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Go back to the <em>AWS Certificate Manager</em>, click on <mark class="critic">Continue</mark> and wait while your domain name gets validated.</li>
+<li>Go back to the <em>AWS Certificate Manager</em>, click on <mark class="critic">Continue</mark> and wait a few minutes while your domain name gets validated.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Refresh your page to see if your domain name gets validated.</li>
 </ul>
 </dd>
 </dl>
@@ -1190,12 +1251,12 @@
 <dt><strong>Content Delivery Network Creation</strong></dt>
 <dd>
 <ul>
-<li>Go back to the homepage by clicking on the top left AWS logo.</li>
+<li>Go back to the homepage by clicking on the top left <strong><em>AWS logo</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Search the AWS service <em>Cloudfront</em> and click on it.</li>
+<li>Search the AWS service <strong><em>Cloudfront</em></strong> and click on it.</li>
 </ul>
 </dd>
 <dd>
@@ -1210,12 +1271,27 @@
 </dd>
 <dd>
 <ul>
-<li>For the <em>Origin domain name</em> filed, select your S3 bucket.</li>
+<li>For the <em>Origin domain name</em> filed, select your <strong><em>S3 bucket</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In <em>Alternate domain name (CNAMEs)</em>, write this: <code class="codehilite">cdn1.example.com</code>. Replace <em>example.com</em> with your domain name.</li>
+<li>In <em>Viewer Protocol Policy</em>, check the <strong><em>Redirect HTTP yo HTTPS</em></strong> box.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In <em>Cached HTTP methods</em>, check the <strong><em>OPTIONS</em></strong> box.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In <em>Compress Objects Automatically</em>, check the <strong><em>Yes</em></strong> box.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In <em>Alternate domain name (CNAMEs)</em>, write this: <code class="codehilite">cdn.example.com</code>. Replace <em>example.com</em> with your domain name.</li>
 </ul>
 </dd>
 <dd>
@@ -1225,7 +1301,12 @@
 </dd>
 <dd>
 <ul>
-<li>Select the ACM certificate matching your domain name.</li>
+<li>In the next empty field, select the <strong><em>SSL certificate matching your domain name</em></strong>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Write your <strong><em>domain name</em></strong> in the <em>Comment</em> field, so you know for which domain name is this distribution. </li>
 </ul>
 </dd>
 <dd>
@@ -1242,22 +1323,27 @@
 <dt><strong>CNAME Cloudfront and Amazon Lightsail Mapping</strong></dt>
 <dd>
 <ul>
-<li>Click on the Cloudfront distribution ID.</li>
+<li>Click on the <strong><em>Cloudfront distribution ID</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Copy <em>Domain name</em> content.</li>
+<li>Copy <strong><em>Domain name</em></strong> content.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Go back to the Lightsail interface, in the Networking section then in your domain name's DNS zone.</li>
+<li>Go back to the Lightsail interface, in the <em>Networking</em> section then in your domain name's DNS zone.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Add a record and choose <em>CNAME record</em> on the first field. For the <em>subdomain</em> field type <code class="codehilite">cdn1</code> and for the <em>Maps to</em> field paste the content you just copied. Then save.</li>
+<li>Add a record and choose <em>CNAME record</em> on the first field. For the <em>subdomain</em> field type <code class="codehilite">cdn</code> and for the <em>Maps to</em> field paste the content you just copied. </li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Then save by clicking on the <strong><em>green button</em></strong>.</li>
 </ul>
 </dd>
 </dl>
@@ -1275,47 +1361,92 @@
 </dd>
 <dd>
 <ul>
-<li>Click on <mark class="critic">Plugin &gt; Add New</mark> on the left menu.</li>
+<li>Copy the <strong><em>access keys in wp-config.php</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Type <em>Amazon S3</em> on the search bar.</li>
+<li>Go to the Runcloud page, you should be on the <em>Web application</em> page.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Install and activate the <em>WP Offload Media Lite for Amazon S3</em> plugin.</li>
+<li>Click on your <strong><em>application's name</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In the <em>Installed Plugins</em> menu, delete the by default applications.</li>
+<li>Click on <strong><em>File Manager</em></strong> in the left menu.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In the plugins menu, click on <em>Settings</em>.</li>
+<li>Select <strong><em>wp-config.php</em></strong> on the list, then scroll up to click on <strong><em>View/Edit</em></strong> in the blue menu.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Once there, put your S3 bucket name in the field and click on <em>Save Bucket Setting</em>.</li>
+<li>Scroll the editor downuntil you find this line of code: <strong><em>define( 'DB_COLLATE', '')</em></strong>.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>In the <em>URL REWRITING</em> tab, enable the <em>Custom Domain (CNAME)</em> option and put <code class="codehilite">cdn1.example.com</code>. Replace <code class="codehilite">example.com</code> by your domain name.</li>
+<li>Skip a line and write this:
+<div class="codehilite"><pre><span></span>/** WP Offload */
+</pre></div></li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Enable <em>Force HTTPS</em> option.</li>
+<li>Skip a line again and paste the wp-config.php access key.</li>
 </ul>
 </dd>
 <dd>
 <ul>
-<li>Click on <em>Save changes</em>.</li>
+<li>Replace the stars next to <em>access-key-id</em> with your <em>IAM Access key ID</em> (we saved it at the end of <a href="/content-delivery-network/#iam-user" target="_blank">this step</a>).</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Replace the stars next to <em>secret-access-key</em> with your <em>IAM secret access key</em> (we saved it at the end of <a href="/content-delivery-network/#iam-user" target="_blank">this step</a>).</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>For Mac users, press the keys <kbd>cmd</kbd> and <kbd>s</kbd>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>For the Windows users, press the keys <kbd>ctrl</kbd> and <kbd>s</kbd>.</li>
+</ul>
+</dd>
+</dl>
+<hr />
+<dl>
+<dd>
+<ul>
+<li>Go back to the Wordpress page, scroll down and click on <mark class="critic">Next</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Once there, put your S3 bucket name in the field and click on <mark class="critic">Save Bucket Setting</mark>.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>In the <em>URL REWRITING</em> tab, enable the <em>Custom Domain (CNAME)</em> option and put <code class="codehilite">cdn.example.com</code>. Replace <code class="codehilite">example.com</code> by your domain name.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Enable <strong><em>Force HTTPS</em></strong> option.</li>
+</ul>
+</dd>
+<dd>
+<ul>
+<li>Click on <strong><em>Save changes</em></strong>.</li>
 </ul>
 </dd>
 </dl>
