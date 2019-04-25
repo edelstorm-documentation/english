@@ -150,7 +150,7 @@ StaticIp-YourDomainName
 
 ## DNS zone
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/SL4oC8wznzI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/FQgDl9HhzWI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 **Combination of your instance and domain name**
 
@@ -183,7 +183,7 @@ StaticIp-YourDomainName
 
 ## Nameservers
 
-<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/uVV-diKCHcM?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
+<iframe width="100%" height="405" src="https://www.youtube-nocookie.com/embed/ik2ij7BkxZg?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture setPlaybackQuality(hd1080);" allowfullscreen></iframe>
 
 ***
 
